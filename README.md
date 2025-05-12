@@ -2,6 +2,16 @@
 
 ## Introduction
 
+### Learning Objectives
+
+By the end of this section, you will be able to:
+
+- Understand core Azure concepts and terminology
+- Explain the benefits of cloud computing
+- Identify different Azure service models
+- Apply Azure concepts to real-world scenarios
+- Prepare for AZ-900 exam questions on these topics
+
 ### What is Microsoft Azure?
 
 Microsoft Azure is a comprehensive cloud computing platform created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. It provides a wide range of cloud services, including those for computing, analytics, storage, and networking.
@@ -9,8 +19,7 @@ Microsoft Azure is a comprehensive cloud computing platform created by Microsoft
 #### Key Azure Concepts for AZ-900
 
 1. **Resource Groups**
-   - **What are they?**
-     Resource groups are logical containers that hold related Azure resources for an application. Think of them as folders that help you organize and manage all the resources needed for a specific project or application.
+Resource groups are logical containers that hold related Azure resources for an application. Think of them as folders that help you organize and manage all the resources needed for a specific project or application.
 
    - **Practical Example:**
      Imagine you're building a web application. Your resource group might contain:
@@ -29,8 +38,7 @@ Microsoft Azure is a comprehensive cloud computing platform created by Microsoft
      [Azure Resource Groups Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 
 2. **Subscriptions**
-   - **What are they?**
-     Subscriptions are the fundamental unit of billing and access management in Azure. They represent a billing relationship with Microsoft and provide a boundary for resource management.
+Subscriptions are the fundamental unit of billing and access management in Azure. They represent a billing relationship with Microsoft and provide a boundary for resource management.
 
    - **Practical Example:**
      A company might have different subscriptions for:
@@ -49,8 +57,7 @@ Microsoft Azure is a comprehensive cloud computing platform created by Microsoft
      [Azure Subscriptions Documentation](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)
 
 3. **Management Groups**
-   - **What are they?**
-     Management groups provide a level of scope above subscriptions. They help you organize subscriptions into containers and apply governance conditions to those containers.
+Management groups provide a level of scope above subscriptions. They help you organize subscriptions into containers and apply governance conditions to those containers.
 
    - **Practical Example:**
      A multinational company might organize their Azure resources like this:
@@ -569,8 +576,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 #### Azure Database Services
 
-- **What are they?**
-  Azure Database Services provide fully managed database solutions for various data types and workloads, offering high availability, scalability, and security.
+Azure Database Services provide fully managed database solutions for various data types and workloads, offering high availability, scalability, and security.
 
 - **Practical Example:**
   A multi-database application:
@@ -982,14 +988,177 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   - Disaster recovery implementation
   - Disaster recovery monitoring
 
+#### Shared Responsibility Model
+
+- **Definition**: A framework that defines which security tasks are handled by the cloud provider and which tasks are handled by the customer.
+
+- **Practical Example**:
+
+  ```plaintext
+  IaaS Responsibility Split:
+  ├── Cloud Provider
+  │   ├── Physical security
+  │   ├── Network infrastructure
+  │   ├── Host infrastructure
+  │   └── Virtualization layer
+  └── Customer
+      ├── Operating system
+      ├── Network configuration
+      ├── Application security
+      └── Data security
+
+  PaaS Responsibility Split:
+  ├── Cloud Provider
+  │   ├── Physical security
+  │   ├── Network infrastructure
+  │   ├── Host infrastructure
+  │   ├── Operating system
+  │   └── Runtime environment
+  └── Customer
+      ├── Application security
+      ├── Data security
+      └── Access management
+
+  SaaS Responsibility Split:
+  ├── Cloud Provider
+  │   ├── Physical security
+  │   ├── Network infrastructure
+  │   ├── Host infrastructure
+  │   ├── Operating system
+  │   ├── Application security
+  │   └── Runtime environment
+  └── Customer
+      ├── Data security
+      └── Access management
+  ```
+
+- **Key Points**:
+  - **Physical Security**: Always managed by the cloud provider
+  - **Data Security**: Always shared responsibility
+  - **Application Security**: Varies by service model
+  - **Network Security**: Varies by service model
+
+- **Exam Focus**:
+  - Understanding responsibility split by service model
+  - Identifying security responsibilities
+  - Implementing appropriate security controls
+  - Managing compliance requirements
+
+#### Cloud Services Types
+
+- **Definition**: Different categories of cloud services that provide specific functionality and capabilities in Azure.
+
+- **Types of Cloud Services**:
+
+  1. **Compute Services**:
+
+     ```plaintext
+     Compute Options:
+     ├── Virtual Machines (IaaS)
+     │   ├── Complete control
+     │   └── Full OS management
+     ├── App Service (PaaS)
+     │   ├── Managed platform
+     │   └── Automatic scaling
+     ├── Azure Functions (Serverless)
+     │   ├── Event-driven
+     │   └── Pay-per-execution
+     └── Container Services
+         ├── AKS (Kubernetes)
+         └── Container Instances
+     ```
+
+  2. **Storage Services**:
+
+     ```plaintext
+     Storage Options:
+     ├── Blob Storage
+     │   ├── Unstructured data
+     │   └── Media files
+     ├── File Storage
+     │   ├── SMB shares
+     │   └── File systems
+     ├── Queue Storage
+     │   ├── Message queuing
+     │   └── Task processing
+     └── Table Storage
+         ├── NoSQL data
+         └── Key-value pairs
+     ```
+
+  3. **Database Services**:
+
+     ```plaintext
+     Database Options:
+     ├── SQL Database
+     │   ├── Relational data
+     │   └── Managed SQL
+     ├── Cosmos DB
+     │   ├── NoSQL
+     │   └── Global distribution
+     ├── MySQL Database
+     │   ├── Open-source
+     │   └── Managed MySQL
+     └── PostgreSQL
+         ├── Open-source
+         └── Managed PostgreSQL
+     ```
+
+  4. **Networking Services**:
+
+     ```plaintext
+     Network Options:
+     ├── Virtual Network
+     │   ├── Private networks
+     │   └── Subnet management
+     ├── Load Balancer
+     │   ├── Traffic distribution
+     │   └── High availability
+     ├── Application Gateway
+     │   ├── Web traffic
+     │   └── SSL termination
+     └── VPN Gateway
+         ├── Site-to-site
+         └── Point-to-site
+     ```
+
+  5. **Security Services**:
+
+     ```plaintext
+     Security Options:
+     ├── Azure Active Directory
+     │   ├── Identity management
+     │   └── Authentication
+     ├── Key Vault
+     │   ├── Secrets management
+     │   └── Certificate storage
+     ├── Security Center
+     │   ├── Threat protection
+     │   └── Security monitoring
+     └── DDoS Protection
+         ├── Network security
+         └── Attack prevention
+     ```
+
+- **Key Points**:
+  - Each service type has specific use cases
+  - Services can be combined for solutions
+  - Different service types have different pricing models
+  - Services follow the shared responsibility model
+
+- **Exam Focus**:
+  - Understanding service categories
+  - Identifying appropriate services
+  - Service capabilities and limitations
+  - Service integration possibilities
+
 ## Core Azure Services
 
 ### Azure Compute Services
 
 #### Virtual Machines (VMs)
 
-- **What are they?**
-  Azure `VMs` are on-demand, scalable computing resources that provide complete control over the `operating system` and configuration. They're ideal for running applications that require full control over the computing environment.
+Azure `VMs` are on-demand, scalable computing resources that provide complete control over the `operating system` and configuration. They're ideal for running applications that require full control over the computing environment.
 
 - **Practical Example:**
   A company running a legacy application:
@@ -1152,8 +1321,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 #### Azure Functions
 
-- **What are they?**
-  Azure `Functions` is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
+Azure `Functions` is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
 
 - **Practical Example:**
   An IoT data processing system:
@@ -1971,8 +2139,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 #### Compliance Offerings
 
-- **What are they?**
-  Azure's compliance offerings help organizations meet regulatory requirements and industry standards through comprehensive compliance controls and certifications.
+Azure's compliance offerings help organizations meet regulatory requirements and industry standards through comprehensive compliance controls and certifications.
 
 - **Practical Example:**
   A healthcare organization's compliance setup:
@@ -2054,14 +2221,190 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 - **Documentation Reference:**
   [Azure Compliance Documentation](https://docs.microsoft.com/en-us/azure/compliance/)
 
+### Azure Governance and Compliance
+
+#### Azure Governance
+
+- **What is it?**
+  Azure Governance provides tools and services to help organizations maintain control over their Azure resources, ensure compliance, and manage costs effectively.
+
+- **Practical Example:**
+  An enterprise governance setup:
+
+  ```plaintext
+  Governance Framework:
+  ├── Management Groups
+  │   ├── Organization hierarchy
+  │   └── Policy inheritance
+  ├── Subscriptions
+  │   ├── Billing boundaries
+  │   └── Access control
+  ├── Resource Groups
+  │   ├── Resource organization
+  │   └── Lifecycle management
+  └── Tags
+      ├── Resource tracking
+      └── Cost allocation
+  ```
+
+- **Core Components**:
+
+  1. **Azure Policy**:
+
+     ```plaintext
+     Policy Management:
+     ├── Policy Definitions
+     │   ├── Built-in policies
+     │   └── Custom policies
+     ├── Policy Assignments
+     │   ├── Scope definition
+     │   └── Parameter configuration
+     ├── Policy Initiatives
+     │   ├── Policy groups
+     │   └── Compliance standards
+     └── Compliance Monitoring
+         ├── Compliance reports
+         └── Remediation tasks
+     ```
+
+  2. **Azure Blueprints**:
+
+     ```plaintext
+     Blueprint Components:
+     ├── Resource Templates
+     │   ├── ARM templates
+     │   └── Resource definitions
+     ├── Policy Assignments
+     │   ├── Compliance policies
+     │   └── Security policies
+     ├── Role Assignments
+     │   ├── RBAC roles
+     │   └── Access control
+     ├── Version Control
+     │   ├── Blueprint versions
+     │   └── Change tracking
+     └── Compliance
+         ├── Compliance reports
+         └── Remediation tasks
+     ```
+
+  3. **Resource Locks**:
+
+     ```plaintext
+     Lock Types:
+     ├── CanNotDelete
+     │   ├── Prevents deletion
+     │   └── Allows modifications
+     └── ReadOnly
+         ├── Prevents modifications
+         └── Prevents deletion
+     ```
+
+#### Compliance Management
+
+- **What is it?**
+  Azure's compliance framework helps organizations meet regulatory requirements and industry standards through comprehensive compliance controls and certifications.
+
+- **Practical Example:**
+  A healthcare organization's compliance setup:
+
+  ```plaintext
+  Compliance Framework:
+  ├── Industry Standards
+  │   ├── HIPAA
+  │   └── HITRUST
+  ├── Regional Compliance
+  │   ├── GDPR
+  │   └── CCPA
+  └── Security Standards
+      ├── ISO 27001
+      └── SOC 2
+  ```
+
+- **Compliance Tools**:
+
+  1. **Compliance Manager**:
+
+     ```plaintext
+     Compliance Features:
+     ├── Risk Assessment
+     │   ├── Control mapping
+     │   └── Risk scoring
+     ├── Compliance Tracking
+     │   ├── Progress monitoring
+     │   └── Evidence collection
+     └── Action Items
+         ├── Remediation tasks
+         └── Improvement plans
+     ```
+
+  2. **Service Trust Portal**:
+
+     ```plaintext
+     Trust Center Features:
+     ├── Compliance Documentation
+     │   ├── Certifications
+     │   └── Audit reports
+     ├── Security Information
+     │   ├── Security controls
+     │   └── Best practices
+     └── Privacy Information
+         ├── Data protection
+         └── Privacy controls
+     ```
+
+#### Cost Management and Governance
+
+- **What is it?**
+  Tools and practices for managing and optimizing Azure costs while maintaining governance controls.
+
+- **Practical Example:**
+  An enterprise cost management setup:
+
+  ```plaintext
+  Cost Management:
+  ├── Budget Management
+  │   ├── Budget creation
+  │   └── Alert configuration
+  ├── Cost Analysis
+  │   ├── Usage tracking
+  │   └── Cost allocation
+  ├── Optimization
+  │   ├── Resource right-sizing
+  │   └── Reserved instances
+  └── Reporting
+      ├── Cost reports
+      └── Usage reports
+  ```
+
+- **Best Practices**:
+
+  ```plaintext
+  Governance Best Practices:
+  ├── Resource Organization
+  │   ├── Consistent naming
+  │   └── Tagging strategy
+  ├── Access Control
+  │   ├── Least privilege
+  │   └── Regular review
+  ├── Cost Management
+  │   ├── Budget controls
+  │   └── Regular optimization
+  └── Compliance
+      ├── Regular audits
+      └── Policy updates
+  ```
+
+- **Documentation Reference:**
+  [Azure Governance Documentation](https://docs.microsoft.com/en-us/azure/governance/)
+
 ## Azure Pricing and Support
 
 ### Understanding Azure Pricing
 
 #### Pricing Models
 
-- **What are they?**
-  Azure offers various pricing models to meet different business needs, from pay-as-you-go to enterprise agreements.
+Azure offers various pricing models to meet different business needs, from pay-as-you-go to enterprise agreements.
 
 - **Practical Example:**
   A startup's pricing strategy:
@@ -2077,6 +2420,38 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   └── Optimization
       ├── Cost analysis
       └── Budget alerts
+  ```
+
+- **Pricing Calculators:**
+
+  ```plaintext
+  Azure Calculators:
+  ├── Pricing Calculator
+  │   ├── Service Cost Estimation
+  │   │   ├── Compute resources
+  │   │   ├── Storage services
+  │   │   ├── Networking
+  │   │   └── Databases
+  │   ├── Cost Optimization
+  │   │   ├── Reserved instances
+  │   │   ├── Spot instances
+  │   │   └── Hybrid benefit
+  │   ├── Export Options
+  │       ├── PDF reports
+  │       └── Share estimates
+  └── TCO Calculator
+      ├── Cloud Migration
+      │   ├── Infrastructure costs
+      │   ├── Operational costs
+      │   └── Staff costs
+      ├── Cost Comparison
+      │   ├── On-premises vs Cloud
+      │   ├── Current vs Future
+      │   └── Different regions
+      └── ROI Analysis
+          ├── Cost savings
+          ├── Productivity gains
+          └── Business value
   ```
 
 - **Common Models:**
@@ -2232,8 +2607,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 #### Support Plans
 
-- **What are they?**
-  Azure offers various support plans to meet different business needs, from `Basic` support to `Enterprise`-level assistance.
+Azure offers various support plans to meet different business needs, from `Basic` support to `Enterprise`-level assistance.
 
 - **Practical Example:**
   A growing company's support strategy:
@@ -2325,8 +2699,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 #### Service Level Agreements
 
-- **What are they?**
-  Azure `SLAs` define the performance standards and availability guarantees for Azure services.
+Azure `SLAs` define the performance standards and availability guarantees for Azure services.
 
 - **Practical Example:**
   A high-availability application:
@@ -2528,8 +2901,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 #### Official Resources
 
-- **What are they?**
-  Microsoft's official learning resources for AZ-900 exam preparation.
+Microsoft's official learning resources for AZ-900 exam preparation.
 
 - **Practical Example:**
   A comprehensive study approach:
@@ -2601,8 +2973,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 #### Community Resources
 
-- **What are they?**
-  Additional learning resources from the Azure community.
+Additional learning resources from the Azure community.
 
 - **Practical Example:**
   Community learning approach:
@@ -2812,8 +3183,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 ### Key Takeaways
 
-- **What are they?**
-  Essential concepts and skills gained from the AZ-900 certification.
+Essential concepts and skills gained from the AZ-900 certification.
 
 - **Practical Example:**
   Core competencies developed:
@@ -2887,8 +3257,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 ### Next Steps
 
-- **What are they?**
-  Recommended actions after completing the AZ-900 certification.
+Recommended actions after completing the AZ-900 certification.
 
 - **Practical Example:**
   Career development path:
@@ -2957,8 +3326,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 ### Additional Resources
 
-- **What are they?**
-  Ongoing learning and support resources.
+Ongoing learning and support resources.
 
 - **Practical Example:**
   Resource collection:
@@ -3104,8 +3472,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 ### Reference Materials
 
-- **What are they?**
-  Essential reference documents and resources.
+Essential reference documents and resources.
 
 - **Practical Example:**
   Reference collection:
@@ -3175,8 +3542,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 ### Practice Scenarios
 
-- **What are they?**
-  Real-world scenarios for hands-on practice.
+Real-world scenarios for hands-on practice.
 
 - **Practical Example:**
   Practice exercises:
@@ -3245,8 +3611,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 ### Useful Links
 
-- **What are they?**
-  Essential online resources and references.
+Essential online resources and references.
 
 - **Practical Example:**
   Resource collection:
@@ -3312,3 +3677,515 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
         ├── SDKs
         └── APIs
     ```
+
+#### Azure Identity, Access, and Security
+
+- **Definition**: Azure's comprehensive security framework that manages identities, controls access, and protects resources.
+
+- **Core Components**:
+
+  1. **Microsoft Entra ID**:
+
+     ```plaintext
+     Entra ID Features:
+     ├── Identity Management
+     │   ├── User accounts
+     │   ├── Groups
+     │   └── Device management
+     ├── Authentication
+     │   ├── Single Sign-On (SSO)
+     │   ├── Multi-Factor Authentication (MFA)
+     │   └── Passwordless authentication
+     ├── Application Management
+     │   ├── App registration
+     │   ├── Enterprise applications
+     │   └── App proxy
+     └── Security Features
+         ├── Conditional Access
+         ├── Identity Protection
+         └── Privileged Identity Management
+     ```
+
+  2. **Role-Based Access Control (RBAC)**:
+
+     ```plaintext
+     RBAC Components:
+     ├── Security Principal
+     │   ├── User
+     │   ├── Group
+     │   └── Service Principal
+     ├── Role Definition
+     │   ├── Permissions
+     │   └── Scope
+     ├── Scope
+     │   ├── Subscription
+     │   ├── Resource Group
+     │   └── Resource
+     └── Built-in Roles
+         ├── Owner
+         ├── Contributor
+         └── Reader
+     ```
+
+  3. **Security Features**:
+
+     ```plaintext
+     Security Tools:
+     ├── Microsoft Defender for Cloud
+     │   ├── Cloud Security Posture Management (CSPM)
+     │   ├── Cloud Workload Protection (CWP)
+     │   ├── Threat Protection
+     │   └── Security Recommendations
+     ├── Microsoft Defender for Servers
+     │   ├── Endpoint Protection
+     │   └── Vulnerability Assessment
+     ├── Microsoft Defender for Storage
+     │   ├── Malware Scanning
+     │   └── Threat Detection
+     ├── Microsoft Defender for SQL
+     │   ├── Advanced Threat Protection
+     │   └── Vulnerability Assessment
+     ├── Microsoft Defender for Containers
+     │   ├── Container Security
+     │   └── Kubernetes Protection
+     ├── Azure Key Vault
+     │   ├── Secrets
+     │   ├── Keys
+     │   └── Certificates
+     ├── Azure DDoS Protection
+     │   ├── Network protection
+     │   └── Attack mitigation
+     └── Azure Firewall
+         ├── Network filtering
+         └── Threat intelligence
+     ```
+
+- **Microsoft Defender Overview**:
+
+  ```plaintext
+  Defender Capabilities:
+  ├── Unified Security
+  │   ├── Centralized Management
+  │   └── Integrated Protection
+  ├── Advanced Protection
+  │   ├── AI-Powered Detection
+  │   └── Real-time Monitoring
+  └── Compliance
+      ├── Built-in Standards
+      └── Custom Policies
+  ```
+
+- **Key Points**:
+  - **Physical Security**: Always managed by the cloud provider
+  - **Data Security**: Always shared responsibility
+  - **Application Security**: Varies by service model
+  - **Network Security**: Varies by service model
+
+- **Exam Focus**:
+  - Understanding Entra ID features
+  - RBAC implementation
+  - Security tools and features
+  - Authentication methods
+  - Access control policies
+  - Security best practices
+
+- **Common Exam Questions**:
+  1. "What is the difference between Entra ID and on-premises AD?"
+  2. "How does RBAC work in Azure?"
+  3. "What are the benefits of MFA?"
+  4. "How does Conditional Access enhance security?"
+
+#### Microsoft Defender for Cloud
+
+- **Definition**: A comprehensive cloud security solution that provides unified security management and advanced threat protection across hybrid cloud workloads.
+
+- **Key Components**:
+
+  ```plaintext
+  Defender Components:
+  ├── Defender for Cloud
+  │   ├── Cloud Security Posture Management
+  │   └── Cloud Workload Protection
+  ├── Defender for Servers
+  │   ├── Endpoint Protection
+  │   └── Vulnerability Assessment
+  ├── Defender for Storage
+  │   ├── Malware Scanning
+  │   └── Threat Detection
+  ├── Defender for SQL
+  │   ├── Advanced Threat Protection
+  │   └── Vulnerability Assessment
+  └── Defender for Containers
+      ├── Container Security
+      └── Kubernetes Protection
+  ```
+
+- **Core Features**:
+
+  ```plaintext
+  Defender Features:
+  ├── Security Posture
+  │   ├── Security Score
+  │   └── Recommendations
+  ├── Threat Protection
+  │   ├── Real-time Monitoring
+  │   └── Security Alerts
+  └── Compliance
+      ├── Built-in Standards
+      └── Custom Policies
+  ```
+
+### Azure Management and Deployment Tools
+
+#### Azure Portal
+
+- **What is it?**
+  A web-based, unified console for managing Azure resources with a graphical user interface.
+
+- **Key Features**:
+
+  ```plaintext
+  Portal Capabilities:
+  ├── Resource Management
+  │   ├── Create resources
+  │   ├── Monitor resources
+  │   └── Configure settings
+  ├── Dashboard
+  │   ├── Custom views
+  │   └── Resource monitoring
+  ├── Cloud Shell
+  │   ├── Bash
+  │   └── PowerShell
+  └── Marketplace
+      ├── Solutions
+      └── Templates
+  ```
+
+#### Azure CLI
+
+- **What is it?**
+  A command-line tool for managing Azure resources across platforms (Windows, macOS, Linux).
+
+- **Key Features**:
+
+  ```plaintext
+  CLI Capabilities:
+  ├── Resource Management
+  │   ├── Create resources
+  │   ├── Update resources
+  │   └── Delete resources
+  ├── Automation
+  │   ├── Scripts
+  │   └── Batch operations
+  ├── Query
+  │   ├── JMESPath
+  │   └── Output formats
+  └── Extensions
+      ├── Additional commands
+      └── Custom modules
+  ```
+
+#### Azure PowerShell
+
+- **What is it?**
+  A PowerShell module for managing Azure resources with PowerShell commands.
+
+- **Key Features**:
+
+  ```plaintext
+  PowerShell Features:
+  ├── Resource Management
+  │   ├── Azure resources
+  │   ├── Resource groups
+  │   └── Subscriptions
+  ├── Automation
+  │   ├── Scripts
+  │   └── Workflows
+  ├── Integration
+  │   ├── Windows tools
+  │   └── Other services
+  └── Modules
+      ├── Core modules
+      └── Service modules
+  ```
+
+#### Azure Resource Manager (ARM)
+
+- **What is it?**
+  A deployment and management service for Azure resources that enables infrastructure as code.
+
+- **Key Features**:
+
+  ```plaintext
+  ARM Features:
+  ├── Templates
+  │   ├── JSON format
+  │   ├── Bicep format
+  │   └── Template specs
+  ├── Deployment
+  │   ├── Incremental
+  │   ├── Complete
+  │   └── What-if
+  ├── Management
+  │   ├── Resource groups
+  │   ├── Tags
+  │   └── Locks
+  └── Security
+      ├── RBAC
+      └── Managed identities
+  ```
+
+#### Azure DevOps
+
+- **What is it?**
+  A set of development tools for planning, developing, testing, and deploying applications.
+
+- **Key Features**:
+
+  ```plaintext
+  DevOps Tools:
+  ├── Azure Repos
+  │   ├── Git repositories
+  │   └── Code management
+  ├── Azure Pipelines
+  │   ├── CI/CD
+  │   └── Build/Release
+  ├── Azure Boards
+  │   ├── Work items
+  │   └── Agile tools
+  ├── Azure Test Plans
+  │   ├── Test management
+  │   └── Manual testing
+  └── Azure Artifacts
+      ├── Package management
+      └── Dependency management
+  ```
+
+#### Best Practices
+
+- **Tool Selection**:
+
+  ```plaintext
+  Tool Selection Guide:
+  ├── Interactive Management
+  │   ├── Azure Portal
+  │   └── Cloud Shell
+  ├── Automation
+  │   ├── Azure CLI
+  │   ├── PowerShell
+  │   └── ARM Templates
+  ├── Development
+  │   ├── Azure DevOps
+  │   └── VS Code
+  └── Monitoring
+      ├── Azure Monitor
+      └── Log Analytics
+  ```
+
+- **Deployment Strategies**:
+
+  ```plaintext
+  Deployment Approaches:
+  ├── Infrastructure as Code
+  │   ├── ARM Templates
+  │   ├── Bicep
+  │   └── Terraform
+  ├── CI/CD Pipelines
+  │   ├── Azure Pipelines
+  │   └── GitHub Actions
+  ├── Manual Deployment
+  │   ├── Portal
+  │   └── CLI/PowerShell
+  └── Hybrid Approaches
+      ├── Combined methods
+      └── Phased deployment
+  ```
+
+- **Documentation Reference:**
+  [Azure Management Tools Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/)
+
+### Azure Monitoring Tools
+
+#### Azure Monitor
+
+- **What is it?**
+  A comprehensive solution for collecting, analyzing, and acting on telemetry from cloud and on-premises environments.
+
+- **Key Components**:
+
+  ```plaintext
+  Monitor Components:
+  ├── Metrics
+  │   ├── Platform metrics
+  │   ├── Custom metrics
+  │   └── Metric alerts
+  ├── Logs
+  │   ├── Log Analytics
+  │   ├── Log queries
+  │   └── Log alerts
+  ├── Application Insights
+  │   ├── Application monitoring
+  │   ├── Performance tracking
+  │   └── User behavior
+  └── Insights
+      ├── Container Insights
+      ├── VM Insights
+      └── Network Insights
+  ```
+
+#### Application Insights
+
+- **What is it?**
+  An extensible Application Performance Management (APM) service for web developers on multiple platforms.
+
+- **Key Features**:
+
+  ```plaintext
+  App Insights Features:
+  ├── Performance Monitoring
+  │   ├── Response times
+  │   ├── Failure rates
+  │   └── Server metrics
+  ├── Usage Analytics
+  │   ├── User behavior
+  │   ├── Page views
+  │   └── User flows
+  ├── Diagnostics
+  │   ├── Exception tracking
+  │   ├── Log correlation
+  │   └── Debug snapshots
+  └── Availability
+      ├── Web tests
+      ├── Synthetic monitoring
+      └── Uptime tracking
+  ```
+
+#### Log Analytics
+
+- **What is it?**
+  A tool for collecting and analyzing log data from various sources to help identify patterns and troubleshoot issues.
+
+- **Key Features**:
+
+  ```plaintext
+  Log Analytics Features:
+  ├── Data Collection
+  │   ├── Log sources
+  │   ├── Custom logs
+  │   └── Data retention
+  ├── Query Language
+  │   ├── KQL syntax
+  │   ├── Advanced queries
+  │   └── Query optimization
+  ├── Visualization
+  │   ├── Custom dashboards
+  │   ├── Workbooks
+  │   └── Reports
+  └── Integration
+      ├── Power BI
+      ├── API access
+      └── Export options
+  ```
+
+#### Network Watcher
+
+- **What is it?**
+  A network monitoring and diagnostics service that provides tools to monitor, diagnose, and gain insights into network performance.
+
+- **Key Features**:
+
+  ```plaintext
+  Network Watcher Features:
+  ├── Connection Monitor
+  │   ├── End-to-end monitoring
+  │   ├── Latency tracking
+  │   └── Connection issues
+  ├── Packet Capture
+  │   ├── Deep packet inspection
+  │   ├── Traffic analysis
+  │   └── Security monitoring
+  ├── IP Flow Verify
+  │   ├── Traffic validation
+  │   ├── Security rules
+  │   └── Routing issues
+  └── Network Diagnostics
+      ├── VPN diagnostics
+      ├── NSG diagnostics
+      └── Route diagnostics
+  ```
+
+#### Service Health
+
+- **What is it?**
+  A personalized view of the health of Azure services and regions that affect your resources.
+
+- **Key Features**:
+
+  ```plaintext
+  Service Health Features:
+  ├── Service Issues
+  │   ├── Active issues
+  │   ├── Planned maintenance
+  │   └── Health advisories
+  ├── Resource Health
+  │   ├── Resource status
+  │   ├── Health history
+  │   └── Recommendations
+  ├── Health Alerts
+  │   ├── Alert configuration
+    │   ├── Notification rules
+    │   └── Action groups
+  └── History
+      ├── Past incidents
+      ├── Maintenance records
+      └── Health trends
+  ```
+
+#### Best Practices for Monitoring
+
+- **Monitoring Strategy**:
+
+  ```plaintext
+  Monitoring Approach:
+  ├── Data Collection
+  │   ├── Critical metrics
+  │   ├── Log sources
+  │   └── Custom data
+  ├── Alert Configuration
+  │   ├── Thresholds
+  │   ├── Severity levels
+  │   └── Notification rules
+  ├── Dashboard Design
+  │   ├── Key metrics
+  │   ├── Resource views
+  │   └── Custom visualizations
+  └── Cost Management
+      ├── Data retention
+      ├── Query optimization
+      └── Resource limits
+  ```
+
+- **Common Scenarios**:
+
+  ```plaintext
+  Monitoring Scenarios:
+  ├── Application Monitoring
+  │   ├── Performance tracking
+  │   ├── Error detection
+  │   └── User experience
+  ├── Infrastructure Monitoring
+  │   ├── Resource health
+  │   ├── Capacity planning
+  │   └── Cost tracking
+  ├── Security Monitoring
+  │   ├── Threat detection
+  │   ├── Access patterns
+  │   └── Compliance tracking
+  └── Business Monitoring
+      ├── Usage patterns
+      ├── Cost analysis
+      └── Performance metrics
+  ```
+
+- **Documentation Reference:**
+  [Azure Monitoring Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)
