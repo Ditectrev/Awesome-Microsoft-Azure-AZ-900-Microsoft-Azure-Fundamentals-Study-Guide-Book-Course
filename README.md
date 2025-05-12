@@ -1966,6 +1966,361 @@ Azure `Functions` is a serverless compute service that lets you run event-trigge
 - **Documentation Reference:**
   [Azure Cosmos DB Documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/)
 
+### Azure Management and Deployment Tools
+
+#### Azure Portal
+
+- **What is it?**
+  A web-based, unified console for managing Azure resources with a graphical user interface.
+
+- **Key Features**:
+
+  ```plaintext
+  Portal Capabilities:
+  ├── Resource Management
+  │   ├── Create resources
+  │   ├── Monitor resources
+  │   └── Configure settings
+  ├── Dashboard
+  │   ├── Custom views
+  │   └── Resource monitoring
+  ├── Cloud Shell
+  │   ├── Bash
+  │   └── PowerShell
+  └── Marketplace
+      ├── Solutions
+      └── Templates
+  ```
+
+#### Azure CLI
+
+- **What is it?**
+  A command-line tool for managing Azure resources across platforms (Windows, macOS, Linux).
+
+- **Key Features**:
+
+  ```plaintext
+  CLI Capabilities:
+  ├── Resource Management
+  │   ├── Create resources
+  │   ├── Update resources
+  │   └── Delete resources
+  ├── Automation
+  │   ├── Scripts
+  │   └── Batch operations
+  ├── Query
+  │   ├── JMESPath
+  │   └── Output formats
+  └── Extensions
+      ├── Additional commands
+      └── Custom modules
+  ```
+
+#### Azure PowerShell
+
+- **What is it?**
+  A PowerShell module for managing Azure resources with PowerShell commands.
+
+- **Key Features**:
+
+  ```plaintext
+  PowerShell Features:
+  ├── Resource Management
+  │   ├── Azure resources
+  │   ├── Resource groups
+  │   └── Subscriptions
+  ├── Automation
+  │   ├── Scripts
+  │   └── Workflows
+  ├── Integration
+  │   ├── Windows tools
+  │   └── Other services
+  └── Modules
+      ├── Core modules
+      └── Service modules
+  ```
+
+#### Azure Resource Manager (ARM)
+
+- **What is it?**
+  A deployment and management service for Azure resources that enables infrastructure as code.
+
+- **Key Features**:
+
+  ```plaintext
+  ARM Features:
+  ├── Templates
+  │   ├── JSON format
+  │   ├── Bicep format
+  │   └── Template specs
+  ├── Deployment
+  │   ├── Incremental
+  │   ├── Complete
+  │   └── What-if
+  ├── Management
+  │   ├── Resource groups
+  │   ├── Tags
+  │   └── Locks
+  └── Security
+      ├── RBAC
+      └── Managed identities
+  ```
+
+#### Azure DevOps
+
+- **What is it?**
+  A set of development tools for planning, developing, testing, and deploying applications.
+
+- **Key Features**:
+
+  ```plaintext
+  DevOps Tools:
+  ├── Azure Repos
+  │   ├── Git repositories
+  │   └── Code management
+  ├── Azure Pipelines
+  │   ├── CI/CD
+  │   └── Build/Release
+  ├── Azure Boards
+  │   ├── Work items
+  │   └── Agile tools
+  ├── Azure Test Plans
+  │   ├── Test management
+  │   └── Manual testing
+  └── Azure Artifacts
+      ├── Package management
+      └── Dependency management
+  ```
+
+#### Best Practices
+
+- **Tool Selection**:
+
+  ```plaintext
+  Tool Selection Guide:
+  ├── Interactive Management
+  │   ├── Azure Portal
+  │   └── Cloud Shell
+  ├── Automation
+  │   ├── Azure CLI
+  │   ├── PowerShell
+  │   └── ARM Templates
+  ├── Development
+  │   ├── Azure DevOps
+  │   └── VS Code
+  └── Monitoring
+      ├── Azure Monitor
+      └── Log Analytics
+  ```
+
+- **Deployment Strategies**:
+
+  ```plaintext
+  Deployment Approaches:
+  ├── Infrastructure as Code
+  │   ├── ARM Templates
+  │   ├── Bicep
+  │   └── Terraform
+  ├── CI/CD Pipelines
+  │   ├── Azure Pipelines
+  │   └── GitHub Actions
+  ├── Manual Deployment
+  │   ├── Portal
+  │   └── CLI/PowerShell
+  └── Hybrid Approaches
+      ├── Combined methods
+      └── Phased deployment
+  ```
+
+- **Documentation Reference:**
+  [Azure Management Tools Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/)
+
+### Azure Monitoring Tools
+
+#### Azure Monitor
+
+- **What is it?**
+  A comprehensive solution for collecting, analyzing, and acting on telemetry from cloud and on-premises environments.
+
+- **Key Components**:
+
+  ```plaintext
+  Monitor Components:
+  ├── Metrics
+  │   ├── Platform metrics
+  │   ├── Custom metrics
+  │   └── Metric alerts
+  ├── Logs
+  │   ├── Log Analytics
+  │   ├── Log queries
+  │   └── Log alerts
+  ├── Application Insights
+  │   ├── Application monitoring
+  │   ├── Performance tracking
+  │   └── User behavior
+  └── Insights
+      ├── Container Insights
+      ├── VM Insights
+      └── Network Insights
+  ```
+
+#### Application Insights
+
+- **What is it?**
+  An extensible Application Performance Management (APM) service for web developers on multiple platforms.
+
+- **Key Features**:
+
+  ```plaintext
+  App Insights Features:
+  ├── Performance Monitoring
+  │   ├── Response times
+  │   ├── Failure rates
+  │   └── Server metrics
+  ├── Usage Analytics
+  │   ├── User behavior
+  │   ├── Page views
+  │   └── User flows
+  ├── Diagnostics
+  │   ├── Exception tracking
+  │   ├── Log correlation
+  │   └── Debug snapshots
+  └── Availability
+      ├── Web tests
+      ├── Synthetic monitoring
+      └── Uptime tracking
+  ```
+
+#### Log Analytics
+
+- **What is it?**
+  A tool for collecting and analyzing log data from various sources to help identify patterns and troubleshoot issues.
+
+- **Key Features**:
+
+  ```plaintext
+  Log Analytics Features:
+  ├── Data Collection
+  │   ├── Log sources
+  │   ├── Custom logs
+  │   └── Data retention
+  ├── Query Language
+  │   ├── KQL syntax
+  │   ├── Advanced queries
+  │   └── Query optimization
+  ├── Visualization
+  │   ├── Custom dashboards
+  │   ├── Workbooks
+  │   └── Reports
+  └── Integration
+      ├── Power BI
+      ├── API access
+      └── Export options
+  ```
+
+#### Network Watcher
+
+- **What is it?**
+  A network monitoring and diagnostics service that provides tools to monitor, diagnose, and gain insights into network performance.
+
+- **Key Features**:
+
+  ```plaintext
+  Network Watcher Features:
+  ├── Connection Monitor
+  │   ├── End-to-end monitoring
+  │   ├── Latency tracking
+  │   └── Connection issues
+  ├── Packet Capture
+  │   ├── Deep packet inspection
+  │   ├── Traffic analysis
+  │   └── Security monitoring
+  ├── IP Flow Verify
+  │   ├── Traffic validation
+  │   ├── Security rules
+  │   └── Routing issues
+  └── Network Diagnostics
+      ├── VPN diagnostics
+      ├── NSG diagnostics
+      └── Route diagnostics
+  ```
+
+#### Service Health
+
+- **What is it?**
+  A personalized view of the health of Azure services and regions that affect your resources.
+
+- **Key Features**:
+
+  ```plaintext
+  Service Health Features:
+  ├── Service Issues
+  │   ├── Active issues
+  │   ├── Planned maintenance
+  │   └── Health advisories
+  ├── Resource Health
+  │   ├── Resource status
+  │   ├── Health history
+  │   └── Recommendations
+  ├── Health Alerts
+  │   ├── Alert configuration
+    │   ├── Notification rules
+    │   └── Action groups
+  └── History
+      ├── Past incidents
+      ├── Maintenance records
+      └── Health trends
+  ```
+
+#### Best Practices for Monitoring
+
+- **Monitoring Strategy**:
+
+  ```plaintext
+  Monitoring Approach:
+  ├── Data Collection
+  │   ├── Critical metrics
+  │   ├── Log sources
+  │   └── Custom data
+  ├── Alert Configuration
+  │   ├── Thresholds
+  │   ├── Severity levels
+  │   └── Notification rules
+  ├── Dashboard Design
+  │   ├── Key metrics
+  │   ├── Resource views
+  │   └── Custom visualizations
+  └── Cost Management
+      ├── Data retention
+      ├── Query optimization
+      └── Resource limits
+  ```
+
+- **Common Scenarios**:
+
+  ```plaintext
+  Monitoring Scenarios:
+  ├── Application Monitoring
+  │   ├── Performance tracking
+  │   ├── Error detection
+  │   └── User experience
+  ├── Infrastructure Monitoring
+  │   ├── Resource health
+  │   ├── Capacity planning
+  │   └── Cost tracking
+  ├── Security Monitoring
+  │   ├── Threat detection
+  │   ├── Access patterns
+  │   └── Compliance tracking
+  └── Business Monitoring
+      ├── Usage patterns
+      ├── Cost analysis
+      └── Performance metrics
+  ```
+
+- **Documentation Reference:**
+  [Azure Monitoring Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)
+
 ## Security, Privacy, and Compliance
 
 ### Azure Security Features
@@ -3834,358 +4189,3 @@ Essential online resources and references.
       ├── Built-in Standards
       └── Custom Policies
   ```
-
-### Azure Management and Deployment Tools
-
-#### Azure Portal
-
-- **What is it?**
-  A web-based, unified console for managing Azure resources with a graphical user interface.
-
-- **Key Features**:
-
-  ```plaintext
-  Portal Capabilities:
-  ├── Resource Management
-  │   ├── Create resources
-  │   ├── Monitor resources
-  │   └── Configure settings
-  ├── Dashboard
-  │   ├── Custom views
-  │   └── Resource monitoring
-  ├── Cloud Shell
-  │   ├── Bash
-  │   └── PowerShell
-  └── Marketplace
-      ├── Solutions
-      └── Templates
-  ```
-
-#### Azure CLI
-
-- **What is it?**
-  A command-line tool for managing Azure resources across platforms (Windows, macOS, Linux).
-
-- **Key Features**:
-
-  ```plaintext
-  CLI Capabilities:
-  ├── Resource Management
-  │   ├── Create resources
-  │   ├── Update resources
-  │   └── Delete resources
-  ├── Automation
-  │   ├── Scripts
-  │   └── Batch operations
-  ├── Query
-  │   ├── JMESPath
-  │   └── Output formats
-  └── Extensions
-      ├── Additional commands
-      └── Custom modules
-  ```
-
-#### Azure PowerShell
-
-- **What is it?**
-  A PowerShell module for managing Azure resources with PowerShell commands.
-
-- **Key Features**:
-
-  ```plaintext
-  PowerShell Features:
-  ├── Resource Management
-  │   ├── Azure resources
-  │   ├── Resource groups
-  │   └── Subscriptions
-  ├── Automation
-  │   ├── Scripts
-  │   └── Workflows
-  ├── Integration
-  │   ├── Windows tools
-  │   └── Other services
-  └── Modules
-      ├── Core modules
-      └── Service modules
-  ```
-
-#### Azure Resource Manager (ARM)
-
-- **What is it?**
-  A deployment and management service for Azure resources that enables infrastructure as code.
-
-- **Key Features**:
-
-  ```plaintext
-  ARM Features:
-  ├── Templates
-  │   ├── JSON format
-  │   ├── Bicep format
-  │   └── Template specs
-  ├── Deployment
-  │   ├── Incremental
-  │   ├── Complete
-  │   └── What-if
-  ├── Management
-  │   ├── Resource groups
-  │   ├── Tags
-  │   └── Locks
-  └── Security
-      ├── RBAC
-      └── Managed identities
-  ```
-
-#### Azure DevOps
-
-- **What is it?**
-  A set of development tools for planning, developing, testing, and deploying applications.
-
-- **Key Features**:
-
-  ```plaintext
-  DevOps Tools:
-  ├── Azure Repos
-  │   ├── Git repositories
-  │   └── Code management
-  ├── Azure Pipelines
-  │   ├── CI/CD
-  │   └── Build/Release
-  ├── Azure Boards
-  │   ├── Work items
-  │   └── Agile tools
-  ├── Azure Test Plans
-  │   ├── Test management
-  │   └── Manual testing
-  └── Azure Artifacts
-      ├── Package management
-      └── Dependency management
-  ```
-
-#### Best Practices
-
-- **Tool Selection**:
-
-  ```plaintext
-  Tool Selection Guide:
-  ├── Interactive Management
-  │   ├── Azure Portal
-  │   └── Cloud Shell
-  ├── Automation
-  │   ├── Azure CLI
-  │   ├── PowerShell
-  │   └── ARM Templates
-  ├── Development
-  │   ├── Azure DevOps
-  │   └── VS Code
-  └── Monitoring
-      ├── Azure Monitor
-      └── Log Analytics
-  ```
-
-- **Deployment Strategies**:
-
-  ```plaintext
-  Deployment Approaches:
-  ├── Infrastructure as Code
-  │   ├── ARM Templates
-  │   ├── Bicep
-  │   └── Terraform
-  ├── CI/CD Pipelines
-  │   ├── Azure Pipelines
-  │   └── GitHub Actions
-  ├── Manual Deployment
-  │   ├── Portal
-  │   └── CLI/PowerShell
-  └── Hybrid Approaches
-      ├── Combined methods
-      └── Phased deployment
-  ```
-
-- **Documentation Reference:**
-  [Azure Management Tools Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/)
-
-### Azure Monitoring Tools
-
-#### Azure Monitor
-
-- **What is it?**
-  A comprehensive solution for collecting, analyzing, and acting on telemetry from cloud and on-premises environments.
-
-- **Key Components**:
-
-  ```plaintext
-  Monitor Components:
-  ├── Metrics
-  │   ├── Platform metrics
-  │   ├── Custom metrics
-  │   └── Metric alerts
-  ├── Logs
-  │   ├── Log Analytics
-  │   ├── Log queries
-  │   └── Log alerts
-  ├── Application Insights
-  │   ├── Application monitoring
-  │   ├── Performance tracking
-  │   └── User behavior
-  └── Insights
-      ├── Container Insights
-      ├── VM Insights
-      └── Network Insights
-  ```
-
-#### Application Insights
-
-- **What is it?**
-  An extensible Application Performance Management (APM) service for web developers on multiple platforms.
-
-- **Key Features**:
-
-  ```plaintext
-  App Insights Features:
-  ├── Performance Monitoring
-  │   ├── Response times
-  │   ├── Failure rates
-  │   └── Server metrics
-  ├── Usage Analytics
-  │   ├── User behavior
-  │   ├── Page views
-  │   └── User flows
-  ├── Diagnostics
-  │   ├── Exception tracking
-  │   ├── Log correlation
-  │   └── Debug snapshots
-  └── Availability
-      ├── Web tests
-      ├── Synthetic monitoring
-      └── Uptime tracking
-  ```
-
-#### Log Analytics
-
-- **What is it?**
-  A tool for collecting and analyzing log data from various sources to help identify patterns and troubleshoot issues.
-
-- **Key Features**:
-
-  ```plaintext
-  Log Analytics Features:
-  ├── Data Collection
-  │   ├── Log sources
-  │   ├── Custom logs
-  │   └── Data retention
-  ├── Query Language
-  │   ├── KQL syntax
-  │   ├── Advanced queries
-  │   └── Query optimization
-  ├── Visualization
-  │   ├── Custom dashboards
-  │   ├── Workbooks
-  │   └── Reports
-  └── Integration
-      ├── Power BI
-      ├── API access
-      └── Export options
-  ```
-
-#### Network Watcher
-
-- **What is it?**
-  A network monitoring and diagnostics service that provides tools to monitor, diagnose, and gain insights into network performance.
-
-- **Key Features**:
-
-  ```plaintext
-  Network Watcher Features:
-  ├── Connection Monitor
-  │   ├── End-to-end monitoring
-  │   ├── Latency tracking
-  │   └── Connection issues
-  ├── Packet Capture
-  │   ├── Deep packet inspection
-  │   ├── Traffic analysis
-  │   └── Security monitoring
-  ├── IP Flow Verify
-  │   ├── Traffic validation
-  │   ├── Security rules
-  │   └── Routing issues
-  └── Network Diagnostics
-      ├── VPN diagnostics
-      ├── NSG diagnostics
-      └── Route diagnostics
-  ```
-
-#### Service Health
-
-- **What is it?**
-  A personalized view of the health of Azure services and regions that affect your resources.
-
-- **Key Features**:
-
-  ```plaintext
-  Service Health Features:
-  ├── Service Issues
-  │   ├── Active issues
-  │   ├── Planned maintenance
-  │   └── Health advisories
-  ├── Resource Health
-  │   ├── Resource status
-  │   ├── Health history
-  │   └── Recommendations
-  ├── Health Alerts
-  │   ├── Alert configuration
-    │   ├── Notification rules
-    │   └── Action groups
-  └── History
-      ├── Past incidents
-      ├── Maintenance records
-      └── Health trends
-  ```
-
-#### Best Practices for Monitoring
-
-- **Monitoring Strategy**:
-
-  ```plaintext
-  Monitoring Approach:
-  ├── Data Collection
-  │   ├── Critical metrics
-  │   ├── Log sources
-  │   └── Custom data
-  ├── Alert Configuration
-  │   ├── Thresholds
-  │   ├── Severity levels
-  │   └── Notification rules
-  ├── Dashboard Design
-  │   ├── Key metrics
-  │   ├── Resource views
-  │   └── Custom visualizations
-  └── Cost Management
-      ├── Data retention
-      ├── Query optimization
-      └── Resource limits
-  ```
-
-- **Common Scenarios**:
-
-  ```plaintext
-  Monitoring Scenarios:
-  ├── Application Monitoring
-  │   ├── Performance tracking
-  │   ├── Error detection
-  │   └── User experience
-  ├── Infrastructure Monitoring
-  │   ├── Resource health
-  │   ├── Capacity planning
-  │   └── Cost tracking
-  ├── Security Monitoring
-  │   ├── Threat detection
-  │   ├── Access patterns
-  │   └── Compliance tracking
-  └── Business Monitoring
-      ├── Usage patterns
-      ├── Cost analysis
-      └── Performance metrics
-  ```
-
-- **Documentation Reference:**
-  [Azure Monitoring Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)
