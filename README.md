@@ -1,4 +1,4 @@
-# Mastering Microsoft Azure Fundamentals (AZ-900)
+# 📚 Awesome Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guide Book & Course
 
 ## Introduction
 
