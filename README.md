@@ -740,6 +740,62 @@ Think of cloud computing like electricity. Instead of generating your own power,
          └── Cost: Pay per execution
      ```
 
+   - **Virtual Machine Scale Sets:**
+
+     ```plaintext
+     Scale Set Features:
+     ├── Automatic Scaling
+     │   ├── Based on CPU usage
+     │   ├── Based on memory usage
+     │   └── Based on custom metrics
+     ├── High Availability
+     │   ├── Multiple fault domains
+     │   └── Multiple update domains
+     ├── Load Balancing
+     │   ├── Automatic distribution
+     │   └── Health monitoring
+     └── Cost Optimization
+         ├── Spot instances
+         └── Reserved instances
+     ```
+
+   - **Availability Sets:**
+
+     ```plaintext
+     Availability Features:
+     ├── Fault Domains
+     │   ├── Separate power sources
+     │   ├── Separate network switches
+     │   └── Separate cooling systems
+     ├── Update Domains
+     │   ├── Controlled updates
+     │   └── Zero downtime maintenance
+     └── High Availability
+         ├── 99.95% SLA
+         └── Automatic failover
+     ```
+
+   - **Azure Virtual Desktop:**
+
+     ```plaintext
+     AVD Features:
+     ├── Virtual Desktops
+     │   ├── Windows 10/11
+     │   ├── Windows Server
+     │   └── Custom images
+     ├── Remote Apps
+     │   ├── Individual applications
+     │   └── Application groups
+     ├── Management
+     │   ├── Azure portal
+     │   ├── PowerShell
+     │   └── REST API
+     └── Security
+         ├── Azure AD integration
+         ├── MFA support
+         └── Conditional access
+     ```
+
 2. **Storage Solutions**
    - **Blob Storage:**
 
@@ -3084,7 +3140,7 @@ Azure offers various pricing models to meet different business needs, from pay-a
   │   ├── Export Options
   │       ├── PDF reports
   │       └── Share estimates
-  └── TCO Calculator
+  └── Total Cost of Ownership (TCO) Calculator
       ├── Cloud Migration
       │   ├── Infrastructure costs
       │   ├── Operational costs
@@ -3182,6 +3238,46 @@ Azure offers various pricing models to meet different business needs, from pay-a
   └── Reporting
       ├── Cost reports
       └── Usage reports
+  ```
+
+- **Resource Tagging Strategy:**
+
+  ```plaintext
+  Tag Management:
+  ├── Tag Categories
+  │   ├── Business
+  │   │   ├── Department
+  │   │   ├── Project
+  │   │   └── Cost Center
+  │   ├── Technical
+  │   │   ├── Environment
+  │   │   ├── Application
+  │   │   └── Version
+  │   └── Operational
+  │       ├── Owner
+  │       ├── Support Team
+  │       └── SLA
+  ├── Tag Implementation
+  │   ├── Naming Conventions
+  │   │   ├── Standard format
+  │   │   └── Required tags
+  │   ├── Automation
+  │   │   ├── Policy enforcement
+  │   │   └── Auto-tagging
+  │   └── Governance
+  │       ├── Tag compliance
+  │       └── Regular audits
+  └── Cost Allocation
+      ├── Department Billing
+      │   ├── Cost centers
+      │   └── Chargeback
+      ├── Project Tracking
+      │   ├── Budget monitoring
+      │   └── Resource usage
+      └── Environment Costs
+          ├── Development
+          ├── Testing
+          └── Production
   ```
 
 - **Common Features:**
@@ -4329,7 +4425,53 @@ Essential online resources and references.
 
 - **Core Components**:
 
-  1. **Microsoft Entra ID**:
+  1. **Zero Trust Security Model**:
+
+     ```plaintext
+     Zero Trust Principles:
+     ├── Never Trust, Always Verify
+     │   ├── Continuous validation
+     │   └── Least privilege access
+     ├── Assume Breach
+     │   ├── Micro-segmentation
+     │   └── Just-in-time access
+     ├── Verify Explicitly
+     │   ├── Strong authentication
+     │   └── Device health checks
+     └── Security Controls
+         ├── Identity verification
+         ├── Device compliance
+         └── Network security
+     ```
+
+  2. **Defense in Depth**:
+
+     ```plaintext
+     Defense Layers:
+     ├── Physical Security
+     │   ├── Data center security
+     │   └── Hardware protection
+     ├── Identity & Access
+     │   ├── Authentication
+     │   └── Authorization
+     ├── Perimeter Security
+     │   ├── DDoS protection
+     │   └── Firewall rules
+     ├── Network Security
+     │   ├── Network segmentation
+     │   └── Traffic filtering
+     ├── Compute Security
+     │   ├── Host security
+     │   └── Application security
+     ├── Application Security
+     │   ├── Secure coding
+     │   └── Input validation
+     └── Data Security
+         ├── Encryption
+         └── Data classification
+     ```
+
+  3. **Microsoft Entra ID**:
 
      ```plaintext
      Entra ID Features:
@@ -4351,7 +4493,7 @@ Essential online resources and references.
          └── Privileged Identity Management
      ```
 
-  2. **Role-Based Access Control (RBAC)**:
+  4. **Role-Based Access Control (RBAC)**:
 
      ```plaintext
      RBAC Components:
@@ -4372,7 +4514,7 @@ Essential online resources and references.
          └── Reader
      ```
 
-  3. **Security Features**:
+  5. **Security Features**:
 
      ```plaintext
      Security Tools:
