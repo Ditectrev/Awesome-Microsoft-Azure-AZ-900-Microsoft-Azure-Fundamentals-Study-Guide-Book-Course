@@ -375,13 +375,13 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
      ```plaintext
      Traditional Approach:
-     ├── Buy `servers`: $10,000
-     ├── `Network equipment`: $5,000
-     ├── `Data center` space: $2,000/month
-     └── `IT staff`: $8,000/month
+     ├── Buy servers: $10,000
+     ├── Network equipment: $5,000
+     ├── Data center space: $2,000/month
+     └── IT staff: $8,000/month
 
      Cloud Approach:
-     ├── `Pay-as-you-go`: ~$500/month
+     ├── Pay-as-you-go: ~$500/month
      ├── Scale as needed
      └── No upfront costs
      ```
@@ -552,20 +552,20 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
      ```plaintext
      Before Migration:
-     ├── Physical `Servers` ($50,000)
-     │   ├── `Database Server`
-     │   ├── `Web Server`
-     │   └── `Application Server`
-     └── `IT Staff` ($100,000/year)
-         ├── `System Administration`
-         └── `Maintenance`
+     ├── Physical Servers ($50,000)
+     │   ├── Database Server
+     │   ├── Web Server
+     │   └── Application Server
+     └── IT Staff ($100,000/year)
+         ├── System Administration
+         └── Maintenance
 
-     After Migration to Azure `IaaS`:
-     ├── Azure `VMs` ($2,000/month)
-     │   ├── `D4s v3` for Database
-     │   ├── `B2s` for Web Server
-     │   └── `D2s v3` for Application
-     └── Reduced `IT Staff` ($50,000/year)
+     After Migration to Azure IaaS:
+     ├── Azure VMs ($2,000/month)
+     │   ├── D4s v3 for Database
+     │   ├── B2s for Web Server
+     │   └── D2s v3 for Application
+     └── Reduced IT Staff ($50,000/year)
          └── Focus on Application Management
      ```
 
@@ -635,16 +635,16 @@ Think of cloud computing like electricity. Instead of generating your own power,
      A web application deployment:
 
      ```plaintext
-     `PaaS` Architecture:
-     ├── `App Service` for web app
+     PaaS Architecture:
+     ├── App Service for web app
      │   ├── Automatic scaling
-     │   └── Built-in `CI/CD`
-     ├── `Azure SQL Database`
+     │   └── Built-in CI/CD
+     ├── Azure SQL Database
      │   ├── Managed database
      │   └── Automatic backups
-     └── `Azure Storage`
-         ├── `Blob storage` for files
-         └── `CDN` for content delivery
+     └── Azure Storage
+         ├── Blob storage for files
+         └── CDN for content delivery
      ```
 
    - **Common Use Cases:**
@@ -694,16 +694,16 @@ Think of cloud computing like electricity. Instead of generating your own power,
      Enterprise productivity tools:
 
      ```plaintext
-     `SaaS` Solutions:
-     ├── `Microsoft 365`
-     │   ├── `Office` applications
-     │   └── `Teams` collaboration
-     ├── `Dynamics 365`
-     │   ├── `CRM` functionality
-     │   └── `ERP` capabilities
-     └── `Power Platform`
-         ├── `Power BI` analytics
-         └── `Power Apps` development
+     SaaS Solutions:
+     ├── Microsoft 365
+     │   ├── Office applications
+     │   └── Teams collaboration
+     ├── Dynamics 365
+     │   ├── CRM functionality
+     │   └── ERP capabilities
+     └── Power Platform
+         ├── Power BI analytics
+         └── Power Apps development
      ```
 
    - **Common Use Cases:**
@@ -1558,15 +1558,15 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   A company running a legacy application:
 
   ```plaintext
-  `VM` Configuration:
-  ├── `Windows Server 2019`
-  │   ├── 4 `vCPUs`
-  │   ├── 16 GB `RAM`
-  │   └── 256 GB `SSD`
-  ├── `Network Security`
-  │   ├── `NSG` Rules
-  │   └── `Private IP`
-  └── `Monitoring`
+  VM Configuration:
+  ├── Windows Server 2019
+  │   ├── 4 vCPUs
+  │   ├── 16 GB RAM
+  │   └── 256 GB SSD
+  ├── Network Security
+  │   ├── NSG Rules
+  │   └── Private IP
+  └── Monitoring
       ├── Performance Metrics
       └── Health Alerts
   ```
@@ -2045,14 +2045,14 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
   ```plaintext
   Network Architecture:
-  ├── `Subnets`
-  │   ├── Web Tier (`10.0.1.0/24`)
-  │   ├── App Tier (`10.0.2.0/24`)
-  │   └── Data Tier (`10.0.3.0/24`)
-  ├── `Network Security Groups`
+  ├── Subnets
+  │   ├── Web Tier (10.0.1.0/24)
+  │   ├── App Tier (10.0.2.0/24)
+  │   └── Data Tier (10.0.3.0/24)
+  ├── Network Security Groups
   │   ├── Inbound Rules
   │   └── Outbound Rules
-  └── `Route Tables`
+  └── Route Tables
       ├── Custom Routes
       └── System Routes
   ```
@@ -2064,13 +2064,13 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
     App Network:
     ├── Web Tier
     │   ├── Public access
-    │   └── `Load Balancer`
+    │   └── Load Balancer
     ├── Application Tier
     │   ├── Internal access
-    │   └── `App Services`
+    │   └── App Services
     └── Database Tier
         ├── Private access
-        └── `SQL Servers`
+        └── SQL Servers
     ```
 
   - **Hybrid Connectivity:**
@@ -2078,14 +2078,14 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
     ```plaintext
     Hybrid Network:
     ├── On-premises
-    │   ├── `VPN Gateway`
-    │   └── `ExpressRoute`
+    │   ├── VPN Gateway
+    │   └── ExpressRoute
     ├── Azure Resources
-    │   ├── `VNet` peering
-    │   └── `Service Endpoints`
+    │   ├── VNet peering
+    │   └── Service Endpoints
     └── Internet
-        ├── `Public IPs`
-        └── `DNS` services
+        ├── Public IPs
+        └── DNS services
     ```
 
 - **Cost Considerations:**
@@ -3195,16 +3195,16 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   An enterprise security setup:
 
   ```plaintext
-  `Key Vault` Architecture:
-  ├── `Secret Storage`
-  │   ├── `Database credentials`
-  │   └── `API secrets`
-  ├── `Key Management`
-  │   ├── `Encryption keys`
-  │   └── `Signing keys`
-  └── `Certificate Management`
-      ├── `SSL/TLS` certificates
-      └── `Code signing` certificates
+  Key Vault Architecture:
+  ├── Secret Storage
+  │   ├── Database credentials
+  │   └── API secrets
+  ├── Key Management
+  │   ├── Encryption keys
+  │   └── Signing keys
+  └── Certificate Management
+      ├── SSL/TLS certificates
+      └── Code signing certificates
   ```
 
 #### Azure Active Directory
@@ -3216,16 +3216,16 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   An enterprise identity solution:
 
   ```plaintext
-  `Azure AD` Setup:
-  ├── `User Management`
-  │   ├── `User accounts`
-  │   └── `Groups`
-  ├── `Authentication`
-  │   ├── `MFA`
-  │   └── `SSO`
-  └── `Access Control`
-      ├── `RBAC`
-      └── `Conditional Access`
+  Azure AD Setup:
+  ├── User Management
+  │   ├── User accounts
+  │   └── Groups
+  ├── Authentication
+  │   ├── MFA
+  │   └── SSO
+  └── Access Control
+      ├── RBAC
+      └── Conditional Access
   ```
 
 - **Common Use Cases:**
@@ -3233,30 +3233,30 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 
     ```plaintext
     Enterprise Identity:
-    ├── `User Management`
-    │   ├── `Directory sync`
-    │   └── `Self-service`
-    ├── `Application Access`
-    │   ├── `SSO`
-    │   └── `App registration`
-    └── `Security`
-        ├── `MFA`
-        └── `Risk policies`
+    ├── User Management
+    │   ├── Directory sync
+    │   └── Self-service
+    ├── Application Access
+    │   ├── SSO
+    │   └── App registration
+    └── Security
+        ├── MFA
+        └── Risk policies
     ```
 
   - **B2B Collaboration:**
 
     ```plaintext
     B2B Setup:
-    ├── `Partner Access`
-    │   ├── `Guest accounts`
-    │   └── `Collaboration`
-    ├── `External Apps`
-    │   ├── `Partner apps`
-    │   └── `Integration`
-    └── `Security`
-        ├── `Access control`
-        └── `Monitoring`
+    ├── Partner Access
+    │   ├── Guest accounts
+    │   └── Collaboration
+    ├── External Apps
+    │   ├── Partner apps
+    │   └── Integration
+    └── Security
+        ├── Access control
+        └── Monitoring
     ```
 
 ### Privacy and Compliance
@@ -3828,21 +3828,21 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```plaintext
   Support Strategy:
   ├── Development
-  │   ├── `Basic` support
+  │   ├── Basic support
   │   └── Community support
   ├── Production
-  │   ├── `Standard` support
+  │   ├── Standard support
   │   └── Technical support
   └── Enterprise
-      ├── `Professional` support
-      └── `Enterprise` support
+      ├── Professional support
+      └── Enterprise support
   ```
 
 - **Support Levels:**
   - **Basic Support:**
 
     ```plaintext
-    `Basic` Support:
+    Basic Support:
     ├── Features
     │   ├── Community forums
     │   └── Documentation
@@ -3855,7 +3855,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   - **Developer Support:**
 
     ```plaintext
-    `Developer` Support:
+    Developer Support:
     ├── Features
     │   ├── Email support
     │   └── Business hours
@@ -3868,7 +3868,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   - **Standard Support:**
 
     ```plaintext
-    `Standard` Support:
+    Standard Support:
     ├── Features
     │   ├── 24/7 support
     │   └── Phone support
@@ -3881,7 +3881,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   - **Professional Direct:**
 
     ```plaintext
-    `Professional Direct`:
+    Professional Direct:
     ├── Features
     │   ├── 24/7 support
     │   ├── Technical account manager
@@ -3918,7 +3918,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   A high-availability application:
 
   ```plaintext
-  `SLA` Requirements:
+  SLA Requirements:
   ├── Compute
   │   ├── 99.95% uptime
   │   └── Multi-region
@@ -3934,14 +3934,14 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   - **Compute Services:**
 
     ```plaintext
-    Compute `SLAs`:
-    ├── `Virtual Machines`
+    Compute SLAs:
+    ├── Virtual Machines
     │   ├── 99.95% uptime
     │   └── Multi-region
-    ├── `App Service`
+    ├── App Service
     │   ├── 99.95% uptime
     │   └── Auto-scaling
-    └── `Functions`
+    └── Functions
         ├── 99.95% uptime
         └── Serverless
     ```
@@ -3949,14 +3949,14 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   - **Storage Services:**
 
     ```plaintext
-    Storage `SLAs`:
-    ├── `Blob Storage`
+    Storage SLAs:
+    ├── Blob Storage
     │   ├── 99.99% uptime
     │   └── Geo-redundant
-    ├── `File Storage`
+    ├── File Storage
     │   ├── 99.9% uptime
     │   └── Zone-redundant
-    └── `SQL Database`
+    └── SQL Database
         ├── 99.99% uptime
         └── Automatic failover
     ```
@@ -3964,14 +3964,14 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   - **Networking:**
 
     ```plaintext
-    Network `SLAs`:
-    ├── `Virtual Network`
+    Network SLAs:
+    ├── Virtual Network
     │   ├── 99.9% uptime
     │   └── Global reach
-    ├── `Load Balancer`
+    ├── Load Balancer
     │   ├── 99.99% uptime
     │   └── Multi-region
-    └── `ExpressRoute`
+    └── ExpressRoute
         ├── 99.95% uptime
         └── Private connection
     ```
