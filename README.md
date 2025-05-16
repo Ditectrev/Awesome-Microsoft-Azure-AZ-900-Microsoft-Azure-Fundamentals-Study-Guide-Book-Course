@@ -491,6 +491,54 @@ Think of cloud computing like electricity. Instead of generating your own power,
    - **Documentation Reference:**
      [Azure Service Level Agreements](https://azure.microsoft.com/en-us/support/legal/sla/)
 
+7. **Governance**
+   - **What it means:**
+     Centralized tools and policies to manage, monitor, and control cloud resources and ensure compliance.
+
+   - **Practical Example:**
+     An enterprise uses Azure Policy and Management Groups to enforce naming conventions, resource tagging, and compliance requirements across all subscriptions.
+
+   - **Key Aspects:**
+     - Policy enforcement
+     - Resource organization
+     - Compliance tracking
+     - Audit and reporting
+
+   - **Documentation Reference:**
+     [Azure Governance Documentation](https://docs.microsoft.com/en-us/azure/governance/)
+
+8. **Manageability**
+   - **What it means:**
+     Simplified and automated management of resources using built-in tools, APIs, and dashboards.
+
+   - **Practical Example:**
+     A company uses the Azure Portal, Azure CLI, and automation scripts to deploy, monitor, and update resources efficiently.
+
+   - **Key Aspects:**
+     - Centralized management (portal, CLI, PowerShell)
+     - Automation (ARM templates, scripts)
+     - Monitoring and alerting
+     - Resource consistency
+
+   - **Documentation Reference:**
+     [Azure Management Tools Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/)
+
+9. **Elasticity**
+   - **What it means:**
+     The ability to automatically scale resources up or down based on demand, ensuring optimal performance and cost efficiency.
+
+   - **Practical Example:**
+     An e-commerce site automatically scales out web servers during a sale and scales back in after traffic returns to normal.
+
+   - **Key Aspects:**
+     - Auto-scaling
+     - Rapid provisioning and deprovisioning
+     - Pay only for what you use
+     - No need for over-provisioning
+
+   - **Documentation Reference:**
+     [Azure Autoscale Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview)
+
 ### Azure as a Cloud Platform
 
 #### Understanding Azure's Service Models
@@ -740,7 +788,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
          └── Cost: Pay per execution
      ```
 
-   - **Virtual Machine Scale Sets:**
+   - **Virtual Machine Scale Sets (VMSS):**
 
      ```plaintext
      Scale Set Features:
@@ -2335,7 +2383,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   │   ├── User management
   │   └── Security settings
   ├── Service Management
-  │   ├── Service health
+  │   ├── Azure Service Health
   │   ├── Support
   │   └── Service monitoring
   ├── Cost Management
@@ -2835,7 +2883,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
       └── Route diagnostics
   ```
 
-#### Service Health
+#### Azure Service Health
 
 - **What is it?**
   A personalized view of the health of Azure services and regions that affect your resources.
@@ -2843,7 +2891,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 - **Key Features**:
 
   ```plaintext
-  Service Health Features:
+  Azure Service Health Features:
   ├── Service Issues
   │   ├── Active issues
   │   ├── Planned maintenance
