@@ -19,7 +19,7 @@ Microsoft Azure is a comprehensive cloud computing platform created by Microsoft
 #### Key Azure Concepts for AZ-900
 
 1. **Resource Groups**
-Resource groups are logical containers that hold related Azure resources for an application. Think of them as folders that help you organize and manage all the resources needed for a specific project or application.
+     Resource groups are logical containers that hold related Azure resources for an application. Think of them as folders that help you organize and manage all the resources needed for a specific project or application.
 
    - **Practical Example:**
      Imagine you're building a web application. Your resource group might contain:
@@ -38,7 +38,7 @@ Resource groups are logical containers that hold related Azure resources for an 
      [Azure Resource Groups Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 
 2. **Subscriptions**
-Subscriptions are the fundamental unit of billing and access management in Azure. They represent a billing relationship with Microsoft and provide a boundary for resource management.
+     Subscriptions are the fundamental unit of billing and access management in Azure. They represent a billing relationship with Microsoft and provide a boundary for resource management.
 
    - **Practical Example:**
      A company might have different subscriptions for:
@@ -57,7 +57,7 @@ Subscriptions are the fundamental unit of billing and access management in Azure
      [Azure Subscriptions Documentation](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)
 
 3. **Management Groups**
-Management groups provide a level of scope above subscriptions. They help you organize subscriptions into containers and apply governance conditions to those containers.
+     Management groups provide a level of scope above subscriptions. They help you organize subscriptions into containers and apply governance conditions to those containers.
 
    - **Practical Example:**
      A multinational company might organize their Azure resources like this:
@@ -922,7 +922,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 #### Azure Database Services
 
-Azure Database Services provide fully managed database solutions for various data types and workloads, offering high availability, scalability, and security.
+  Azure Database Services provide fully managed database solutions for various data types and workloads, offering high availability, scalability, and security.
 
 - **Practical Example:**
   A multi-database application:
@@ -1504,7 +1504,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 #### Virtual Machines (VMs)
 
-Azure `VMs` are on-demand, scalable computing resources that provide complete control over the `operating system` and configuration. They're ideal for running applications that require full control over the computing environment.
+  Azure `VMs` are on-demand, scalable computing resources that provide complete control over the `operating system` and configuration. They're ideal for running applications that require full control over the computing environment.
 
 - **Practical Example:**
   A company running a legacy application:
@@ -1667,7 +1667,7 @@ Azure `VMs` are on-demand, scalable computing resources that provide complete co
 
 #### Azure Functions
 
-Azure `Functions` is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
+  Azure `Functions` is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
 
 - **Practical Example:**
   An IoT data processing system:
@@ -2330,13 +2330,146 @@ Azure `Functions` is a serverless compute service that lets you run event-trigge
   ├── Dashboard
   │   ├── Custom views
   │   └── Resource monitoring
-  ├── Cloud Shell
-  │   ├── Bash
-  │   └── PowerShell
-  └── Marketplace
-      ├── Solutions
-      └── Templates
+  ├── Access Control
+  │   ├── Role-based access
+  │   ├── User management
+  │   └── Security settings
+  ├── Service Management
+  │   ├── Service health
+  │   ├── Support
+  │   └── Service monitoring
+  ├── Cost Management
+  │   ├── Billing
+  │   ├── Cost analysis
+  │   └── Budget alerts
+  └── Development Tools
+      ├── Cloud Shell
+      │   ├── Bash
+      │   └── PowerShell
+      ├── Resource Explorer
+      ├── API Management
+      └── Marketplace
+          ├── Solutions
+          └── Templates
   ```
+
+#### Azure Arc
+
+- **What is it?**
+  Azure Arc is a hybrid and multi-cloud management service that extends Azure's management capabilities to any infrastructure, including on-premises, multi-cloud, and edge environments.
+
+- **Practical Example:**
+  A hybrid enterprise setup:
+
+  ```plaintext
+  Azure Arc Implementation:
+  ├── Server Management
+  │   ├── Windows Servers
+  │   │   ├── On-premises
+  │   │   └── Other clouds
+  │   ├── Linux Servers
+  │   │   ├── On-premises
+  │   │   └── Other clouds
+  │   └── Management Features
+  │       ├── Inventory
+  │       ├── Updates
+  │       └── Monitoring
+  ├── Kubernetes Management
+  │   ├── Cluster Management
+  │   │   ├── Multi-cluster
+  │   │   └── Multi-cloud
+  │   ├── GitOps
+  │   │   ├── Configuration
+  │   │   └── Deployment
+  │   └── Monitoring
+  │       ├── Container insights
+  │       └── Health checks
+  ├── Data Services
+  │   ├── SQL Server
+  │   │   ├── On-premises
+  │   │   └── Other clouds
+  │   ├── PostgreSQL
+  │   │   ├── On-premises
+  │   │   └── Other clouds
+  │   └── Management
+  │       ├── Updates
+  │       └── Monitoring
+  └── Security & Compliance
+      ├── Security Center
+      │   ├── Threat protection
+      │   └── Security posture
+      ├── Policy Management
+      │   ├── Policy enforcement
+      │   └── Compliance checks
+      └── Access Control
+          ├── RBAC
+          └── Authentication
+  ```
+
+- **Key Features**:
+
+  ```plaintext
+  Arc Capabilities:
+  ├── Unified Management
+  │   ├── Single control plane
+  │   ├── Consistent experience
+  │   └── Centralized monitoring
+  ├── Resource Management
+  │   ├── Inventory tracking
+  │   ├── Configuration
+  │   └── Updates
+  ├── Security
+  │   ├── Threat protection
+  │   ├── Compliance
+  │   └── Access control
+  └── DevOps
+      ├── GitOps
+      ├── CI/CD
+      └── Automation
+  ```
+
+- **Use Cases**:
+
+  ```plaintext
+  Common Scenarios:
+  ├── Hybrid Cloud
+  │   ├── On-premises extension
+  │   └── Multi-cloud management
+  ├── Edge Computing
+  │   ├── IoT devices
+  │   └── Remote locations
+  ├── Disaster Recovery
+  │   ├── Backup management
+  │   └── Failover
+  └── Compliance
+      ├── Policy enforcement
+      └── Security management
+  ```
+
+- **Benefits**:
+
+  ```plaintext
+  Arc Benefits:
+  ├── Management
+  │   ├── Unified control
+  │   ├── Consistent tools
+  │   └── Simplified operations
+  ├── Security
+  │   ├── Centralized security
+  │   ├── Compliance
+  │   └── Threat protection
+  ├── Cost
+  │   ├── Resource optimization
+  │   ├── License management
+  │   └── Operational efficiency
+  └── Innovation
+      ├── Modern applications
+      ├── Cloud-native
+      └── DevOps practices
+  ```
+
+- **Documentation Reference:**
+  [Azure Arc Documentation](https://docs.microsoft.com/en-us/azure/azure-arc/)
 
 #### Azure CLI
 
@@ -2437,6 +2570,117 @@ Azure `Functions` is a serverless compute service that lets you run event-trigge
       ├── Package management
       └── Dependency management
   ```
+
+#### Infrastructure as Code (IaC)
+
+- **What is it?**
+
+Infrastructure as Code (IaC) is the practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.
+
+- **Key Components**:
+
+  ```plaintext
+  IaC Components:
+  ├── ARM Templates
+  │   ├── JSON Templates
+  │   │   ├── Resource definitions
+  │   │   ├── Parameters
+  │   │   └── Variables
+  │   ├── Bicep
+  │   │   ├── Simplified syntax
+  │   │   ├── Type safety
+  │   │   └── Modular design
+  │   ├── Template Specs
+  │       ├── Version control
+  │       └── Reusable templates
+  ├── Terraform
+  │   ├── HCL syntax
+  │   ├── State management
+  │   ├── Provider support
+  │   └── Module system
+  ├── Azure CLI
+  │   ├── Command-line automation
+  │   ├── Scripting support
+  │   └── Cross-platform
+  └── Azure PowerShell
+      ├── PowerShell automation
+      ├── Azure modules
+      └── Windows integration
+  ```
+
+- **Best Practices**:
+
+  ```plaintext
+  IaC Best Practices:
+  ├── Version Control
+  │   ├── Source control
+  │   ├── Change tracking
+  │   └── Collaboration
+  ├── Modularity
+  │   ├── Reusable components
+  │   ├── Template linking
+  │   └── Parameterization
+  ├── Testing
+  │   ├── Template validation
+  │   ├── What-if operations
+  │   └── Integration testing
+  ├── Security
+  │   ├── Secret management
+  │   ├── RBAC integration
+  │   └── Policy enforcement
+  └── Documentation
+      ├── Code comments
+      ├── Usage examples
+      └── Architecture diagrams
+  ```
+
+- **Common Use Cases**:
+
+  ```plaintext
+  IaC Scenarios:
+  ├── Environment Management
+  │   ├── Development
+  │   ├── Testing
+  │   └── Production
+  ├── Resource Deployment
+  │   ├── Virtual machines
+  │   ├── Networks
+  │   └── Storage
+  ├── Application Deployment
+  │   ├── Web applications
+  │   ├── Containers
+  │   └── Serverless
+  └── Compliance
+      ├── Policy enforcement
+      ├── Security standards
+      └── Audit trails
+  ```
+
+- **Benefits**:
+
+  ```plaintext
+  IaC Benefits:
+  ├── Consistency
+  │   ├── Standardized deployments
+  │   ├── Reduced errors
+  │   └── Repeatable processes
+  ├── Efficiency
+  │   ├── Automated deployments
+  │   ├── Faster provisioning
+  │   └── Resource optimization
+  ├── Collaboration
+  │   ├── Team coordination
+  │   ├── Code review
+  │   └── Knowledge sharing
+  └── Compliance
+      ├── Audit trails
+      ├── Policy enforcement
+      └── Security standards
+  ```
+
+- **Documentation Reference:**
+  [Azure Resource Manager Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/)
+  [Bicep Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
 
 #### Best Practices
 
@@ -2617,6 +2861,137 @@ Azure `Functions` is a serverless compute service that lets you run event-trigge
       ├── Maintenance records
       └── Health trends
   ```
+
+#### Azure Advisor
+
+- **What is it?**
+  Azure Advisor is a personalized cloud consultant that helps you follow best practices to optimize your Azure deployments. It analyzes your resource configuration and usage telemetry and then recommends solutions that can help you improve the cost effectiveness, performance, reliability, and security of your Azure resources.
+
+- **Key Features**:
+
+  ```plaintext
+  Advisor Features:
+  ├── Cost Optimization
+  │   ├── Right-size recommendations
+  │   ├── Reserved instance suggestions
+  │   ├── Unused resource identification
+  │   └── Cost-saving opportunities
+  ├── Performance
+  │   ├── Response time improvements
+  │   ├── Throughput optimization
+  │   ├── Resource utilization
+  │   └── Performance bottlenecks
+  ├── High Availability
+  │   ├── Fault tolerance
+  │   ├── Disaster recovery
+  │   ├── Load balancing
+  │   └── Redundancy checks
+  ├── Security
+  │   ├── Security best practices
+  │   ├── Vulnerability assessment
+  │   ├── Network security
+  │   └── Data protection
+  └── Operational Excellence
+      ├── Resource organization
+      ├── Tagging strategy
+      ├── Management efficiency
+      └── Best practices
+  ```
+
+- **Recommendation Types**:
+
+  ```plaintext
+  Advisor Recommendations:
+  ├── Cost Recommendations
+  │   ├── VM right-sizing
+  │   ├── Reserved instances
+  │   ├── Unused resources
+  │   └── Storage optimization
+  ├── Performance Recommendations
+  │   ├── Database optimization
+  │   ├── Network latency
+  │   ├── Application performance
+  │   └── Resource scaling
+  ├── High Availability Recommendations
+  │   ├── Multi-region deployment
+  │   ├── Load balancer setup
+  │   ├── Backup configuration
+  │   └── Disaster recovery
+  └── Security Recommendations
+      ├── Security updates
+      ├── Network security groups
+      ├── Data encryption
+      └── Access control
+  ```
+
+- **Best Practices**:
+
+  ```plaintext
+  Advisor Best Practices:
+  ├── Regular Review
+  │   ├── Weekly checks
+  │   ├── Monthly audits
+  │   └── Action tracking
+  ├── Implementation
+  │   ├── Priority-based actions
+  │   ├── Impact assessment
+  │   └── Change management
+  ├── Monitoring
+  │   ├── Recommendation status
+  │   ├── Implementation progress
+  │   └── Cost savings tracking
+  └── Integration
+      ├── Azure Monitor
+      ├── Security Center
+      └── Cost Management
+  ```
+
+- **Use Cases**:
+
+  ```plaintext
+  Common Scenarios:
+  ├── Cost Management
+  │   ├── Budget optimization
+  │   ├── Resource efficiency
+  │   └── Cost reduction
+  ├── Performance Optimization
+  │   ├── Application tuning
+  │   ├── Resource scaling
+  │   └── Latency reduction
+  ├── Security Enhancement
+  │   ├── Security hardening
+  │   ├── Compliance checks
+  │   └── Threat protection
+  └── Reliability Improvement
+      ├── High availability
+      ├── Disaster recovery
+      └── Business continuity
+  ```
+
+- **Benefits**:
+
+  ```plaintext
+  Advisor Benefits:
+  ├── Cost Savings
+  │   ├── Resource optimization
+  │   ├── Unused resource cleanup
+  │   └── Reserved instance savings
+  ├── Performance Improvement
+  │   ├── Faster response times
+  │   ├── Better resource utilization
+  │   └── Optimized configurations
+  ├── Enhanced Security
+  │   ├── Security best practices
+  │   ├── Vulnerability reduction
+  │   └── Compliance adherence
+  └── Better Reliability
+      ├── Improved availability
+      ├── Better disaster recovery
+      └── Enhanced resilience
+  ```
+
+- **Documentation Reference:**
+  [Azure Advisor Documentation](https://docs.microsoft.com/en-us/azure/advisor/)
 
 #### Best Practices for Monitoring
 
@@ -2950,7 +3325,56 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 
 - **Core Components**:
 
-  1. **Azure Policy**:
+  1. **Microsoft Purview**:
+
+     ```plaintext
+     Purview Capabilities:
+     ├── Data Governance
+     │   ├── Data Catalog
+     │   │   ├── Data discovery
+     │   │   ├── Data lineage
+     │   │   └── Business glossary
+     │   ├── Data Map
+     │   │   ├── Data assets
+     │   │   ├── Relationships
+     │   │   └── Lineage tracking
+     │   ├── Data Insights
+     │       ├── Usage analytics
+     │       └── Quality metrics
+     ├── Data Protection
+     │   ├── Sensitivity Labels
+     │   │   ├── Classification
+     │   │   └── Protection policies
+     │   ├── Data Loss Prevention
+     │   │   ├── Policy management
+     │   │   └── Incident response
+     │   └── Information Protection
+     │       ├── Encryption
+     │       └── Access controls
+     ├── Compliance Management
+     │   ├── Compliance Manager
+     │   │   ├── Risk assessment
+     │   │   └── Compliance tracking
+     │   ├── Audit Logs
+     │   │   ├── Activity tracking
+     │   │   └── Compliance reports
+     │   └── Policy Management
+     │       ├── Policy creation
+     │       └── Enforcement
+     └── Integration
+         ├── Azure Services
+         │   ├── Synapse Analytics
+         │   ├── Data Factory
+         │   └── SQL Database
+         ├── On-premises
+         │   ├── SQL Server
+         │   └── File shares
+         └── Third-party
+             ├── AWS
+             └── Google Cloud
+     ```
+
+  2. **Azure Policy**:
 
      ```plaintext
      Policy Management:
@@ -2968,7 +3392,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
          └── Remediation tasks
      ```
 
-  2. **Azure Blueprints**:
+  3. **Azure Blueprints**:
 
      ```plaintext
      Blueprint Components:
@@ -2989,7 +3413,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
          └── Remediation tasks
      ```
 
-  3. **Resource Locks**:
+  4. **Resource Locks**:
 
      ```plaintext
      Lock Types:
@@ -3105,7 +3529,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 
 #### Pricing Models
 
-Azure offers various pricing models to meet different business needs, from pay-as-you-go to enterprise agreements.
+  Azure offers various pricing models to meet different business needs, from pay-as-you-go to enterprise agreements.
 
 - **Practical Example:**
   A startup's pricing strategy:
@@ -3348,7 +3772,7 @@ Azure offers various pricing models to meet different business needs, from pay-a
 
 #### Support Plans
 
-Azure offers various support plans to meet different business needs, from `Basic` support to `Enterprise`-level assistance.
+  Azure offers various support plans to meet different business needs, from `Basic` support to `Enterprise`-level assistance.
 
 - **Practical Example:**
   A growing company's support strategy:
@@ -3440,7 +3864,7 @@ Azure offers various support plans to meet different business needs, from `Basic
 
 #### Service Level Agreements
 
-Azure `SLAs` define the performance standards and availability guarantees for Azure services.
+  Azure `SLAs` define the performance standards and availability guarantees for Azure services.
 
 - **Practical Example:**
   A high-availability application:
@@ -3642,7 +4066,7 @@ Azure `SLAs` define the performance standards and availability guarantees for Az
 
 #### Official Resources
 
-Microsoft's official learning resources for AZ-900 exam preparation.
+  Microsoft's official learning resources for AZ-900 exam preparation.
 
 - **Practical Example:**
   A comprehensive study approach:
@@ -3714,7 +4138,7 @@ Microsoft's official learning resources for AZ-900 exam preparation.
 
 #### Community Resources
 
-Additional learning resources from the Azure community.
+  Additional learning resources from the Azure community.
 
 - **Practical Example:**
   Community learning approach:
@@ -3924,7 +4348,7 @@ Additional learning resources from the Azure community.
 
 ### Key Takeaways
 
-Essential concepts and skills gained from the AZ-900 certification.
+  Essential concepts and skills gained from the AZ-900 certification.
 
 - **Practical Example:**
   Core competencies developed:
@@ -3998,7 +4422,7 @@ Essential concepts and skills gained from the AZ-900 certification.
 
 ### Next Steps
 
-Recommended actions after completing the AZ-900 certification.
+  Recommended actions after completing the AZ-900 certification.
 
 - **Practical Example:**
   Career development path:
@@ -4067,7 +4491,7 @@ Recommended actions after completing the AZ-900 certification.
 
 ### Additional Resources
 
-Ongoing learning and support resources.
+  Ongoing learning and support resources.
 
 - **Practical Example:**
   Resource collection:
@@ -4213,7 +4637,7 @@ Ongoing learning and support resources.
 
 ### Reference Materials
 
-Essential reference documents and resources.
+  Essential reference documents and resources.
 
 - **Practical Example:**
   Reference collection:
@@ -4283,7 +4707,7 @@ Essential reference documents and resources.
 
 ### Practice Scenarios
 
-Real-world scenarios for hands-on practice.
+  Real-world scenarios for hands-on practice.
 
 - **Practical Example:**
   Practice exercises:
@@ -4352,7 +4776,7 @@ Real-world scenarios for hands-on practice.
 
 ### Useful Links
 
-Essential online resources and references.
+  Essential online resources and references.
 
 - **Practical Example:**
   Resource collection:
