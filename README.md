@@ -1,5 +1,44 @@
 # 📚 Awesome Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guide Book & Course
 
+![Promotional image](images/promotional.png)
+
+## ✨ This Study Guide Book & Course is unlike any Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guides Books & Courses you will find online.
+
+✋ Join a live online community and a course taught by industry experts and pass the Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) confidently. We aim to build an ecosystem of Information Technology (IT) certifications and online courses in cooperation with the technology industry. We believe it will give our students 100% confidence in the pacing market in an open-source environment. We are just at the beginning of our way, so it's even better for you to join now!
+
+[![Join our Discord](images/discord.png 'Join our Discord')](https://discord.gg/RFjtXKfJy3)
+
+## Who this course is for:
+
+- 👨‍🎓 Students preparing for the Microsoft Azure Fundamentals (AZ-900) Exam;
+- 👨‍🎓 AWS Engineers;
+- 👨‍🎓 Azure Engineers;
+- 👨‍🎓 Cloud Architects;
+- 👨‍🎓 Cloud Engineers;
+- 👨‍🎓 DevOps Engineers;
+- 👨‍🎓 Enterprise Architects;
+- 👨‍🎓 Google Cloud Platform (GCP) Engineers;
+- 👨‍🎓 Infrastructure Engineers;
+- 👨‍🎓 IT Professionals;
+- 👨‍🎓 Lead Engineers;
+- 👨‍🎓 Product Architects;
+- 👨‍🎓 Product Managers;
+- 👨‍🎓 Product Owners;
+- 👨‍🎓 Project Managers;
+- 👨‍🎓 Scrum Masters;
+- 👨‍🎓 Security Engineers;
+- 👨‍🎓 Site Reliability Engineers;
+- 👨‍🎓 Software Developers/Engineers;
+- 👨‍🎓 Software Testers;
+- 👨‍🎓 Solution Architects;
+- 👨‍🎓 Team Leaders.
+
+## Requirements
+
+- 🤩 Excitement to learn!
+- 0️⃣ Prior knowledge is required;
+- ✅ You can pass the Microsoft Azure Fundamentals (AZ-900) Exam solely based on our Study Guide Book & Course.
+
 ## Introduction
 
 ### Learning Objectives
