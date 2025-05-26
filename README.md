@@ -2,13 +2,13 @@
 
 ![Promotional image](images/promotional.png)
 
-## ✨ This Study Guide Book & Course is unlike any Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guides Books & Courses you will find online.
+## ✨ This Study Guide Book & Course is unlike any Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guides Books & Courses you will find online
 
 ✋ Join a live online community and a course taught by industry experts and pass the Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) confidently. We aim to build an ecosystem of Information Technology (IT) certifications and online courses in cooperation with the technology industry. We believe it will give our students 100% confidence in the pacing market in an open-source environment. We are just at the beginning of our way, so it's even better for you to join now!
 
 [![Join our Discord](images/discord.png 'Join our Discord')](https://discord.gg/RFjtXKfJy3)
 
-## Who this course is for:
+## Who this course is for
 
 - 👨‍🎓 Students preparing for the Microsoft Azure Fundamentals (AZ-900) Exam;
 - 👨‍🎓 AWS Engineers;
@@ -74,7 +74,7 @@ Microsoft Azure is a comprehensive cloud computing platform created by Microsoft
      - Lifecycle management: Delete all resources together when no longer needed
 
    - **Documentation Reference:**
-     [Azure Resource Groups Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
+     [Azure Resource Groups Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
 
 2. **Subscriptions**
      Subscriptions are the fundamental unit of billing and access management in Azure. They represent a billing relationship with Microsoft and provide a boundary for resource management.
@@ -93,7 +93,7 @@ Microsoft Azure is a comprehensive cloud computing platform created by Microsoft
      - **Student**: Free services for verified students
 
    - **Documentation Reference:**
-     [Azure Subscriptions Documentation](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)
+     [Azure Subscriptions Documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)
 
 3. **Management Groups**
      Management groups provide a level of scope above subscriptions. They help you organize subscriptions into containers and apply governance conditions to those containers.
@@ -121,7 +121,7 @@ Microsoft Azure is a comprehensive cloud computing platform created by Microsoft
      - Implement consistent governance
 
    - **Documentation Reference:**
-     [Azure Management Groups Documentation](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)
+     [Azure Management Groups Documentation](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview)
 
 4. **Regions and Availability Zones**
    - **What are they?**
@@ -483,7 +483,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      - Disaster recovery plan
 
    - **Documentation Reference:**
-     [Azure Reliability Documentation](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/overview)
+     [Azure Reliability Documentation](https://learn.microsoft.com/en-us/azure/well-architected/reliability/)
 
 6. **Predictability**
    - **What it means:**
@@ -528,7 +528,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
        - Regular compliance checks
 
    - **Documentation Reference:**
-     [Azure Service Level Agreements](https://azure.microsoft.com/en-us/support/legal/sla/)
+     [Azure Service Level Agreements](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services)
 
 7. **Governance**
    - **What it means:**
@@ -544,7 +544,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      - Audit and reporting
 
    - **Documentation Reference:**
-     [Azure Governance Documentation](https://docs.microsoft.com/en-us/azure/governance/)
+     [Azure Governance Documentation](https://learn.microsoft.com/en-us/azure/governance/)
 
 8. **Manageability**
    - **What it means:**
@@ -664,7 +664,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      ```
 
    - **Documentation Reference:**
-     [Azure Virtual Machines Documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/)
+     [Azure Virtual Machines Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/)
 
 2. **Platform as a Service (PaaS)**
    - **What it is:**
@@ -723,7 +723,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
        ```
 
    - **Documentation Reference:**
-     [Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/)
+     [Azure App Service Documentation](https://learn.microsoft.com/en-us/azure/app-service/)
 
 3. **Software as a Service (SaaS)**
    - **What it is:**
@@ -777,7 +777,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
        ```
 
    - **Documentation Reference:**
-     [Microsoft 365 Documentation](https://docs.microsoft.com/en-us/microsoft-365/)
+     [Microsoft 365 Documentation](https://learn.microsoft.com/en-us/microsoft-365/)
 
 #### Azure's Core Capabilities
 
@@ -1593,6 +1593,79 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
   Azure `VMs` are on-demand, scalable computing resources that provide complete control over the `operating system` and configuration. They're ideal for running applications that require full control over the computing environment.
 
+- **What is a vCPU?**
+  A vCPU (virtual CPU) is a virtual processor that represents a portion of a physical CPU core. In Azure, vCPUs are the fundamental unit of compute power for virtual machines. Each vCPU:
+  - Represents a portion of a physical CPU core
+  - Provides consistent performance
+  - Can be scaled up or down based on workload needs
+  - Is billed based on usage
+
+  **Key Characteristics:**
+  - **Performance:** Each vCPU provides consistent compute power
+  - **Isolation:** Workloads are isolated between vCPUs
+  - **Scalability:** Can be increased or decreased based on needs
+  - **Cost:** Billed per vCPU-hour of usage
+
+  **Practical Example:**
+
+  ```plaintext
+  VM Size Examples:
+  ├── B2s (Budget)
+  │   ├── 2 vCPUs
+  │   ├── 4 GB RAM
+  │   └── Cost: ~$50/month
+  ├── D4s v3 (General Purpose)
+  │   ├── 4 vCPUs
+  │   ├── 16 GB RAM
+  │   └── Cost: ~$200/month
+  └── H16r (High Performance)
+      ├── 16 vCPUs
+      ├── 448 GB RAM
+      └── Cost: ~$2,000/month
+  ```
+
+  **Common Use Cases:**
+  - **Web Servers:**
+
+    ```plaintext
+    Web Server VM:
+    ├── 2-4 vCPUs
+    ├── 4-8 GB RAM
+    └── Standard SSD
+    ```
+
+  - **Database Servers:**
+
+    ```plaintext
+    Database Server VM:
+    ├── 4-8 vCPUs
+    ├── 16-32 GB RAM
+    └── Premium SSD
+    ```
+
+  - **Application Servers:**
+
+    ```plaintext
+    App Server VM:
+    ├── 2-4 vCPUs
+    ├── 8-16 GB RAM
+    └── Standard SSD
+    ```
+
+  **Cost Optimization:**
+
+  ```plaintext
+  vCPU Cost Management:
+  ├── Reserved Instances
+  │   ├── 1-year: 40% savings
+  │   └── 3-year: 60% savings
+  ├── Spot VMs
+  │   └── Up to 90% savings
+  └── Auto-scaling
+      ├── Scale out: Peak hours
+      └── Scale in: Off-hours
+  ```
+
 - **Practical Example:**
   A company running a legacy application:
 
@@ -1666,7 +1739,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   ```
 
 - **Documentation Reference:**
-  [Azure Virtual Machines Documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/)
+  [Azure Virtual Machines Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/)
 
 #### App Service
 
@@ -1750,7 +1823,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   ```
 
 - **Documentation Reference:**
-  [Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/)
+  [Azure App Service Documentation](https://learn.microsoft.com/en-us/azure/app-service/)
 
 #### Azure Functions
 
@@ -2237,20 +2310,45 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 - **What is it?**
   Azure SQL Database is a fully managed relational database service that provides high availability, scalability, and security for your applications.
 
+- **What are DTUs?**
+  DTUs (Database Transaction Units) are a bundled measure of compute, storage, and I/O resources in Azure SQL Database. They represent a simplified way to understand and purchase database performance. Each DTU includes:
+  - Compute resources (CPU)
+  - Storage
+  - I/O operations
+  - Memory
+
+  Note: While DTUs are still available, Microsoft has introduced a newer vCore-based purchasing model that provides more granular control over resources.
+
+- **What are vCores?**
+  vCores (virtual cores) are a more granular way to provision and manage computing resources in Azure SQL Database. Each vCore represents a logical CPU core that can be allocated to your database. This model provides:
+  - More precise control over compute resources
+  - Better predictability of performance
+  - Easier matching with on-premises workloads
+  - More flexible scaling options
+
+  The vCore model separates compute resources from storage, allowing you to:
+  - Scale compute and storage independently
+  - Choose specific hardware generations
+  - Select memory configurations
+  - Optimize costs based on actual needs
+
 - **Practical Example:**
-  An e-commerce database:
+  An enterprise database:
 
   ```plaintext
-  SQL Database Setup:
-  ├── Basic Tier
-  │   ├── 5 DTUs
-  │   └── Cost: ~$5/month
-  ├── Standard Tier
-  │   ├── 100 DTUs
-  │   └── Cost: ~$100/month
-  └── Premium Tier
-      ├── 1000 DTUs
-      └── Cost: ~$1000/month
+  vCore-based Database:
+  ├── General Purpose
+  │   ├── 4 vCores
+  │   ├── 20 GB RAM
+  │   └── Cost: ~$200/month
+  ├── Business Critical
+  │   ├── 8 vCores
+  │   ├── 40 GB RAM
+  │   └── Cost: ~$800/month
+  └── Hyperscale
+      ├── Auto-scaling vCores
+      ├── Unlimited storage
+      └── Cost: Based on usage
   ```
 
 - **Common Use Cases:**
@@ -2321,6 +2419,14 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
 - **What is it?**
   Azure Cosmos DB is a globally distributed, multi-model database service that provides low latency, high availability, and automatic scaling.
+
+- **What are RUs?**
+  RUs (Request Units) are the currency of throughput in Azure Cosmos DB. They represent the system resources (CPU, memory, and I/O) required to perform database operations. Each operation (read, write, query) consumes a certain number of RUs based on its complexity. For example:
+  - A simple point read of a 1 KB item: ~1 RU
+  - A complex query across multiple partitions: ~100+ RUs
+  - A write operation: ~5-10 RUs
+
+  RUs are provisioned per second, and you only pay for the RUs you provision. This allows you to scale your database's throughput independently of storage.
 
 - **Practical Example:**
   A global gaming platform:
