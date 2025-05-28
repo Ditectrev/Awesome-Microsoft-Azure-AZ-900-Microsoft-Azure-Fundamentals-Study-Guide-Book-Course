@@ -41,6 +41,21 @@
 
 ## Introduction
 
+### What is Microsoft Azure?
+
+Microsoft Azure is a comprehensive cloud computing platform created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. It provides a wide range of cloud services, including those for computing, analytics, storage, and networking.
+
+### Brief History and Evolution of Azure
+
+Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officially launched in 2010 as "Windows Azure." The platform has evolved significantly over the years:
+
+- 2010: Initial launch as Windows Azure
+- 2014: Renamed to Microsoft Azure
+- 2016: Introduction of Azure Stack
+- 2018: Launch of Azure Arc
+- 2020: Introduction of Azure Synapse Analytics
+- 2022: Launch of Azure OpenAI Service
+
 ### Who Uses Azure: Organizations and Professionals
 
 Azure's user base includes:
@@ -54,141 +69,7 @@ Azure's user base includes:
 - Financial services
 - Manufacturing companies
 
-### Course Overview and Objectives
-
-This comprehensive guide aims to:
-
-1. Provide a solid foundation in Azure's core concepts
-2. Develop understanding of cloud computing principles
-3. Master Azure services and their use cases
-4. Build knowledge of security and compliance
-5. Prepare for the AZ-900 certification exam
-
-### Learning Outcomes
-
-By the end of this guide, you will be able to:
-
-#### Fundamental Knowledge (1-2 weeks)
-
-- Understand cloud concepts
-  - Cloud computing models
-  - Cloud deployment types
-  - Cloud benefits
-  - Cloud challenges
-- Identify Azure services
-  - Core services
-  - Service categories
-  - Service use cases
-- Navigate the Azure portal
-  - Resource management
-  - Service configuration
-  - Monitoring
-- Create and manage resources
-  - Resource groups
-  - Subscriptions
-  - Management groups
-
-#### Core Services
-
-- Work with compute services
-  - Virtual Machines
-  - App Service
-  - Functions
-  - Containers
-- Implement storage solutions
-  - Blob Storage
-  - File Storage
-  - Queue Storage
-  - Table Storage
-- Configure networking
-  - Virtual Networks
-  - Load Balancers
-  - Application Gateway
-  - DNS
-- Deploy databases
-  - SQL Database
-  - Cosmos DB
-  - MySQL
-  - PostgreSQL
-
-#### Security and Compliance
-
-- Implement security controls
-  - Network security
-  - Identity security
-  - Data security
-  - Application security
-- Manage identities
-  - Azure AD
-  - RBAC
-  - MFA
-  - Conditional access
-- Ensure compliance
-  - Compliance standards
-  - Privacy controls
-  - Data protection
-  - Audit logging
-- Protect data
-  - Encryption
-  - Backup
-  - Recovery
-  - Monitoring
-
-#### Cost Management
-
-- Understand pricing models
-  - Pay-as-you-go
-  - Reserved instances
-  - Spot instances
-  - Hybrid benefit
-- Optimize costs
-  - Right-sizing
-  - Auto-scaling
-  - Resource cleanup
-  - Cost analysis
-- Monitor usage
-  - Usage metrics
-  - Cost alerts
-  - Budgets
-  - Reports
-- Implement budgets
-  - Budget creation
-  - Alert configuration
-  - Cost allocation
-  - Optimization
-
-### Structure of the Guide
-
-The guide is organized into logical sections:
-
-1. Cloud Concepts
-2. Core Azure Services
-3. Security, Privacy, and Compliance
-4. Azure Pricing and Support
-
-Each section includes:
-
-- Detailed explanations
-- Practical examples
-- Best practices
-- Common scenarios
-- Practice questions
-
-### Learning Objectives
-
-By the end of this section, you will be able to:
-
-- Understand core Azure concepts and terminology
-- Explain the benefits of cloud computing
-- Identify different Azure service models
-- Apply Azure concepts to real-world scenarios
-- Prepare for AZ-900 exam questions on these topics
-
-### What is Microsoft Azure?
-
-Microsoft Azure is a comprehensive cloud computing platform created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. It provides a wide range of cloud services, including those for computing, analytics, storage, and networking.
-
-#### Key Azure Concepts for AZ-900
+### Key Azure Concepts for AZ-900
 
 1. **Resource Groups**
      Resource groups are logical containers that hold related Azure resources for an application. Think of them as folders that help you organize and manage all the resources needed for a specific project or application.
@@ -1233,7 +1114,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - Global reach
 
 - **Documentation Reference:**
-  [Azure Public Cloud Documentation](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/)
+  [Azure Public Cloud Documentation](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/)
 
 #### Private Cloud
 
@@ -1258,7 +1139,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - Predictable performance
 
 - **Documentation Reference:**
-  [Azure Stack Documentation](https://docs.microsoft.com/en-us/azure-stack/)
+  [Azure Stack Documentation](https://learn.microsoft.com/en-us/azure-stack/)
 
 #### Hybrid Cloud
 
@@ -1286,7 +1167,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - Workload portability
 
 - **Documentation Reference:**
-  [Azure Hybrid Cloud Documentation](https://docs.microsoft.com/en-us/azure/architecture/hybrid/)
+  [Azure Hybrid Cloud Documentation](https://learn.microsoft.com/en-us/azure/architecture/hybrid/hybrid-start-here)
 
 #### Azure vs Other Cloud Platforms
 
@@ -1339,17 +1220,6 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - Data encryption
   - Access control
 
-### Brief History and Evolution of Azure
-
-Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officially launched in 2010 as "Windows Azure." The platform has evolved significantly over the years:
-
-- 2010: Initial launch as Windows Azure
-- 2014: Renamed to Microsoft Azure
-- 2016: Introduction of Azure Stack
-- 2018: Launch of Azure Arc
-- 2020: Introduction of Azure Synapse Analytics
-- 2022: Launch of Azure OpenAI Service
-
 ### Cloud Computing Terms and Concepts
 
 #### High Availability
@@ -1360,24 +1230,15 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   - Failover
   - Load balancing
   - Disaster recovery
-- **Exam Focus**:
-  - High availability features
-  - High availability benefits
-  - High availability implementation
-  - High availability monitoring
 
 #### Scalability
 
+- **Definition**: The ability of a system to handle increased load by adding resources (scaling up/out) or removing resources (scaling down/in) to maintain performance and meet demand
 - **Types**:
   - Vertical scaling
   - Horizontal scaling
   - Auto-scaling
   - Load balancing
-- **Exam Focus**:
-  - Scaling types
-  - Scaling benefits
-  - Scaling implementation
-  - Scaling monitoring
 
 #### Elasticity
 
@@ -1387,11 +1248,6 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   - Performance optimization
   - Resource efficiency
   - Automatic scaling
-- **Exam Focus**:
-  - Elasticity features
-  - Elasticity benefits
-  - Elasticity implementation
-  - Elasticity monitoring
 
 #### Fault Tolerance
 
@@ -1401,11 +1257,6 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   - Replication
   - Backup systems
   - Failover mechanisms
-- **Exam Focus**:
-  - Fault tolerance features
-  - Fault tolerance benefits
-  - Fault tolerance implementation
-  - Fault tolerance monitoring
 
 #### Disaster Recovery
 
@@ -1415,11 +1266,6 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   - Recovery plans
   - Testing procedures
   - Documentation
-- **Exam Focus**:
-  - Disaster recovery features
-  - Disaster recovery benefits
-  - Disaster recovery implementation
-  - Disaster recovery monitoring
 
 #### Shared Responsibility Model
 
@@ -1471,12 +1317,6 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   - **Application Security**: Varies by service model
   - **Network Security**: Varies by service model
 
-- **Exam Focus**:
-  - Understanding responsibility split by service model
-  - Identifying security responsibilities
-  - Implementing appropriate security controls
-  - Managing compliance requirements
-
 #### Cloud Services Types
 
 - **Definition**: Different categories of cloud services that provide specific functionality and capabilities in Azure.
@@ -1509,7 +1349,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
      │   ├── Unstructured data
      │   └── Media files
      ├── File Storage
-     │   ├── SMB shares
+     │   ├── SMB shares (Server Message Block - a network file sharing protocol that enables applications to read and write to files and request services from server programs in a computer network)
      │   └── File systems
      ├── Queue Storage
      │   ├── Message queuing
@@ -1559,7 +1399,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 
      ```plaintext
      Security Options:
-     ├── Azure Active Directory
+     ├── Microsoft Entra ID
      │   ├── Identity management
      │   └── Authentication
      ├── Key Vault
@@ -1578,12 +1418,6 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
   - Services can be combined for solutions
   - Different service types have different pricing models
   - Services follow the shared responsibility model
-
-- **Exam Focus**:
-  - Understanding service categories
-  - Identifying appropriate services
-  - Service capabilities and limitations
-  - Service integration possibilities
 
 ## Core Azure Services
 
