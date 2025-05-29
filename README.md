@@ -288,7 +288,7 @@ Azure's user base includes:
          - Separate support channels
 
        - **Documentation Reference:**
-         [Azure Sovereign Regions](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-welcome)
+         [Azure Sovereign Regions](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome)
 
        - **Azure Datacenters**:
          - **What are they?**
@@ -401,12 +401,12 @@ Azure's user base includes:
            - Disaster recovery capabilities
 
          - **Documentation Reference:**
-           [Azure Datacenter Security](https://docs.microsoft.com/en-us/azure/security/fundamentals/physical-security)
-           [Azure Compliance](https://docs.microsoft.com/en-us/azure/compliance/)
+           [Azure Datacenter Security](https://learn.microsoft.com/en-us/azure/security/fundamentals/physical-security)
+           [Azure Compliance](https://learn.microsoft.com/en-us/azure/compliance/)
 
    - **Documentation Reference:**
-     [Azure Regions and Availability Zones](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)
-     [Azure Region Pairs](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions)
+     [Azure Regions and Availability Zones](https://learn.microsoft.com/en-us/azure/availability-zones/az-overview)
+     [Azure Region Pairs](https://learn.microsoft.com/en-us/azure/best-practices-availability-paired-regions)
 
 ### Cloud Computing Fundamentals
 
@@ -455,7 +455,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      ```
 
    - **Documentation Reference:**
-     [Azure Autoscaling Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview)
+     [Azure Autoscaling Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview)
 
 3. **Performance**
    - **What it means:**
@@ -483,7 +483,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      - Compliance certifications (HIPAA, GDPR)
 
    - **Documentation Reference:**
-     [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/)
+     [Azure Security Documentation](https://learn.microsoft.com/en-us/azure/security/)
 
 5. **Reliability**
    - **What it means:**
@@ -574,7 +574,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      - Resource consistency
 
    - **Documentation Reference:**
-     [Azure Management Tools Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/)
+     [Azure Management Tools Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/)
 
 9. **Elasticity**
    - **What it means:**
@@ -590,7 +590,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      - No need for over-provisioning
 
    - **Documentation Reference:**
-     [Azure Autoscale Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview)
+     [Azure Autoscale Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview)
 
 ### Azure as a Cloud Platform
 
@@ -670,11 +670,17 @@ Think of cloud computing like electricity. Instead of generating your own power,
      ├── Reserved Instances
      │   ├── 1-year commitment: 40% savings
      │   └── 3-year commitment: 60% savings
+     │   └── Commitment to use specific VM types for fixed period
+     │   └── Best for predictable, continuous workloads
      ├── Spot VMs
      │   └── Up to 90% savings
+     │   └── No SLA, can be evicted with 30s notice
+     │   └── Best for batch processing and development
      └── Auto-scaling
-         ├── Scale out during peak hours
-         └── Scale in during off-hours
+         ├── Scale out: Peak hours
+         └── Scale in: Off-hours
+         └── Automatically adjusts VM instances based on demand
+         └── Best for applications with variable workloads
      ```
 
    - **Documentation Reference:**
@@ -721,7 +727,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
        ```plaintext
        Mobile App Infrastructure:
        ├── API: Azure API Management
-       ├── Authentication: Azure AD B2C
+       ├── Authentication: Microsoft Entra ID B2C
        ├── Push Notifications: Azure Notification Hubs
        └── Data: Azure Cosmos DB
        ```
@@ -892,7 +898,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      │   ├── PowerShell
      │   └── REST API
      └── Security
-         ├── Azure AD integration
+         ├── Microsoft Entra ID integration
          ├── MFA support
          └── Conditional access
      ```
@@ -1493,11 +1499,17 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ├── Reserved Instances
   │   ├── 1-year: 40% savings
   │   └── 3-year: 60% savings
+  │   └── Commitment to use specific VM types for fixed period
+  │   └── Best for predictable, continuous workloads
   ├── Spot VMs
   │   └── Up to 90% savings
+  │   └── No SLA, can be evicted with 30s notice
+  │   └── Best for batch processing and development
   └── Auto-scaling
       ├── Scale out: Peak hours
       └── Scale in: Off-hours
+      └── Automatically adjusts VM instances based on demand
+      └── Best for applications with variable workloads
   ```
 
 - **Practical Example:**
@@ -1565,11 +1577,17 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ├── Reserved Instances
   │   ├── 1-year commitment: 40% savings
   │   └── 3-year commitment: 60% savings
+  │   └── Commitment to use specific VM types for fixed period
+  │   └── Best for predictable, continuous workloads
   ├── Spot VMs
   │   └── Up to 90% savings
+  │   └── No SLA, can be evicted with 30s notice
+  │   └── Best for batch processing and development
   └── Auto-scaling
-      ├── Scale out during peak hours
-      └── Scale in during off-hours
+      ├── Scale out: Peak hours
+      └── Scale in: Off-hours
+      └── Automatically adjusts VM instances based on demand
+      └── Best for applications with variable workloads
   ```
 
 - **Documentation Reference:**
@@ -1619,7 +1637,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
     ├── API Management
     │   └── REST/GraphQL APIs
     ├── Authentication
-    │   └── Azure AD B2C
+    │   └── Microsoft Entra ID B2C
     ├── Push Notifications
     │   └── Notification Hubs
     └── Data Storage
@@ -1703,7 +1721,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
     │   ├── REST APIs
     │   └── GraphQL endpoints
     ├── Authentication
-    │   └── Azure AD
+    │   └── Microsoft Entra ID
     └── Integration
         ├── API Management
         └── Logic Apps
@@ -1737,7 +1755,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure Functions Documentation](https://docs.microsoft.com/en-us/azure/azure-functions/)
+  [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
 
 ### Azure Storage Services
 
@@ -1824,7 +1842,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure Blob Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/blobs/)
+  [Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)
 
 #### File Storage
 
@@ -1910,7 +1928,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure File Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/files/)
+  [Azure File Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/files/)
 
 #### Azure Storage
 
@@ -2050,7 +2068,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure Virtual Network Documentation](https://docs.microsoft.com/en-us/azure/virtual-network/)
+  [Azure Virtual Network Documentation](https://learn.microsoft.com/en-us/azure/virtual-network/)
 
 #### Load Balancer
 
@@ -2135,7 +2153,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure Load Balancer Documentation](https://docs.microsoft.com/en-us/azure/load-balancer/)
+  [Azure Load Balancer Documentation](https://learn.microsoft.com/en-us/azure/load-balancer/)
 
 ### Azure Databases
 
@@ -2236,7 +2254,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```plaintext
   SQL Security:
   ├── Authentication
-  │   ├── Azure AD
+  │   ├── Microsoft Entra ID
   │   └── SQL Auth
   ├── Encryption
   │   ├── At rest
@@ -2247,7 +2265,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure SQL Database Documentation](https://docs.microsoft.com/en-us/azure/azure-sql/)
+  [Azure SQL Database Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/)
 
 #### Cosmos DB
 
@@ -2337,7 +2355,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure Cosmos DB Documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/)
+  [Azure Cosmos DB Documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/)
 
 ### Azure Management and Deployment Tools
 
@@ -2496,7 +2514,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   ```
 
 - **Documentation Reference:**
-  [Azure Arc Documentation](https://docs.microsoft.com/en-us/azure/azure-arc/)
+  [Azure Arc Documentation](https://learn.microsoft.com/en-us/azure/azure-arc/)
 
 #### Azure CLI
 
@@ -2706,8 +2724,8 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   ```
 
 - **Documentation Reference:**
-  [Azure Resource Manager Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/)
-  [Bicep Documentation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
+  [Azure Resource Manager Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/)
+  [Bicep Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
 
 #### Best Practices
 
@@ -2750,7 +2768,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   ```
 
 - **Documentation Reference:**
-  [Azure Management Tools Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/)
+  [Azure Management Tools Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/)
 
 ### Azure Monitoring Tools
 
@@ -3018,7 +3036,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   ```
 
 - **Documentation Reference:**
-  [Azure Advisor Documentation](https://docs.microsoft.com/en-us/azure/advisor/)
+  [Azure Advisor Documentation](https://learn.microsoft.com/en-us/azure/advisor/)
 
 #### Best Practices for Monitoring
 
@@ -3067,7 +3085,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   ```
 
 - **Documentation Reference:**
-  [Azure Monitoring Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/)
+  [Azure Monitoring Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/)
 
 ## Security, Privacy, and Compliance
 
@@ -3163,7 +3181,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   ```
 
 - **Documentation Reference:**
-  [Azure Security Center Documentation](https://docs.microsoft.com/en-us/azure/security-center/)
+  [Azure Security Center Documentation](https://learn.microsoft.com/en-us/azure/security-center/)
 
 #### Azure Key Vault
 
@@ -3186,16 +3204,16 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
       └── Code signing certificates
   ```
 
-#### Azure Active Directory
+#### Microsoft Entra ID
 
 - **What is it?**
-  Azure `Active Directory` (`Azure AD`) is Microsoft's cloud-based identity and access management service, helping your employees sign in and access resources.
+  Microsoft Entra ID (formerly Azure Active Directory) is Microsoft's cloud-based identity and access management service, helping your employees sign in and access resources.
 
 - **Practical Example:**
   An enterprise identity solution:
 
   ```plaintext
-  Azure AD Setup:
+  Microsoft Entra ID Setup:
   ├── User Management
   │   ├── User accounts
   │   └── Groups
@@ -3322,7 +3340,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure Compliance Documentation](https://docs.microsoft.com/en-us/azure/compliance/)
+  [Azure Compliance Documentation](https://learn.microsoft.com/en-us/azure/compliance/)
 
 ### Azure Governance and Compliance
 
@@ -3548,7 +3566,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure Governance Documentation](https://docs.microsoft.com/en-us/azure/governance/)
+  [Azure Governance Documentation](https://learn.microsoft.com/en-us/azure/governance/)
 
 ## Azure Pricing and Support
 
@@ -3668,7 +3686,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure Pricing Documentation](https://docs.microsoft.com/en-us/azure/cost-management-billing/)
+  [Azure Pricing Documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/)
 
 #### Cost Management
 
@@ -3704,7 +3722,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   │   ├── Environment
   │   │   ├── Application
   │   │   └── Version
-  │   └── Operational
+  │   ├── Operational
   │       ├── Owner
   │       ├── Support Team
   │       └── SLA
@@ -3793,7 +3811,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure Cost Management Documentation](https://docs.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview)
+  [Azure Cost Management Documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview)
 
 ### Azure Support Options
 
@@ -3887,7 +3905,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure Support Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/)
+  [Azure Support Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/)
 
 #### Service Level Agreements
 
@@ -3971,7 +3989,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure SLA Documentation](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/)
+  [Azure SLA Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/)
 
 ## Exam Preparation
 
@@ -4065,7 +4083,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ├── Security Features
   │   ├── Security Center
   │   ├── Key Vault
-  │   └── Azure AD
+  │   └── Microsoft Entra ID
   ├── Compliance
   │   ├── Standards
   │   └── Certifications
