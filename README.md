@@ -2899,8 +2899,8 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   │   └── Recommendations
   ├── Health Alerts
   │   ├── Alert configuration
-    │   ├── Notification rules
-    │   └── Action groups
+  │   ├── Notification rules
+  │   └── Action groups
   └── History
       ├── Past incidents
       ├── Maintenance records
