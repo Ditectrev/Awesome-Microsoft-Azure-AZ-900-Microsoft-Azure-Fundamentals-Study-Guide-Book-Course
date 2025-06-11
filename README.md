@@ -1411,7 +1411,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
      ├── Key Vault
      │   ├── Secrets management
      │   └── Certificate storage
-     ├── Security Center
+     ├── Microsoft Defender for Cloud
      │   ├── Threat protection
      │   └── Security monitoring
      └── DDoS Protection
@@ -2440,7 +2440,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   │       ├── Updates
   │       └── Monitoring
   └── Security & Compliance
-      ├── Security Center
+      ├── Microsoft Defender for Cloud
       │   ├── Threat protection
       │   └── Security posture
       ├── Policy Management
@@ -2987,7 +2987,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   │   └── Cost savings tracking
   └── Integration
       ├── Azure Monitor
-      ├── Security Center
+      ├── Microsoft Defender for Cloud
       └── Cost Management
   ```
 
@@ -3091,16 +3091,16 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 
 ### Azure Security Features
 
-#### Azure Security Center
+#### Microsoft Defender for Cloud
 
 - **What is it?**
-  Azure Security Center is a unified security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud.
+  Microsoft Defender for Cloud is a unified security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud.
 
 - **Practical Example:**
   A financial institution's security setup:
 
   ```plaintext
-  Security Center Implementation:
+  Microsoft Defender for Cloud Implementation:
   ├── Security Monitoring
   │   ├── Real-time alerts
   │   └── Security scores
@@ -3168,7 +3168,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 - **Cost Considerations:**
 
   ```plaintext
-  Security Center Pricing:
+  Microsoft Defender for Cloud Pricing:
   ├── Free Tier
   │   ├── Basic security features
   │   └── Limited monitoring
@@ -3181,12 +3181,12 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   ```
 
 - **Documentation Reference:**
-  [Azure Security Center Documentation](https://learn.microsoft.com/en-us/azure/security-center/)
+  [Microsoft Defender for Cloud Documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/)
 
 #### Azure Key Vault
 
 - **What is it?**
-  Azure `Key Vault` is a cloud service for securely storing and accessing secrets, keys, and certificates.
+  Azure Key Vault is a cloud service for securely storing and accessing secrets, keys, and certificates.
 
 - **Practical Example:**
   An enterprise security setup:
@@ -4081,7 +4081,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```plaintext
   Security Topics:
   ├── Security Features
-  │   ├── Security Center
+  │   ├── Microsoft Defender for Cloud
   │   ├── Key Vault
   │   └── Microsoft Entra ID
   ├── Compliance
@@ -4455,7 +4455,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     ```plaintext
     Security Knowledge:
     ├── Security Features
-    │   ├── Security Center
+    │   ├── Microsoft Defender for Cloud
     │   └── Key Vault
     ├── Compliance
     │   ├── Standards
@@ -4661,7 +4661,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     │   ├── VNet
     │   └── Load Balancer
     └── Security
-        ├── Security Center
+        ├── Microsoft Defender for Cloud
         └── Key Vault
     ```
 
@@ -4766,7 +4766,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   ├── Web apps
   │   └── Databases
   ├── Security Implementation
-  │   ├── Security Center
+  │   ├── Microsoft Defender for Cloud
   │   └── Key Vault
   └── Cost Management
       ├── Budget setup
