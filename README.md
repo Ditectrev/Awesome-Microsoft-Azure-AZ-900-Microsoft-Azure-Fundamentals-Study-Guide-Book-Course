@@ -3371,6 +3371,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 - **Core Components**:
 
   1. **Microsoft Purview**:
+     Microsoft Purview is a unified data governance service that helps organizations manage and govern their data across on-premises, multi-cloud, and software-as-a-service (SaaS) data sources. It provides a comprehensive solution for data discovery, classification, and governance.
 
      ```plaintext
      Purview Capabilities:
@@ -3383,7 +3384,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
      │   │   ├── Data assets
      │   │   ├── Relationships
      │   │   └── Lineage tracking
-     │   ├── Data Insights
+     │   └── Data Insights
      │       ├── Usage analytics
      │       └── Quality metrics
      ├── Data Protection
@@ -3420,6 +3421,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
      ```
 
   2. **Azure Policy**:
+     Azure Policy is a service in Azure that enables you to create, assign, and manage policies that enforce different rules and effects over your resources. These policies ensure your resources stay compliant with your corporate standards and service level agreements.
 
      ```plaintext
      Policy Management:
@@ -3438,6 +3440,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
      ```
 
   3. **Azure Blueprints**:
+     Azure Blueprints is a service that enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. It helps you rapidly build and launch new environments with a set of built-in components that speed up development and delivery.
 
      ```plaintext
      Blueprint Components:
@@ -3459,6 +3462,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
      ```
 
   4. **Resource Locks**:
+     Resource Locks are a security feature in Azure that prevents accidental deletion or modification of critical resources. They provide an additional layer of protection beyond RBAC permissions, ensuring that even users with delete permissions cannot remove or modify protected resources.
 
      ```plaintext
      Lock Types:
@@ -3466,8 +3470,8 @@ Azure's compliance offerings help organizations meet regulatory requirements and
      │   ├── Prevents deletion
      │   └── Allows modifications
      └── ReadOnly
-         ├── Prevents modifications
-         └── Prevents deletion
+         ├── Prevents deletion
+         └── Prevents modifications
      ```
 
 #### Compliance Management
@@ -4967,20 +4971,20 @@ Azure's compliance offerings help organizations meet regulatory requirements and
      ```plaintext
      RBAC Components:
      ├── Security Principal
-     │   ├── User
-     │   ├── Group
-     │   └── Service Principal
+     │   ├── User (individual user account)
+     │   ├── Group (collection of users)
+     │   └── Service Principal (application or service)
      ├── Role Definition
-     │   ├── Permissions
-     │   └── Scope
+     │   ├── Permissions (allowed actions)
+     │   └── Scope (where permissions apply)
      ├── Scope
      │   ├── Subscription
      │   ├── Resource Group
-     │   └── Resource
+     │   └── Individual Resource
      └── Built-in Roles
-         ├── Owner
-         ├── Contributor
-         └── Reader
+         ├── Owner (full access)
+         ├── Contributor (create/manage resources)
+         └── Reader (view resources)
      ```
 
   5. **Security Features**:
@@ -5090,3 +5094,53 @@ Azure's compliance offerings help organizations meet regulatory requirements and
       ├── Built-in Standards
       └── Custom Policies
   ```
+
+#### Role-Based Access Control (RBAC)
+
+- **What is RBAC?**
+  Role-Based Access Control (RBAC) is a security model that provides fine-grained access management for Azure resources. It helps organizations maintain control over who can access what resources and what actions they can perform.
+
+- **Core Components**:
+
+  ```plaintext
+  RBAC Components:
+  ├── Security Principal
+  │   ├── User (individual user account)
+  │   ├── Group (collection of users)
+  │   └── Service Principal (application or service)
+  ├── Role Definition
+  │   ├── Permissions (allowed actions)
+  │   └── Scope (where permissions apply)
+  ├── Scope
+  │   ├── Subscription
+  │   ├── Resource Group
+  │   └── Individual Resource
+  └── Built-in Roles
+      ├── Owner (full access)
+      ├── Contributor (create/manage resources)
+      └── Reader (view resources)
+  ```
+
+- **Key Features**:
+  - **Least Privilege**: Users are granted only the permissions they need
+  - **Hierarchical Access**: Permissions can be assigned at different levels
+  - **Flexible Assignment**: Roles can be assigned to users, groups, or service principals
+  - **Built-in Roles**: Predefined roles for common scenarios
+  - **Custom Roles**: Ability to create custom roles for specific needs
+
+- **Common Use Cases**:
+  - Managing access to Azure resources
+  - Implementing security policies
+  - Controlling who can view or modify resources
+  - Enforcing compliance requirements
+  - Delegating administrative tasks
+
+- **Best Practices**:
+  - Use built-in roles when possible
+  - Follow the principle of least privilege
+  - Regularly review and audit role assignments
+  - Use groups instead of individual users
+  - Document custom roles and their purposes
+
+- **Documentation Reference:**
+  [Azure RBAC Documentation](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
