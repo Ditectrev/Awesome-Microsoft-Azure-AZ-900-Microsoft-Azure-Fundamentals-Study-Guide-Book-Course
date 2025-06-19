@@ -622,67 +622,6 @@ Think of cloud computing like electricity. Instead of generating your own power,
          └── Focus on Application Management
      ```
 
-   - **Common Use Cases:**
-     - **Development and Testing:**
-
-       ```plaintext
-       Development Environment:
-       ├── Dev VM: B2s ($50/month)
-       │   ├── 2 vCPUs
-       │   └── 4 GB RAM
-       ├── Test VM: B2s ($50/month)
-       │   ├── 2 vCPUs
-       │   └── 4 GB RAM
-       └── Staging VM: D2s v3 ($100/month)
-           ├── 2 vCPUs
-           └── 8 GB RAM
-       ```
-
-     - **Disaster Recovery:**
-
-       ```plaintext
-       Primary Site (On-premises):
-       ├── Production Servers
-       └── Active Directory
-
-       Azure DR Site:
-       ├── Replica VMs
-       └── Azure Site Recovery
-       ```
-
-     - **High-Performance Computing:**
-
-       ```plaintext
-       HPC Cluster:
-       ├── Compute Nodes: H-series VMs
-       │   ├── 8-64 vCPUs
-       │   └── Up to 448 GB RAM
-       ├── Storage: Premium SSD
-       │   └── Up to 32 TB
-       └── Network: Accelerated Networking
-           └── 40 Gbps
-       ```
-
-   - **Cost Optimization:**
-
-     ```plaintext
-     VM Cost Management:
-     ├── Reserved Instances
-     │   ├── 1-year commitment: 40% savings
-     │   └── 3-year commitment: 60% savings
-     │   └── Commitment to use specific VM types for fixed period
-     │   └── Best for predictable, continuous workloads
-     ├── Spot VMs
-     │   └── Up to 90% savings
-     │   └── No SLA, can be evicted with 30s notice
-     │   └── Best for batch processing and development
-     └── Auto-scaling
-         ├── Scale out: Peak hours
-         └── Scale in: Off-hours
-         └── Automatically adjusts VM instances based on demand
-         └── Best for applications with variable workloads
-     ```
-
    - **Documentation Reference:**
      [Azure Virtual Machines Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/)
 
@@ -1491,26 +1430,6 @@ Think of cloud computing like electricity. Instead of generating your own power,
     ├── 8-16 GB RAM
     └── Standard SSD
     ```
-
-  **Cost Optimization:**
-
-  ```plaintext
-  vCPU Cost Management:
-  ├── Reserved Instances
-  │   ├── 1-year: 40% savings
-  │   └── 3-year: 60% savings
-  │   └── Commitment to use specific VM types for fixed period
-  │   └── Best for predictable, continuous workloads
-  ├── Spot VMs
-  │   └── Up to 90% savings
-  │   └── No SLA, can be evicted with 30s notice
-  │   └── Best for batch processing and development
-  └── Auto-scaling
-      ├── Scale out: Peak hours
-      └── Scale in: Off-hours
-      └── Automatically adjusts VM instances based on demand
-      └── Best for applications with variable workloads
-  ```
 
 - **Practical Example:**
   A company running a legacy application:
@@ -3610,7 +3529,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   │   ├── Reserved instances
   │   │   ├── Spot instances
   │   │   └── Hybrid benefit
-  │   ├── Export Options
+  │   └── Export Options
   │       ├── PDF reports
   │       └── Share estimates
   └── Total Cost of Ownership (TCO) Calculator
