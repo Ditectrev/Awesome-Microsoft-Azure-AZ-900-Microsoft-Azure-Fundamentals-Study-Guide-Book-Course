@@ -3645,7 +3645,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   │   ├── Environment
   │   │   ├── Application
   │   │   └── Version
-  │   ├── Operational
+  │   └── Operational
   │       ├── Owner
   │       ├── Support Team
   │       └── SLA
