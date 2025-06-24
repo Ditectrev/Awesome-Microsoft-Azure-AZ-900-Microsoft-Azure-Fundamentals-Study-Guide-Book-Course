@@ -3828,7 +3828,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure Support Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/)
+  [Azure Support Documentation](https://azure.microsoft.com/en-us/support/plans)
 
 #### Service Level Agreements
 
@@ -3912,7 +3912,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Documentation Reference:**
-  [Azure SLA Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/supportability/)
+  [Azure SLA Documentation](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services)
 
 ## Exam Preparation
 
