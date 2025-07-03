@@ -4417,8 +4417,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     ```plaintext
     Certification Path:
     ├── Administrator
-    │   ├── AZ-104
-    │   └── AZ-303/304
+    │   └── AZ-104
     ├── Developer
     │   ├── AZ-204
     │   └── AZ-400
@@ -4471,7 +4470,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   └── Best practices
   ├── Training
   │   ├── Courses
-    │   └── Workshops
+  │   └── Workshops
   ├── Community
   │   ├── Forums
   │   └── Blogs
@@ -4501,8 +4500,10 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     ```plaintext
     Training Resources:
     ├── Online Courses
+    │   ├── Coursera
     │   ├── Microsoft Learn
-    │   └── Pluralsight
+    │   ├── Pluralsight
+    │   └── Udemy
     ├── Workshops
     │   ├── Hands-on
     │   └── Virtual labs
@@ -4522,8 +4523,9 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     │   ├── Technical
     │   └── Best practices
     └── Social Media
-        ├── Twitter
-        └── LinkedIn
+        ├── LinkedIn
+        ├── Reddit
+        └── X
     ```
 
 ## Appendices
@@ -4576,16 +4578,33 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     Azure Terms:
     ├── Compute
     │   ├── VM
-    │   └── App Service
+    │   ├── App Service
+    │   ├── Functions
+    │   ├── Container Instances
+    │   └── AKS
     ├── Storage
     │   ├── Blob
-    │   └── File
+    │   ├── File
+    │   ├── Queue
+    │   └── Table
     ├── Networking
     │   ├── VNet
-    │   └── Load Balancer
+    │   ├── Load Balancer
+    │   ├── Application Gateway
+    │   └── CDN
+    ├── Integration
+    │   ├── Logic Apps
+    │   ├── Event Grid
+    │   ├── Event Hubs
+    │   └── Service Bus
+    ├── AI & ML
+    │   ├── Machine Learning
+    │   ├── Cognitive Services
+    │   └── Bot Service
     └── Security
         ├── Microsoft Defender for Cloud
-        └── Key Vault
+        ├── Key Vault
+        └── Microsoft Entra ID
     ```
 
   - **Security & Compliance:**
