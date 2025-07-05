@@ -592,6 +592,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
    - **Documentation Reference:**
      [Azure Autoscale Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview)
 
+- **Key Points**:
+  - Cloud computing eliminates upfront infrastructure costs
+  - Pay-as-you-go model provides cost efficiency
+  - Automatic scaling ensures optimal performance
+  - Built-in security and compliance features
+  - Global reach with local data centers
+  - Reduced IT management overhead
+
 ### Azure as a Cloud Platform
 
 #### Understanding Azure's Service Models
@@ -737,6 +745,13 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
    - **Documentation Reference:**
      [Microsoft 365 Documentation](https://learn.microsoft.com/en-us/microsoft-365/)
+
+- **Key Points**:
+  - IaaS provides maximum control but requires more management
+  - PaaS offers development platform with managed infrastructure
+  - SaaS delivers ready-to-use applications with minimal setup
+  - Choose service model based on control needs vs. management overhead
+  - Higher service levels reduce operational complexity
 
 #### Azure's Core Capabilities
 
@@ -1512,6 +1527,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 - **Documentation Reference:**
   [Azure Virtual Machines Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/)
 
+- **Key Points**:
+  - VMs provide complete control over OS and configuration
+  - Choose VM size based on CPU, memory, and storage needs
+  - Use Reserved Instances for predictable workloads to save costs
+  - Spot VMs offer significant savings for flexible workloads
+  - Always consider high availability with availability sets or zones
+  - Monitor performance and scale based on actual usage patterns
+
 #### App Service
 
 - **What is it?**
@@ -1596,6 +1619,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 - **Documentation Reference:**
   [Azure App Service Documentation](https://learn.microsoft.com/en-us/azure/app-service/)
 
+- **Key Points**:
+  - App Service is ideal for web applications and APIs
+  - Supports multiple programming languages and frameworks
+  - Built-in CI/CD integration simplifies deployment
+  - Automatic scaling based on demand
+  - Free tier available for development and testing
+  - Integrated with Azure ecosystem for databases and services
+
 #### Azure Functions
 
   Azure `Functions` is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
@@ -1675,6 +1706,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 - **Documentation Reference:**
   [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
+
+- **Key Points**:
+  - Serverless compute with pay-per-execution pricing
+  - Event-driven architecture for modern applications
+  - Automatic scaling with no infrastructure management
+  - Supports multiple programming languages
+  - Integrates with Azure services and external triggers
+  - Ideal for microservices and event processing
 
 ### Azure Storage Services
 
@@ -1763,6 +1802,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 - **Documentation Reference:**
   [Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)
 
+- **Key Points**:
+  - Blob Storage is ideal for unstructured data like images and videos
+  - Three tiers: Hot, Cool, and Archive for cost optimization
+  - Global distribution with CDN integration
+  - Built-in security with encryption and access controls
+  - Automatic replication for high availability
+  - REST API for easy integration
+
 #### File Storage
 
 - **What is it?**
@@ -1848,6 +1895,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 - **Documentation Reference:**
   [Azure File Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/files/)
+
+- **Key Points**:
+  - File Storage provides SMB file shares in the cloud
+  - Compatible with Windows, Linux, and macOS
+  - Supports both standard and premium performance tiers
+  - Azure File Sync enables hybrid cloud scenarios
+  - Automatic backup and disaster recovery
+  - Enterprise-grade security and compliance
 
 #### Azure Storage
 
@@ -1989,6 +2044,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 - **Documentation Reference:**
   [Azure Virtual Network Documentation](https://learn.microsoft.com/en-us/azure/virtual-network/)
 
+- **Key Points**:
+  - Virtual Network provides private networking in Azure
+  - Subnets help organize and secure resources
+  - Network Security Groups control traffic flow
+  - Service Endpoints enable secure service access
+  - VNet peering connects networks across regions
+  - Integration with on-premises via VPN or ExpressRoute
+
 #### Load Balancer
 
 - **What is it?**
@@ -2073,6 +2136,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 - **Documentation Reference:**
   [Azure Load Balancer Documentation](https://learn.microsoft.com/en-us/azure/load-balancer/)
+
+- **Key Points**:
+  - Load Balancer distributes traffic across multiple VMs
+  - Provides high availability and fault tolerance
+  - Supports both public and internal load balancing
+  - Health probes ensure only healthy instances receive traffic
+  - Automatic failover when instances become unavailable
+  - Cost-effective solution for scaling applications
 
 ### Azure Databases
 
@@ -2186,6 +2257,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 - **Documentation Reference:**
   [Azure SQL Database Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/)
 
+- **Key Points**:
+  - Fully managed SQL database with automatic scaling
+  - Built-in high availability and disaster recovery
+  - Multiple service tiers for different performance needs
+  - Built-in security with encryption and threat protection
+  - Automatic backups and point-in-time restore
+  - Seamless migration from on-premises SQL Server
+
 #### Cosmos DB
 
 - **What is it?**
@@ -2275,6 +2354,14 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 - **Documentation Reference:**
   [Azure Cosmos DB Documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/)
+
+- **Key Points**:
+  - Globally distributed NoSQL database with low latency
+  - Multi-model support (document, key-value, graph, column-family)
+  - Automatic scaling with provisioned throughput (RUs)
+  - Five consistency levels for different application needs
+  - Built-in global distribution with multi-region writes
+  - 99.999% availability SLA for multi-region deployments
 
 ### Azure Management and Deployment Tools
 
@@ -3008,7 +3095,156 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 
 ## Security, Privacy, and Compliance
 
-### Azure Security Features
+### Azure Identity, Access, and Security
+
+#### Azure Identity, Access, and Security Overview
+
+- **Definition**: Azure's comprehensive security framework that manages identities, controls access, and protects resources.
+
+- **Core Components**:
+
+  1. **Zero Trust Security Model**:
+
+     ```plaintext
+     Zero Trust Principles:
+     ├── Never Trust, Always Verify
+     │   ├── Continuous validation
+     │   └── Least privilege access
+     ├── Assume Breach
+     │   ├── Micro-segmentation
+     │   └── Just-in-time access
+     ├── Verify Explicitly
+     │   ├── Strong authentication
+     │   └── Device health checks
+     └── Security Controls
+         ├── Identity verification
+         ├── Device compliance
+         └── Network security
+     ```
+
+  2. **Defense in Depth**:
+
+     ```plaintext
+     Defense Layers:
+     ├── Physical Security
+     │   ├── Data center security
+     │   └── Hardware protection
+     ├── Identity & Access
+     │   ├── Authentication
+     │   └── Authorization
+     ├── Perimeter Security
+     │   ├── DDoS protection
+     │   └── Firewall rules
+     ├── Network Security
+     │   ├── Network segmentation
+     │   └── Traffic filtering
+     ├── Compute Security
+     │   ├── Host security
+     │   └── Application security
+     ├── Application Security
+     │   ├── Secure coding
+     │   └── Input validation
+     └── Data Security
+         ├── Encryption
+         └── Data classification
+     ```
+
+  3. **Microsoft Entra ID**:
+
+     ```plaintext
+     Entra ID Features:
+     ├── Identity Management
+     │   ├── User accounts
+     │   ├── Groups
+     │   └── Device management
+     ├── Authentication
+     │   ├── Single Sign-On (SSO)
+     │   ├── Multi-Factor Authentication (MFA)
+     │   └── Passwordless authentication
+     ├── Application Management
+     │   ├── App registration
+     │   ├── Enterprise applications
+     │   └── App proxy
+     └── Security Features
+         ├── Conditional Access
+         ├── Identity Protection
+         └── Privileged Identity Management
+     ```
+
+  4. **Role-Based Access Control (RBAC)**:
+
+     ```plaintext
+     RBAC Components:
+     ├── Security Principal
+     │   ├── User (individual user account)
+     │   ├── Group (collection of users)
+     │   └── Service Principal (application or service)
+     ├── Role Definition
+     │   ├── Permissions (allowed actions)
+     │   └── Scope (where permissions apply)
+     ├── Scope
+     │   ├── Subscription
+     │   ├── Resource Group
+     │   └── Individual Resource
+     └── Built-in Roles
+         ├── Owner (full access)
+         ├── Contributor (create/manage resources)
+         └── Reader (view resources)
+     ```
+
+  5. **Security Features**:
+
+     ```plaintext
+     Security Tools:
+     ├── Microsoft Defender for Cloud
+     │   ├── Cloud Security Posture Management (CSPM)
+     │   ├── Cloud Workload Protection (CWP)
+     │   ├── Threat Protection
+     │   └── Security Recommendations
+     ├── Microsoft Defender for Servers
+     │   ├── Endpoint Protection
+     │   └── Vulnerability Assessment
+     ├── Microsoft Defender for Storage
+     │   ├── Malware Scanning
+     │   └── Threat Detection
+     ├── Microsoft Defender for SQL
+     │   ├── Advanced Threat Protection
+     │   └── Vulnerability Assessment
+     ├── Microsoft Defender for Containers
+     │   ├── Container Security
+     │   └── Kubernetes Protection
+     ├── Azure Key Vault
+     │   ├── Secrets
+     │   ├── Keys
+     │   └── Certificates
+     ├── Azure DDoS Protection
+     │   ├── Network protection
+     │   └── Attack mitigation
+     └── Azure Firewall
+         ├── Network filtering
+         └── Threat intelligence
+     ```
+
+- **Microsoft Defender Overview**:
+
+  ```plaintext
+  Defender Capabilities:
+  ├── Unified Security
+  │   ├── Centralized Management
+  │   └── Integrated Protection
+  ├── Advanced Protection
+  │   ├── AI-Powered Detection
+  │   └── Real-time Monitoring
+  └── Compliance
+      ├── Built-in Standards
+      └── Custom Policies
+  ```
+
+- **Key Points**:
+  - **Physical Security**: Always managed by the cloud provider
+  - **Data Security**: Always shared responsibility
+  - **Application Security**: Varies by service model
+  - **Network Security**: Varies by service model
 
 #### Microsoft Defender for Cloud
 
@@ -3611,6 +3847,14 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 - **Documentation Reference:**
   [Azure Pricing Documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/)
 
+- **Key Points**:
+  - Pay-as-you-go offers flexibility with no upfront costs
+  - Reserved Instances provide significant savings for predictable workloads
+  - Enterprise Agreements offer volume discounts and custom terms
+  - Free tier available for 12 months with $200 credit
+  - Use pricing calculator to estimate costs before deployment
+  - Monitor and optimize costs continuously
+
 #### Cost Management
 
 - **What is it?**
@@ -3829,6 +4073,14 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 
 - **Documentation Reference:**
   [Azure Support Documentation](https://azure.microsoft.com/en-us/support/plans)
+
+- **Key Points**:
+  - Basic support is free with community forums and documentation
+  - Developer support includes email support during business hours
+  - Standard support provides 24/7 phone and email support
+  - Professional Direct includes technical account manager
+  - Higher support tiers offer faster response times
+  - Choose support level based on business criticality
 
 #### Service Level Agreements
 
@@ -4621,464 +4873,3 @@ Azure's compliance offerings help organizations meet regulatory requirements and
         ├── Data protection
         └── Privacy controls
     ```
-
-### Reference Materials
-
-  Essential reference documents and resources.
-
-- **Practical Example:**
-  Reference collection:
-
-  ```plaintext
-  References:
-  ├── Service Limits
-  │   ├── Compute
-  │   ├── Storage
-  │   └── Networking
-  ├── Pricing
-  │   ├── Calculators
-  │   └── Cost estimates
-  ├── Compliance
-  │   ├── Standards
-  │   └── Certifications
-  └── Security
-      ├── Best practices
-      └── Guidelines
-  ```
-
-- **Reference Types:**
-  - **Service Limits:**
-
-    ```plaintext
-    Service Limits:
-    ├── Compute
-    │   ├── VM sizes
-    │   └── Quotas
-    ├── Storage
-    │   ├── Capacity
-    │   └── Performance
-    └── Networking
-        ├── Bandwidth
-        └── Connections
-    ```
-
-  - **Pricing:**
-
-    ```plaintext
-    Pricing References:
-    ├── Calculators
-    │   ├── TCO
-    │   └── Cost estimation
-    ├── Models
-    │   ├── Pay-as-you-go
-    │   └── Reserved
-    └── Optimization
-        ├── Best practices
-        └── Tools
-    ```
-
-  - **Compliance:**
-
-    ```plaintext
-    Compliance References:
-    ├── Standards
-    │   ├── ISO
-    │   └── SOC
-    ├── Certifications
-    │   ├── Industry
-    │   └── Regional
-    └── Documentation
-        ├── Policies
-        └── Procedures
-    ```
-
-### Practice Scenarios
-
-  Real-world scenarios for hands-on practice.
-
-- **Practical Example:**
-  Practice exercises:
-
-  ```plaintext
-  Scenarios:
-  ├── Basic Setup
-  │   ├── Resource groups
-  │   └── Virtual networks
-  ├── Application Deployment
-  │   ├── Web apps
-  │   └── Databases
-  ├── Security Implementation
-  │   ├── Microsoft Defender for Cloud
-  │   └── Key Vault
-  └── Cost Management
-      ├── Budget setup
-      └── Optimization
-  ```
-
-- **Scenario Types:**
-  - **Basic Scenarios:**
-
-    ```plaintext
-    Basic Exercises:
-    ├── Resource Management
-    │   ├── Creation
-    │   └── Configuration
-    ├── Networking
-    │   ├── VNet setup
-    │   └── Security rules
-    └── Storage
-        ├── Account creation
-        └── Data management
-    ```
-
-  - **Advanced Scenarios:**
-
-    ```plaintext
-    Advanced Exercises:
-    ├── Application Deployment
-    │   ├── Multi-tier
-    │   └── Scaling
-    ├── Security
-    │   ├── Compliance
-    │   └── Monitoring
-    └── Optimization
-        ├── Performance
-        └── Cost
-    ```
-
-  - **Troubleshooting:**
-
-    ```plaintext
-    Troubleshooting:
-    ├── Common Issues
-    │   ├── Connectivity
-    │   └── Performance
-    ├── Security
-    │   ├── Access
-    │   └── Compliance
-    └── Cost
-        ├── Optimization
-        └── Management
-    ```
-
-### Useful Links
-
-  Essential online resources and references.
-
-- **Practical Example:**
-  Resource collection:
-
-  ```plaintext
-  Online Resources:
-  ├── Documentation
-  │   ├── Azure docs
-  │   └── Best practices
-  ├── Learning
-  │   ├── Microsoft Learn
-  │   └── Training
-  ├── Community
-  │   ├── Forums
-  │   └── Blogs
-  └── Tools
-      ├── Azure portal
-      └── CLI
-  ```
-
-- **Link Categories:**
-  - **Documentation:**
-
-    ```plaintext
-    Documentation Links:
-    ├── Official Docs
-    │   ├── Service docs
-    │   └── Architecture
-    ├── Best Practices
-    │   ├── Security
-    │   └── Performance
-    └── Reference
-        ├── API docs
-        └── SDK docs
-    ```
-
-  - **Learning:**
-
-    ```plaintext
-    Learning Links:
-    ├── Courses
-    │   ├── Microsoft Learn
-    │   └── Pluralsight
-    ├── Practice
-    │   ├── Labs
-    │   └── Tests
-    └── Community
-        ├── Forums
-        └── Blogs
-    ```
-
-  - **Tools:**
-
-    ```plaintext
-    Tool Links:
-    ├── Azure Portal
-    │   ├── Management
-    │   └── Monitoring
-    ├── CLI Tools
-    │   ├── Azure CLI
-    │   └── PowerShell
-    └── Development
-        ├── SDKs
-        └── APIs
-    ```
-
-#### Azure Identity, Access, and Security
-
-- **Definition**: Azure's comprehensive security framework that manages identities, controls access, and protects resources.
-
-- **Core Components**:
-
-  1. **Zero Trust Security Model**:
-
-     ```plaintext
-     Zero Trust Principles:
-     ├── Never Trust, Always Verify
-     │   ├── Continuous validation
-     │   └── Least privilege access
-     ├── Assume Breach
-     │   ├── Micro-segmentation
-     │   └── Just-in-time access
-     ├── Verify Explicitly
-     │   ├── Strong authentication
-     │   └── Device health checks
-     └── Security Controls
-         ├── Identity verification
-         ├── Device compliance
-         └── Network security
-     ```
-
-  2. **Defense in Depth**:
-
-     ```plaintext
-     Defense Layers:
-     ├── Physical Security
-     │   ├── Data center security
-     │   └── Hardware protection
-     ├── Identity & Access
-     │   ├── Authentication
-     │   └── Authorization
-     ├── Perimeter Security
-     │   ├── DDoS protection
-     │   └── Firewall rules
-     ├── Network Security
-     │   ├── Network segmentation
-     │   └── Traffic filtering
-     ├── Compute Security
-     │   ├── Host security
-     │   └── Application security
-     ├── Application Security
-     │   ├── Secure coding
-     │   └── Input validation
-     └── Data Security
-         ├── Encryption
-         └── Data classification
-     ```
-
-  3. **Microsoft Entra ID**:
-
-     ```plaintext
-     Entra ID Features:
-     ├── Identity Management
-     │   ├── User accounts
-     │   ├── Groups
-     │   └── Device management
-     ├── Authentication
-     │   ├── Single Sign-On (SSO)
-     │   ├── Multi-Factor Authentication (MFA)
-     │   └── Passwordless authentication
-     ├── Application Management
-     │   ├── App registration
-     │   ├── Enterprise applications
-     │   └── App proxy
-     └── Security Features
-         ├── Conditional Access
-         ├── Identity Protection
-         └── Privileged Identity Management
-     ```
-
-  4. **Role-Based Access Control (RBAC)**:
-
-     ```plaintext
-     RBAC Components:
-     ├── Security Principal
-     │   ├── User (individual user account)
-     │   ├── Group (collection of users)
-     │   └── Service Principal (application or service)
-     ├── Role Definition
-     │   ├── Permissions (allowed actions)
-     │   └── Scope (where permissions apply)
-     ├── Scope
-     │   ├── Subscription
-     │   ├── Resource Group
-     │   └── Individual Resource
-     └── Built-in Roles
-         ├── Owner (full access)
-         ├── Contributor (create/manage resources)
-         └── Reader (view resources)
-     ```
-
-  5. **Security Features**:
-
-     ```plaintext
-     Security Tools:
-     ├── Microsoft Defender for Cloud
-     │   ├── Cloud Security Posture Management (CSPM)
-     │   ├── Cloud Workload Protection (CWP)
-     │   ├── Threat Protection
-     │   └── Security Recommendations
-     ├── Microsoft Defender for Servers
-     │   ├── Endpoint Protection
-     │   └── Vulnerability Assessment
-     ├── Microsoft Defender for Storage
-     │   ├── Malware Scanning
-     │   └── Threat Detection
-     ├── Microsoft Defender for SQL
-     │   ├── Advanced Threat Protection
-     │   └── Vulnerability Assessment
-     ├── Microsoft Defender for Containers
-     │   ├── Container Security
-     │   └── Kubernetes Protection
-     ├── Azure Key Vault
-     │   ├── Secrets
-     │   ├── Keys
-     │   └── Certificates
-     ├── Azure DDoS Protection
-     │   ├── Network protection
-     │   └── Attack mitigation
-     └── Azure Firewall
-         ├── Network filtering
-         └── Threat intelligence
-     ```
-
-- **Microsoft Defender Overview**:
-
-  ```plaintext
-  Defender Capabilities:
-  ├── Unified Security
-  │   ├── Centralized Management
-  │   └── Integrated Protection
-  ├── Advanced Protection
-  │   ├── AI-Powered Detection
-  │   └── Real-time Monitoring
-  └── Compliance
-      ├── Built-in Standards
-      └── Custom Policies
-  ```
-
-- **Key Points**:
-  - **Physical Security**: Always managed by the cloud provider
-  - **Data Security**: Always shared responsibility
-  - **Application Security**: Varies by service model
-  - **Network Security**: Varies by service model
-
-- **Exam Focus**:
-  - Understanding Entra ID features
-  - RBAC implementation
-  - Security tools and features
-  - Authentication methods
-  - Access control policies
-  - Security best practices
-
-- **Common Exam Questions**:
-  1. "What is the difference between Entra ID and on-premises AD?"
-  2. "How does RBAC work in Azure?"
-  3. "What are the benefits of MFA?"
-  4. "How does Conditional Access enhance security?"
-
-#### Microsoft Defender for Cloud
-
-- **Definition**: A comprehensive cloud security solution that provides unified security management and advanced threat protection across hybrid cloud workloads.
-
-- **Key Components**:
-
-  ```plaintext
-  Defender Components:
-  ├── Defender for Cloud
-  │   ├── Cloud Security Posture Management
-  │   └── Cloud Workload Protection
-  ├── Defender for Servers
-  │   ├── Endpoint Protection
-  │   └── Vulnerability Assessment
-  ├── Defender for Storage
-  │   ├── Malware Scanning
-  │   └── Threat Detection
-  ├── Defender for SQL
-  │   ├── Advanced Threat Protection
-  │   └── Vulnerability Assessment
-  └── Defender for Containers
-      ├── Container Security
-      └── Kubernetes Protection
-  ```
-
-- **Core Features**:
-
-  ```plaintext
-  Defender Features:
-  ├── Security Posture
-  │   ├── Security Score
-  │   └── Recommendations
-  ├── Threat Protection
-  │   ├── Real-time Monitoring
-  │   └── Security Alerts
-  └── Compliance
-      ├── Built-in Standards
-      └── Custom Policies
-  ```
-
-#### Role-Based Access Control (RBAC)
-
-- **What is RBAC?**
-  Role-Based Access Control (RBAC) is a security model that provides fine-grained access management for Azure resources. It helps organizations maintain control over who can access what resources and what actions they can perform.
-
-- **Core Components**:
-
-  ```plaintext
-  RBAC Components:
-  ├── Security Principal
-  │   ├── User (individual user account)
-  │   ├── Group (collection of users)
-  │   └── Service Principal (application or service)
-  ├── Role Definition
-  │   ├── Permissions (allowed actions)
-  │   └── Scope (where permissions apply)
-  ├── Scope
-  │   ├── Subscription
-  │   ├── Resource Group
-  │   └── Individual Resource
-  └── Built-in Roles
-      ├── Owner (full access)
-      ├── Contributor (create/manage resources)
-      └── Reader (view resources)
-  ```
-
-- **Key Features**:
-  - **Least Privilege**: Users are granted only the permissions they need
-  - **Hierarchical Access**: Permissions can be assigned at different levels
-  - **Flexible Assignment**: Roles can be assigned to users, groups, or service principals
-  - **Built-in Roles**: Predefined roles for common scenarios
-  - **Custom Roles**: Ability to create custom roles for specific needs
-
-- **Common Use Cases**:
-  - Managing access to Azure resources
-  - Implementing security policies
-  - Controlling who can view or modify resources
-  - Enforcing compliance requirements
-  - Delegating administrative tasks
-
-- **Best Practices**:
-  - Use built-in roles when possible
-  - Follow the principle of least privilege
-  - Regularly review and audit role assignments
-  - Use groups instead of individual users
-  - Document custom roles and their purposes
-
-- **Documentation Reference:**
-  [Azure RBAC Documentation](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
