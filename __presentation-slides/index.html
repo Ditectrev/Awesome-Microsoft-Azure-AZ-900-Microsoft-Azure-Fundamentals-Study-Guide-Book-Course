@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Microsoft Azure AZ-900 Fundamentals</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/serif.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+  <style>
+    .fragment.blur {
+      filter: blur(1rem);
+    }
+
+    .fragment.blur.visible {
+      filter: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        <textarea data-template>
+# Welcome <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+## Introduction <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### What is Microsoft Azure? <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Global Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 200+ Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Enterprise-Grade <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Security & Compliance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Open Source Friendly <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Brief History and Evolution of Azure <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* 2010: Initial launch as Windows Azure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 2014: Renamed to Microsoft Azure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 2016: Introduction of Azure Stack <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 2018: Launch of Azure Arc <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 2020: Introduction of Azure Synapse Analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 2022: Launch of Azure OpenAI Service <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Who Uses Azure <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Enterprise organizations<!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Small and medium businesses <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Startups and developers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Government agencies <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Educational institutions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Healthcare providers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Financial services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Manufacturing companies <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Key Azure Concepts for AZ-900 <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### Resource Groups <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* A web app (App Service) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* A database (Azure SQL Database) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* A storage account for images <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* A virtual network for connectivity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Subscriptions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Billing Boundary <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Access Control <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Resource Limits <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Subscriptions Types <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Free Account <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Pay-As-You-Go <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Enterprise Agreement <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Practical Example <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|5|8|2,5,8|2|3|4|3,4|2-4|5|6|7|6,7|5-7|8|9|10|9,10|8-10]
+Root Management Group
+├── North America
+│   ├── Production Subscriptions
+│   └── Development Subscriptions
+├── Europe
+│   ├── Production Subscriptions
+│   └── Development Subscriptions
+└── Asia
+    ├── Production Subscriptions
+    └── Development Subscriptions
+```
+
+---
+
+### Azure Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Geographic Distribution <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data Residency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Latency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Service Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+---
+
+### Popular Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* East US <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* West US 2 <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* West Europe <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Southeast Asia <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Availability Zones <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* High Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 99.99% SLA <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Practical Example <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4]
+Region: East US
+├── Availability Zone 1: Primary data center
+├── Availability Zone 2: Backup data center
+└── Availability Zone 3: Disaster recovery
+```
+
+---
+
+### Region Pairs <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* High Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data Residency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Maintenance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Region Pair Example <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|2,3|4|5|4,5|6|7|6,7|8|9|8,9]
+North America Region Pairs:
+├── East US
+│   └── West US
+├── Central US
+│   └── East US 2
+├── North Central US
+│   └── South Central US
+└── West US 2
+    └── West US 3
+```
+
+---
+
+### Common Use Cases <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
+Common Scenarios:
+├── Disaster Recovery
+│   ├── Business continuity
+│   └── Data protection
+├── High Availability
+│   ├── Multi-region deployment
+│   └── Load balancing
+├── Compliance
+│   ├── Data residency
+│   └── Regulatory requirements
+└── Performance
+    ├── Global distribution
+    └── Low latency
+```
+
+---
+
+### Sovereign Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Sovereign regions are special Azure regions that are physically and logically isolated from the main Azure regions, designed to meet specific data sovereignty, compliance, and security requirements.
+
+---
+
+### Available Sovereign Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
+Sovereign Regions:
+├── US Government
+│   ├── US Gov Virginia
+│   ├── US Gov Texas
+│   ├── US Gov Arizona
+│   └── US Gov DoD
+├── China
+│   ├── China East
+│   └── China North
+└── Germany
+    ├── Germany Central
+    └── Germany Northeast
+```
+
+---
+
+### Sovereign Features <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
+Sovereign Features:
+├── Physical Isolation
+│   ├── Separate data centers
+│   └── Dedicated infrastructure
+├── Logical Isolation
+│   ├── Separate network
+│   └── Access controls
+├── Compliance
+│   ├── Government standards
+│   └── Industry regulations
+└── Operations
+    ├── Local operations
+    └── Specialized support
+```
+
+---
+
+### Sovereign Use Cases <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
+Common Scenarios:
+├── Government
+│   ├── Federal agencies
+│   ├── Defense contracts
+│   └── Public sector
+├── Regulated Industries
+│   ├── Healthcare
+│   ├── Financial services
+│   └── Critical infrastructure
+└── Compliance Requirements
+    ├── Data sovereignty
+    ├── Regulatory compliance
+    └── Security standards
+```
+
+---
+
+### Important Considerations <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Separate Azure portal and management tools <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Different service availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Specialized compliance certifications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Unique pricing and licensing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Restricted access requirements <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Separate support channels <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Datacenters <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Azure datacenters are physical facilities that house the computing infrastructure for Azure services, designed with multiple layers of security, redundancy, and environmental controls.
+
+---
+
+### Datacenter Components <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20]
+Datacenter Components:
+├── Physical Security
+│   ├── 24/7 security personnel
+│   ├── Biometric access
+│   ├── Video surveillance
+│   └── Security perimeters
+├── Infrastructure
+│   ├── Power systems
+│   │   ├── Multiple power feeds
+│   │   ├── UPS systems
+│   │   └── Backup generators
+│   ├── Cooling systems
+│   │   ├── Redundant cooling
+│   │   └── Temperature control
+│   └── Network
+│       ├── Fiber connectivity
+│       └── Redundant paths
+└── Environmental Controls
+    ├── Fire suppression
+    ├── Flood protection
+    └── Climate control
+```
+
+---
+
+### Security Measures <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
+Security Measures:
+├── Physical Security
+│   ├── Access control
+│   ├── Security cameras
+│   └── Intrusion detection
+├── Network Security
+│   ├── DDoS protection
+│   ├── Firewalls
+│   └── Encryption
+└── Operational Security
+    ├── Staff screening
+    ├── Security protocols
+    └── Incident response
+```
+
+---
+
+### Environmental Features <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
+Environmental Features:
+├── Power Management
+│   ├── Energy efficiency
+│   ├── Renewable energy
+│   └── Power monitoring
+├── Cooling Systems
+│   ├── Efficient cooling
+│   ├── Temperature monitoring
+│   └── Humidity control
+└── Sustainability
+    ├── Green initiatives
+    ├── Waste reduction
+    └── Carbon footprint
+```
+
+---
+
+### Operations <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
+Operations:
+├── Monitoring
+│   ├── 24/7 monitoring
+│   ├── Performance tracking
+│   └── Health checks
+├── Maintenance
+│   ├── Preventive maintenance
+│   ├── Equipment updates
+│   └── System upgrades
+└── Support
+    ├── Technical support
+    ├── Emergency response
+    └── Service restoration
+```
+
+---
+
+### Certifications <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
+Certifications:
+├── ISO Standards
+│   ├── ISO 27001
+│   ├── ISO 27018
+│   └── ISO 22301
+├── Industry Standards
+│   ├── SOC 1/2/3
+│   ├── PCI DSS
+│   └── HIPAA
+└── Regional Compliance
+    ├── GDPR
+    ├── CCPA
+    └── Local regulations
+```
+
+---
+
+### Datacenter Considerations <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Multiple layers of redundancy <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Continuous monitoring and maintenance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Regular security audits <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Environmental impact management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Compliance with local regulations <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Disaster recovery capabilities <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Core Azure Services <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### 5. Virtual Machines (VMs) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Full Control <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Flexible Sizing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Multiple OS Support <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Common Use Cases:
+* Web servers and applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Development and testing environments <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Database servers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Legacy application hosting <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Cost <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### 6. Azure App Service <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Multiple Languages <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Built-in Scaling <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* SSL/TLS Support <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Git Integration <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+App Service Plans:
+* Free <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Shared <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Basic <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Standard <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Premium <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### 7. Azure Functions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
+
+Key Benefits:
+* Serverless <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Pay-per-use <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Event-driven <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Common Triggers:
+* HTTP <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Timer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Blob Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Queue Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Use Cases:
+* Image processing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data validation <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* IoT data processing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* API endpoints <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### 8. Azure Storage <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Azure Storage is a cloud storage solution for modern data storage scenarios. It provides a massively scalable object store, a file system service, a messaging store, and a NoSQL store.
+
+Storage Services:
+* Blob Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* File Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Queue Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Table Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Redundancy Options:
+* LRS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* ZRS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* GRS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Cost <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### 10. Azure Virtual Network <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Azure Virtual Network is the fundamental building block for your private network in Azure. It enables Azure resources to securely communicate with each other, the internet, and on-premises networks.
+
+Key Features:
+* Isolation <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Connectivity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Security <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* DNS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Components:
+* Subnets <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Route Tables <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Peering <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Use Cases:
+* Multi-tier applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Hybrid cloud deployments <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Secure application architectures <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### 11. Azure Load Balancer <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Azure Load Balancer distributes incoming network traffic across multiple backend resources to ensure high availability and reliability.
+
+Types of Load Balancers:
+* Public Load Balancer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Internal Load Balancer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Load Balancing Methods:
+* Round Robin <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Source IP Affinity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Health Probes:
+* Monitor the health of your backend instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Automatically remove unhealthy instances from the pool <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Benefits:
+* High availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Scalability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Fault tolerance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### 12. Azure Active Directory (Azure AD) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Azure Active Directory is Microsoft's cloud-based identity and access management service. It helps your employees sign in and access resources.
+
+Key Features:
+* Single Sign-On (SSO) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Multi-Factor Authentication (MFA) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Conditional Access <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Application Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Directory Types:
+* Azure AD Free <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure AD Premium P1 <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure AD Premium P2 <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Use Cases:
+* Employee identity management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Application access control <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* B2B collaboration <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Exam Preparation Tips <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### Understanding the AZ-900 Exam <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+The Microsoft Azure Fundamentals (AZ-900) exam validates your foundational knowledge of cloud services and how those services are provided with Microsoft Azure.
+
+Exam Details:
+* Duration <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Questions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Passing Score <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Question Types <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Exam Domains:
+* Cloud Concepts (20-25%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Architecture and Services (35-40%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Management and Governance (30-35%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Pricing and Support (20-25%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Study Strategy <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Recommended Approach:
+* Start with Fundamentals <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Hands-on Practice <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Focus on Core Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Understand Pricing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Practice Tests <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Key Areas to Master:
+* Shared Responsibility Model <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Service Tiers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Regions and Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Security Features <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Exam Day Tips <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+Before the Exam:
+* Get Good Sleep <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Arrive Early <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Bring ID <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+During the Exam:
+* Read Carefully <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Flag Questions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Manage Time <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Review Answers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Common Mistakes to Avoid:
+* Rushing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Overthinking <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Ignoring Keywords <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Thank You! <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+You're now ready to start your Azure journey!
+
+* 📚 Continue studying with our comprehensive course materials <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 🎯 Take practice exams to test your knowledge <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 🚀 Create a free Azure account and start exploring <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 📝 Schedule your AZ-900 exam when you're confident <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+Good luck with your Azure Fundamentals certification! <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure App Service Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* App Service Plans <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Web Apps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* API Apps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Mobile Apps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Function Apps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Deployment Slots <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Custom Domains <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Application Insights <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Functions Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Serverless Computing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Triggers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Bindings <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Runtime Versions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Hosting Plans <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Durable Functions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Function Apps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Monitoring <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Container Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Container Instances (ACI) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Kubernetes Service (AKS) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Container Registry (ACR) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Service Fabric <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Container Orchestration <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Docker Support <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Helm Charts <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Container Networking <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Storage Account Types Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* General-Purpose v2 <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* General-Purpose v1 <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Blob Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Premium Performance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Storage Account Tiers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Redundancy Options <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Access Tiers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Storage Account Keys <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Virtual Networking Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Virtual Network (VNet) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Subnets <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Network Security Groups (NSG) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Route Tables <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* VNet Peering <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Service Endpoints <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Private Link <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* DNS Resolution <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Load Balancing Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Load Balancer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Application Gateway <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Front Door <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Traffic Manager <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Load Balancer SKUs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Health Probes <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Load Balancing Rules <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Backend Pools <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Core Azure Services <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### Core Azure Architectural Components <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Resource Groups <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Subscriptions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Management Groups <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Regions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Availability Zones <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Core Azure Services <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Compute Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Storage Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Networking Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Database Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* AI and Machine Learning <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Analytics Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Compute Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Virtual Machines <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure App Service <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Functions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Container Instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Kubernetes Service (AKS) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Batch <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Spring Cloud <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Cloud Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Storage Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Blob Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure File Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Queue Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Table Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Disk Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Data Lake Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure NetApp Files <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Archive Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Networking Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Virtual Network (VNet) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Load Balancer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Application Gateway <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure VPN Gateway <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure ExpressRoute <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Content Delivery Network (CDN) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Traffic Manager <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Front Door <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Bastion <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Database Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure SQL Database <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Cosmos DB <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Database for MySQL <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Database for PostgreSQL <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Redis Cache <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Database for MariaDB <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Synapse Analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Database Migration Service <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure AI and Machine Learning Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Machine Learning <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Cognitive Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Bot Service <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Computer Vision <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Speech Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Language Understanding (LUIS) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Text Analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Personalizer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Analytics Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Synapse Analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure HDInsight <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Data Factory <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Stream Analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Data Lake Analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Databricks <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Analysis Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Data Explorer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Security Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Microsoft Entra ID (Azure AD) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Microsoft Defender for Cloud <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Key Vault <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure DDoS Protection <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Firewall <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Information Protection <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Sentinel <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Private Link <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure IoT Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure IoT Hub <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure IoT Central <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Digital Twins <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Sphere <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Time Series Insights <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Maps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Event Hubs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Notification Hubs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure DevOps and Developer Tools Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure DevOps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure DevTest Labs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure App Configuration <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure API Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure SignalR Service <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Static Web Apps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Web PubSub <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Lab Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Management and Governance Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Resource Manager (ARM) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Policy <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Blueprints <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Management Groups <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Tags <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Resource Locks <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Cost Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Automation <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Migration and Hybrid Services Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Migrate <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Site Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Arc <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Stack <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Data Box <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Database Migration Service <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Backup <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure File Sync <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Compliance and Privacy Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Compliance Offerings <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Compliance Manager <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Service Trust Portal <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data Protection <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Privacy Controls <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data Residency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Audit and Reporting <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Industry Standards <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Pricing and Cost Optimization Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Pay-as-you-go <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Reserved Instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Enterprise Agreement <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Free Tier <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Spot Instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Hybrid Benefit <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Dev/Test Pricing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Cost Optimization Tools <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Support and Service Level Agreements Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Basic (Free) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Developer ($29/month) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Standard ($100/month) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Professional Direct ($1000/month) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Compute SLAs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Storage SLAs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Database SLAs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Network SLAs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Exam Preparation and Study Tips Deep Dive <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Create a Study Plan <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Use Microsoft Learn <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Practice Tests <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Hands-on Experience <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Focus on Weak Areas <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Exam Strategy <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Key Topics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Study Resources <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Management Tools <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Portal <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure CLI <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure PowerShell <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Resource Manager (ARM) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure DevOps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Monitoring and Advisor <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Monitor <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Application Insights <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Log Analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Network Watcher <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Advisor <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Application Gateway <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Traffic Manager <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Security, Privacy, and Compliance <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### Azure Security Features <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Zero Trust Security Model <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Defense in Depth <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Microsoft Entra ID (Azure AD) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Role-Based Access Control (RBAC) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Microsoft Defender for Cloud <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Key Vault <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure DDoS Protection <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Firewall <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Compliance and Privacy <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Compliance Offerings <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Compliance Manager <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Service Trust Portal <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data Protection <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Governance <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Management Groups <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Subscriptions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Resource Groups <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Tags <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Policy <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Blueprints <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Resource Locks <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Azure Pricing and Support <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### Azure Pricing Models <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Pay-as-you-go <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Reserved Instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Enterprise Agreement <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Free Tier <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Cost Management and Optimization <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Azure Cost Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Pricing Calculator <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* TCO Calculator <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Resource Tagging <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Budgeting and Alerts <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Support Plans <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Basic (Free) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Developer ($29/month) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Standard ($100/month) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Professional Direct ($1000/month) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Service Level Agreements (SLAs) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Compute Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Storage Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Networking <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Database Services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Monitoring <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Exam Preparation and Tips <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### AZ-900 Exam Structure <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* 60 minutes <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* 40-60 questions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Multiple choice and multiple select <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Passing score: 700/1000 <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Cost: $99 USD <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Exam Topics Breakdown <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Cloud Concepts (15-20%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Core Azure Services (30-35%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Security, Privacy, and Compliance (25-30%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Pricing and Support (20-25%) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Study and Exam Tips <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Create a Study Plan <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Use Official Resources <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Practice Tests <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Focus on Weak Areas <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Time Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Read Carefully <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Process of Elimination <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Flag Questions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+## Conclusion and Next Steps <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### Key Takeaways <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Understand cloud concepts and Azure fundamentals <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Know the core Azure services and management tools <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Be familiar with security, compliance, and governance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Learn Azure pricing, cost management, and support options <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Prepare effectively for the AZ-900 exam <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Next Steps After AZ-900 <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Pursue advanced certifications (AZ-104, AZ-204, AZ-305, etc.) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Get hands-on experience with Azure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Join the Azure community and forums <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Continue learning and stay updated <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Additional Resources <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Microsoft Learn <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Official Azure Documentation <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Community forums and blogs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Online courses and workshops <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+        </textarea>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+
+</html>
