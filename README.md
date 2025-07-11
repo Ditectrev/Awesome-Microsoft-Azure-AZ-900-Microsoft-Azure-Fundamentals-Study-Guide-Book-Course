@@ -602,7 +602,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 ### Azure as a Cloud Platform
 
-#### Understanding Azure's Service Models
+#### Cloud Service Models
 
 1. **Infrastructure as a Service (IaaS)**
    - **What it is:**
