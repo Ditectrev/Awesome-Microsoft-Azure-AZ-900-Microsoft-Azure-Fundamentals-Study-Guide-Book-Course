@@ -600,9 +600,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - Global reach with local data centers
   - Reduced IT management overhead
 
-### Azure as a Cloud Platform
-
-#### Cloud Service Models
+### Cloud Service Models
 
 1. **Infrastructure as a Service (IaaS)**
    - **What it is:**
@@ -752,300 +750,6 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - SaaS delivers ready-to-use applications with minimal setup
   - Choose service model based on control needs vs. management overhead
   - Higher service levels reduce operational complexity
-
-#### Azure's Core Capabilities
-
-1. **Compute Services**
-   - **Virtual Machines:**
-
-     ```plaintext
-     Common VM Scenarios:
-     ├── Web Server: B2s VM
-     │   ├── 2 vCPUs
-     │   ├── 4 GB RAM
-     │   └── Cost: ~$50/month
-     ├── Database Server: D4s v3
-     │   ├── 4 vCPUs
-     │   ├── 16 GB RAM
-     │   └── Cost: ~$200/month
-     └── Application Server: D2s v3
-         ├── 2 vCPUs
-         ├── 8 GB RAM
-         └── Cost: ~$100/month
-     ```
-
-   - **App Service:**
-
-     ```plaintext
-     Web Application Stack:
-     ├── Frontend: Static Web Apps
-     │   ├── React/Angular/Vue
-     │   └── Cost: Free tier available
-     ├── Backend: App Service
-     │   ├── .NET/Node.js/Python
-     │   └── Cost: ~$75/month
-     └── Database: Azure SQL
-         ├── Basic tier
-         └── Cost: ~$5/month
-     ```
-
-   - **Azure Functions:**
-
-     ```plaintext
-     Serverless Architecture:
-     ├── HTTP Trigger: API endpoints
-     │   └── Cost: Pay per execution
-     ├── Timer Trigger: Scheduled tasks
-     │   └── Cost: Pay per execution
-     └── Event Trigger: Event processing
-         └── Cost: Pay per execution
-     ```
-
-   - **Virtual Machine Scale Sets (VMSS):**
-
-     ```plaintext
-     Scale Set Features:
-     ├── Automatic Scaling
-     │   ├── Based on CPU usage
-     │   ├── Based on memory usage
-     │   └── Based on custom metrics
-     ├── High Availability
-     │   ├── Multiple fault domains
-     │   └── Multiple update domains
-     ├── Load Balancing
-     │   ├── Automatic distribution
-     │   └── Health monitoring
-     └── Cost Optimization
-         ├── Spot instances
-         └── Reserved instances
-     ```
-
-   - **Availability Sets:**
-
-     ```plaintext
-     Availability Features:
-     ├── Fault Domains
-     │   ├── Separate power sources
-     │   ├── Separate network switches
-     │   └── Separate cooling systems
-     ├── Update Domains
-     │   ├── Controlled updates
-     │   └── Zero downtime maintenance
-     └── High Availability
-         ├── 99.95% SLA
-         └── Automatic failover
-     ```
-
-   - **Azure Virtual Desktop:**
-
-     ```plaintext
-     AVD Features:
-     ├── Virtual Desktops
-     │   ├── Windows 10/11
-     │   ├── Windows Server
-     │   └── Custom images
-     ├── Remote Apps
-     │   ├── Individual applications
-     │   └── Application groups
-     ├── Management
-     │   ├── Azure portal
-     │   ├── PowerShell
-     │   └── REST API
-     └── Security
-         ├── Microsoft Entra ID integration
-         ├── MFA support
-         └── Conditional access
-     ```
-
-2. **Storage Solutions**
-   - **Blob Storage:**
-
-     ```plaintext
-     Common Use Cases:
-     ├── Website Assets
-     │   ├── Images
-     │   ├── Videos
-     │   └── Cost: ~$0.02/GB
-     ├── Backup Storage
-     │   ├── Database backups
-     │   ├── File backups
-     │   └── Cost: ~$0.01/GB
-     └── Big Data Storage
-         ├── Log files
-         ├── Analytics data
-         └── Cost: ~$0.02/GB
-     ```
-
-   - **File Storage:**
-
-     ```plaintext
-     Enterprise File Sharing:
-     ├── User Home Directories
-     │   └── Cost: ~$0.06/GB
-     ├── Application Data
-     │   └── Cost: ~$0.06/GB
-     └── Backup Storage
-         └── Cost: ~$0.06/GB
-     ```
-
-   - **Queue Storage:**
-
-     ```plaintext
-     Message Processing:
-     ├── Task Queues
-     │   └── Cost: ~$0.0004/10,000 messages
-     ├── Event Processing
-     │   └── Cost: ~$0.0004/10,000 messages
-     └── Load Leveling
-         └── Cost: ~$0.0004/10,000 messages
-     ```
-
-3. **Networking**
-   - **Virtual Network:**
-
-     ```plaintext
-     Network Architecture:
-     ├── Subnets
-     │   ├── Web Tier
-     │   ├── Application Tier
-     │   └── Database Tier
-     ├── Network Security Groups
-     │   ├── Inbound Rules
-     │   └── Outbound Rules
-     └── Route Tables
-         ├── Custom Routes
-         └── System Routes
-     ```
-
-   - **Load Balancer:**
-
-     ```plaintext
-     High Availability Setup:
-     ├── Public Load Balancer
-     │   ├── Internet-facing
-     │   └── Cost: ~$20/month
-     └── Internal Load Balancer
-         ├── Internal traffic
-         └── Cost: ~$20/month
-     ```
-
-   - **Application Gateway:**
-
-     ```plaintext
-     Web Application Security:
-     ├── SSL Termination
-     │   └── Cost: ~$100/month
-     ├── WAF Protection
-     │   └── Cost: ~$200/month
-     └── URL-based Routing
-         └── Cost: Included
-     ```
-
-4. **Databases**
-   - **Azure SQL Database:**
-
-     ```plaintext
-     Database Tiers:
-     ├── Basic
-     │   ├── 5 DTUs
-     │   └── Cost: ~$5/month
-     ├── Standard
-     │   ├── 100 DTUs
-     │   └── Cost: ~$100/month
-     └── Premium
-         ├── 1000 DTUs
-         └── Cost: ~$1000/month
-     ```
-
-   - **Cosmos DB:**
-
-     ```plaintext
-     Global Distribution:
-     ├── Multi-region Write
-     │   └── Cost: ~$0.008/100 RUs
-     ├── Single-region Write
-     │   └── Cost: ~$0.004/100 RUs
-     └── Storage
-         └── Cost: ~$0.25/GB
-     ```
-
-   - **Azure Database for MySQL:**
-
-     ```plaintext
-     Managed MySQL:
-     ├── Basic Tier
-     │   ├── 1 vCore
-     │   └── Cost: ~$25/month
-     └── General Purpose
-         ├── 4 vCores
-         └── Cost: ~$200/month
-     ```
-
-#### Azure Database Services
-
-  Azure Database Services provide fully managed database solutions for various data types and workloads, offering high availability, scalability, and security.
-
-- **Practical Example:**
-  A multi-database application:
-
-  ```plaintext
-  Database Architecture:
-  ├── SQL Database
-  │   ├── Relational data
-  │   └── Transaction processing
-  ├── Cosmos DB
-  │   ├── NoSQL data
-  │   └── Global distribution
-  └── Azure Database for PostgreSQL
-      ├── Open-source database
-      └── Enterprise workloads
-  ```
-
-- **Common Use Cases:**
-  - **Relational Databases:**
-
-    ```plaintext
-    SQL Database:
-    ├── Business Applications
-    │   ├── ERP systems
-    │   └── CRM systems
-    ├── Web Applications
-    │   ├── User data
-    │   └── Transaction data
-    └── Data Warehousing
-        ├── Analytics
-        └── Reporting
-    ```
-
-  - **NoSQL Databases:**
-
-    ```plaintext
-    Cosmos DB:
-    ├── IoT Applications
-    │   ├── Device telemetry
-    │   └── Time-series data
-    ├── Mobile Applications
-    │   ├── User profiles
-    │   └── Session data
-    └── Real-time Analytics
-        ├── Event processing
-        └── Data streaming
-    ```
-
-  - **Open-Source Databases:**
-
-    ```plaintext
-    PostgreSQL:
-    ├── Web Applications
-    │   ├── Content management
-    │   └── User authentication
-    ├── Geospatial Applications
-    │   ├── Location services
-    │   └── Mapping
-    └── Analytics
-        ├── Data processing
-        └── Business intelligence
-    ```
 
 ## Cloud Concepts
 
@@ -1534,6 +1238,182 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - Spot VMs offer significant savings for flexible workloads
   - Always consider high availability with availability sets or zones
   - Monitor performance and scale based on actual usage patterns
+
+#### Virtual Machine Scale Sets (VMSS)
+
+- **What is it?**
+  Azure Virtual Machine Scale Sets provide automatic scaling of virtual machines based on demand or a defined schedule.
+
+- **Practical Example:**
+  A web application with variable traffic:
+
+  ```plaintext
+  Scale Set Configuration:
+  ├── Automatic Scaling
+  │   ├── Based on CPU usage
+  │   ├── Based on memory usage
+  │   └── Based on custom metrics
+  ├── High Availability
+  │   ├── Multiple fault domains
+  │   └── Multiple update domains
+  ├── Load Balancing
+  │   ├── Automatic distribution
+  │   └── Health monitoring
+  └── Cost Optimization
+      ├── Spot instances
+      └── Reserved instances
+  ```
+
+- **Common Use Cases:**
+  - **Web Applications:**
+
+    ```plaintext
+    Web App Scaling:
+    ├── Peak Hours
+    │   ├── Scale out: 10 instances
+    │   └── Handle high traffic
+    ├── Normal Hours
+    │   ├── Scale in: 3 instances
+    │   └── Cost optimization
+    └── Off Hours
+        ├── Scale in: 1 instance
+        └── Minimal cost
+    ```
+
+  - **Batch Processing:**
+
+    ```plaintext
+    Batch Processing:
+    ├── Job Submission
+    │   ├── Scale out: 50 instances
+    │   └── Process jobs
+    ├── Job Completion
+    │   ├── Scale in: 5 instances
+    │   └── Monitor remaining jobs
+    └── Idle State
+        ├── Scale in: 0 instances
+        └── Zero cost
+    ```
+
+- **Documentation Reference:**
+  [Azure Virtual Machine Scale Sets Documentation](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/)
+
+#### Availability Sets
+
+- **What is it?**
+  Availability Sets help ensure that VM applications are available during planned or unplanned maintenance events by distributing VMs across multiple isolated hardware nodes.
+
+- **Practical Example:**
+  A high-availability application:
+
+  ```plaintext
+  Availability Set Configuration:
+  ├── Fault Domains
+  │   ├── Separate power sources
+  │   ├── Separate network switches
+  │   └── Separate cooling systems
+  ├── Update Domains
+  │   ├── Controlled updates
+  │   └── Zero downtime maintenance
+  └── High Availability
+      ├── 99.95% SLA
+      └── Automatic failover
+  ```
+
+- **Common Use Cases:**
+  - **Web Applications:**
+
+    ```plaintext
+    Web App Availability:
+    ├── Web Servers
+    │   ├── 3 VMs in availability set
+    │   └── Load balanced
+    ├── Application Servers
+    │   ├── 3 VMs in availability set
+    │   └── Load balanced
+    └── Database Servers
+        ├── 2 VMs in availability set
+        └── Always On availability group
+    ```
+
+  - **Business Applications:**
+
+    ```plaintext
+    Business App Availability:
+    ├── Frontend
+    │   ├── Multiple web servers
+    │   └── Session persistence
+    ├── Backend
+    │   ├── Multiple app servers
+    │   └── Load distribution
+    └── Data Layer
+        ├── Database clustering
+        └── Backup servers
+    ```
+
+- **Documentation Reference:**
+  [Azure Availability Sets Documentation](https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview)
+
+#### Azure Virtual Desktop (AVD)
+
+- **What is it?**
+  Azure Virtual Desktop is a desktop and app virtualization service that runs on the cloud, providing a secure remote desktop experience.
+
+- **Practical Example:**
+  An enterprise remote work solution:
+
+  ```plaintext
+  AVD Configuration:
+  ├── Virtual Desktops
+  │   ├── Windows 10/11
+  │   ├── Windows Server
+  │   └── Custom images
+  ├── Remote Apps
+  │   ├── Individual applications
+  │   └── Application groups
+  ├── Management
+  │   ├── Azure portal
+  │   ├── PowerShell
+  │   └── REST API
+  └── Security
+      ├── Microsoft Entra ID integration
+      ├── MFA support
+      └── Conditional access
+  ```
+
+- **Common Use Cases:**
+  - **Remote Work:**
+
+    ```plaintext
+    Remote Work Setup:
+    ├── User Desktops
+    │   ├── Personal desktops
+    │   └── Pooled desktops
+    ├── Applications
+    │   ├── Office applications
+    │   └── Business applications
+    └── Security
+        ├── Data protection
+        └── Access control
+    ```
+
+  - **Development Environments:**
+
+    ```plaintext
+    Dev Environment:
+    ├── Development VMs
+    │   ├── Pre-configured tools
+    │   └── Isolated environments
+    ├── Testing VMs
+    │   ├── Different configurations
+    │   └── Clean environments
+    └── Collaboration
+        ├── Shared resources
+        └── Team access
+    ```
+
+- **Documentation Reference:**
+  [Azure Virtual Desktop Documentation](https://learn.microsoft.com/en-us/azure/virtual-desktop/)
 
 #### App Service
 
@@ -2362,6 +2242,102 @@ Think of cloud computing like electricity. Instead of generating your own power,
   - Five consistency levels for different application needs
   - Built-in global distribution with multi-region writes
   - 99.999% availability SLA for multi-region deployments
+
+#### Azure Database for PostgreSQL
+
+- **What is it?**
+  Azure Database for PostgreSQL is a fully managed, open-source relational database service for app development and deployment.
+
+- **Practical Example:**
+  A multi-database application:
+
+  ```plaintext
+  Database Architecture:
+  ├── SQL Database
+  │   ├── Relational data
+  │   └── Transaction processing
+  ├── Cosmos DB
+  │   ├── NoSQL data
+  │   └── Global distribution
+  └── Azure Database for PostgreSQL
+      ├── Open-source database
+      └── Enterprise workloads
+  ```
+
+- **Common Use Cases:**
+  - **Web Applications:**
+
+    ```plaintext
+    PostgreSQL:
+    ├── Content management
+    └── User authentication
+    ```
+
+  - **Geospatial Applications:**
+
+    ```plaintext
+    PostgreSQL:
+    ├── Location services
+    └── Mapping
+    ```
+
+  - **Analytics:**
+
+    ```plaintext
+    PostgreSQL:
+    ├── Data processing
+    └── Business intelligence
+    ```
+
+- **Documentation Reference:**
+  [Azure Database for PostgreSQL Documentation](https://learn.microsoft.com/en-us/azure/postgresql/)
+
+#### Azure Database for MySQL
+
+- **What is it?**
+  Azure Database for MySQL is a fully managed, open-source MySQL database service for app development and deployment, offering high availability, security, and scalability.
+
+- **Practical Example:**
+  A web application using a managed MySQL backend:
+
+  ```plaintext
+  MySQL Database Setup:
+  ├── Managed MySQL instance
+  │   ├── Automatic backups
+  │   ├── High availability
+  │   └── Scaling as needed
+  └── Application
+      ├── PHP/Node.js/Python backend
+      └── MySQL database connection
+  ```
+
+- **Common Use Cases:**
+  - **Web Applications:**
+
+    ```plaintext
+    MySQL:
+    ├── Content management systems (WordPress, Drupal)
+    └── E-commerce platforms
+    ```
+
+  - **Open-Source Compatibility:**
+
+    ```plaintext
+    MySQL:
+    ├── LAMP/LEMP stack applications
+    └── Cross-platform support
+    ```
+
+  - **Analytics:**
+
+    ```plaintext
+    MySQL:
+    ├── Reporting
+    └── Data warehousing (small/medium scale)
+    ```
+
+- **Documentation Reference:**
+  [Azure Database for MySQL Documentation](https://learn.microsoft.com/en-us/azure/mysql/)
 
 ### Azure Management and Deployment Tools
 
