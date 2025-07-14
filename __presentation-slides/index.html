@@ -544,129 +544,260 @@ Cloud Deployment Models:
 
 ### Private Cloud <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-Private cloud consists of computing resources used exclusively by one business or organization.
-
-Characteristics:
 * Single-tenant architecture <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Higher security and control <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Customizable infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Higher capital expenditure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-Use Cases:
-* Government agencies <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Financial institutions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Healthcare organizations <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Large enterprises <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-
 ---
 
 ### Hybrid Cloud <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-Hybrid cloud combines public and private clouds, bound together by technology that allows data and applications to be shared between them.
-
-Benefits:
 * Flexibility <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Cost optimization <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Security and compliance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Disaster recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-Common Scenarios:
-* Bursting to public cloud <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Data backup and recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Development and testing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Legacy system integration <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-
 ---
 
 ### Cloud Computing Challenges <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-* **Security and Privacy** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Data protection concerns
-  * Compliance requirements
-  * Shared responsibility model
+* Security and Privacy <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-* **Internet Dependency** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Requires reliable internet connection
-  * Potential latency issues
-  * Bandwidth limitations
+* Internet Dependency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-* **Vendor Lock-in** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Difficulty migrating between providers
-  * Proprietary technologies
-  * Integration challenges
+* Vendor Lock-in <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-* **Cost Management** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Unexpected costs
-  * Resource optimization
-  * Monitoring and governance
+* Cost Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
-### Shared Responsibility Model <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Azure vs Other Cloud Platforms <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-The shared responsibility model defines which security tasks are handled by the cloud provider and which tasks are handled by the customer.
-
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15]
-Shared Responsibility:
-├── Customer Responsibilities
-│   ├── Data classification and accountability
-│   ├── Client and endpoint protection
-│   ├── Account and access management
-│   └── Identity and directory infrastructure
-├── Provider Responsibilities
-│   ├── Physical datacenter security
-│   ├── Network and compute infrastructure
-│   ├── Host operating system
-│   └── Application platform
-└── Shared Responsibilities
-    ├── Network controls
-    ├── Identity and access management
-    ├── Application-level controls
-    └── Customer data
-```
+<table border="1">
+  <thead>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <th>Feature</th>
+      <th>Azure</th>
+      <th>AWS</th>
+      <th>Google Cloud</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Market Share</td>
+      <td>Second</td>
+      <td>First</td>
+      <td>Third</td>
+    </tr>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Global Regions</td>
+      <td>60+</td>
+      <td>25+</td>
+      <td>35+</td>
+    </tr>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Learning Curve</td>
+      <td>Moderate</td>
+      <td>Steep</td>
+      <td>Moderate</td>
+    </tr>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Integration</td>
+      <td>Strong with Microsoft</td>
+      <td>Broad</td>
+      <td>Strong with Google</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-### Cloud Migration Strategies <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Azure vs Other Cloud Platforms <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-* **Rehost (Lift and Shift)** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Move applications without changes
-  * Fastest migration approach
-  * Minimal risk
+<table border="1">
+  <thead>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <th>Feature</th>
+      <th>Azure</th>
+      <th>AWS</th>
+      <th>Google Cloud</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Free Tier</td>
+      <td>12 months</td>
+      <td>12 months</td>
+      <td>90 days</td>
+    </tr>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Compliance</td>
+      <td>Extensive</td>
+      <td>Extensive</td>
+      <td>Extensive</td>
+    </tr>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Support</td>
+      <td>Enterprise-grade</td>
+      <td>Enterprise-grade</td>
+      <td>Enterprise-grade</td>
+    </tr>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Docs</td>
+      <td>Compre-hensive</td>
+      <td>Compre-hensive</td>
+      <td>Compre-hensive</td>
+    </tr>
+    <tr class="fragment custom blur highlight-current-blue fade-up">
+      <td>Pricing Model</td>
+      <td>Pay-as-you-go</td>
+      <td>Pay-as-you-go</td>
+      <td>Pay-as-you-go</td>
+    </tr>
+  </tbody>
+</table>
 
-* **Refactor (Lift, Tinker, and Shift)** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Optimize applications for cloud
-  * Improve performance and cost
-  * Moderate complexity
+---
 
-* **Rearchitect** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Redesign applications for cloud-native
-  * Maximum cloud benefits
-  * Highest complexity and cost
+### Professional Use Cases <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-* **Rebuild** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Completely rebuild applications
-  * Cloud-native architecture
-  * Highest risk and cost
+* Enterprise Solutions <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Development and DevOps <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Internet of Things (IoT) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Security and Compliance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Cloud Computing Terms and Concepts <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* High Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Scalability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Elasticity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Fault Tolerance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Shared Responsibility Model - IaaS (Customer) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Operating System <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Runtime <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Middleware <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Shared Responsibility Model - IaaS (Provider) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Physical Security <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Network Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Host Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Virtualization Layer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Shared Responsibility Model - PaaS (Customer) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Access Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Shared Responsibility Model - PaaS (Provider) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Physical Security <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Network Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Host Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Operating System <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Runtime Environment <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Shared Responsibility Model - SaaS (Customer) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Data <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Access Management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+---
+
+### Shared Responsibility Model - SaaS (Provider) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Physical Security <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Network Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Host Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Operating System <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Application Security <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Runtime Environment <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Cloud Services Types <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+---
+
+### Infrastructure as a Service (IaaS) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Virtual machines <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Networking <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Operating systems <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Platform as a Service (PaaS) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Development tools <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Database management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Business analytics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Operating systems <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Software as a Service (SaaS) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Email services <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Office applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Customer relationship management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Enterprise resource planning <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Serverless Computing <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Event-driven <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Pay-per-use <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* No server management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Automatic scaling <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
 ### Cloud Economics <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-* **Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Traditional IT: High upfront costs
-  * Cloud: Pay-as-you-go model
+---
 
-* **Total Cost of Ownership (TCO)** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Hardware and software costs
-  * Operational and maintenance costs
-  * Power and cooling costs
+### Capital Expenditure (CapEx) vs Operational Expenditure (OpEx) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-* **Cost Optimization Strategies** <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-  * Right-sizing resources
-  * Reserved instances
-  * Spot instances
-  * Auto-scaling
+* Traditional IT : High upfront costs (CapEx) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Cloud: Pay-as-you-go model (OpEx) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Total Cost of Ownership (TCO) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Hardware and software costs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Operational and maintenance costs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Power and cooling costs <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Cost Optimization Strategies <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Right-sizing resources <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Reserved instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Spot instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Auto-scaling <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
