@@ -951,48 +951,47 @@ Storage Architecture:
 
 ---
 
-### 10. Azure Virtual Network <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-Azure Virtual Network is the fundamental building block for your private network in Azure. It enables Azure resources to securely communicate with each other, the internet, and on-premises networks.
-
-Key Features:
-* Isolation <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Connectivity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Security <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* DNS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-
-Components:
-* Subnets <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Route Tables <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Peering <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-
-Use Cases:
-* Multi-tier applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Hybrid cloud deployments <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Secure application architectures <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+### Azure Networking <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
 ---
 
-### 11. Azure Load Balancer <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Azure Networking <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-Azure Load Balancer distributes incoming network traffic across multiple backend resources to ensure high availability and reliability.
+* Virtual Network (VNet) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Load Balancer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-Types of Load Balancers:
+---
+
+### Azure Virtual Network (VNet) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Subnets (10.0.1.0/24, 10.0.2.0/24, 10.0.3.0/24, etc.) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Network Security Groups (NSG) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Route Tables <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Virtual Network (VNet) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Multi-tier Applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Hybrid Connectivity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Cost Considerations <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Load Balancer <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
 * Public Load Balancer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Internal Load Balancer <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Health Probes <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-Load Balancing Methods:
-* Round Robin <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Source IP Affinity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+---
 
-Health Probes:
-* Monitor the health of your backend instances <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Automatically remove unhealthy instances from the pool <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+### Azure Load Balancer <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-Benefits:
-* High availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Scalability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Fault tolerance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Web Applications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Database Clusters <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Microservices <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Performance Features <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 

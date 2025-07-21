@@ -1932,10 +1932,10 @@ Effective cost management in the cloud involves several strategies:
 
 ### Azure Networking
 
-#### Virtual Network
+#### Azure Virtual Network
 
 - **What is it?**
-  Azure `Virtual Network` (`VNet`) is the fundamental building block for your private network in Azure, enabling secure communication between Azure resources, the internet, and on-premises networks.
+  Azure Virtual Network (`VNet`) is the fundamental building block for your private network in Azure, enabling secure communication between Azure resources, the internet, and on-premises networks.
 
 - **Practical Example:**
   A multi-tier application network:
@@ -1946,7 +1946,7 @@ Effective cost management in the cloud involves several strategies:
   │   ├── Web Tier (10.0.1.0/24)
   │   ├── App Tier (10.0.2.0/24)
   │   └── Data Tier (10.0.3.0/24)
-  ├── Network Security Groups
+  ├── Network Security Groups (NSG)
   │   ├── Inbound Rules
   │   └── Outbound Rules
   └── Route Tables
@@ -2011,7 +2011,7 @@ Effective cost management in the cloud involves several strategies:
   - VNet peering connects networks across regions
   - Integration with on-premises via VPN or ExpressRoute
 
-#### Load Balancer
+#### Azure Load Balancer
 
 - **What is it?**
   Azure Load Balancer provides high availability and network performance to your applications by distributing incoming traffic across multiple VMs or services.
