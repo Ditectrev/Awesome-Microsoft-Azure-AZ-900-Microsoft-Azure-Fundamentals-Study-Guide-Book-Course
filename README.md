@@ -1863,7 +1863,7 @@ Effective cost management in the cloud involves several strategies:
 #### Azure Storage
 
 - **What is it?**
-  Azure `Storage` is a cloud storage solution for modern data storage scenarios, providing highly available, massively scalable, durable, and secure storage for a variety of data objects.
+  Azure Storage is a cloud storage solution for modern data storage scenarios, providing highly available, massively scalable, durable, and secure storage for a variety of data objects.
 
 - **Practical Example:**
   A media content delivery system:
@@ -1876,9 +1876,12 @@ Effective cost management in the cloud involves several strategies:
   ├── File Storage
   │   ├── Shared files
   │   └── User documents
-  └── Queue Storage
-      ├── Message queue
-      └── Task processing
+  ├── Queue Storage
+  │   ├── Message queue
+  │   └── Task processing
+  └── Table Storage
+      ├── NoSQL data
+      └── Structured datasets
   ```
 
 - **Common Use Cases:**

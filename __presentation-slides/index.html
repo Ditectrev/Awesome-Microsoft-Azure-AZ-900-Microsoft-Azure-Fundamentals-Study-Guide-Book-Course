@@ -426,24 +426,9 @@ Certifications:
 
 ### Cloud Service Models <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-```plaintext[|1|2|3|4|5|6|3-6|2-6|7|8|9|10|11|8-11|7-11|12|13|14|15|16|13-16|12-16]
-Cloud Service Models:
-├── Infrastructure as a Service (IaaS)
-│   ├── Virtual machines
-│   ├── Storage
-│   ├── Networking
-│   └── Operating systems
-├── Platform as a Service (PaaS)
-│   ├── Development tools
-│   ├── Database management
-│   ├── Business analytics
-│   └── Operating systems
-└── Software as a Service (SaaS)
-    ├── Email services
-    ├── Office applications
-    ├── Customer relationship management
-    └── Enterprise resource planning
-```
+* Infrastructure as a Service (IaaS) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Platform as a Service (PaaS) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Software as a Service (SaaS) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
@@ -504,24 +489,12 @@ Cloud Service Models:
 
 ### Cloud Deployment Models <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16]
-Cloud Deployment Models:
-├── Public Cloud
-│   ├── Owned by third-party cloud service provider
-│   ├── Available to the general public
-│   ├── Pay-as-you-go pricing
-│   └── Examples: Azure, AWS, Google Cloud
-├── Private Cloud
-│   ├── Used exclusively by a single organization
-│   ├── On-premises or hosted by third-party
-│   ├── Greater control and security
-│   └── Higher cost and complexity
-└── Hybrid Cloud
-    ├── Combination of public and private clouds
-    ├── Data and application portability
-    ├── Flexibility and optimization
-    └── Best of both worlds
-```
+* Public Cloud <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Private Cloud <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Hybrid Cloud <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Cloud Computing Challenges <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure vs Other Cloud Platforms <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Professional Use Cases <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
@@ -676,6 +649,9 @@ Cloud Deployment Models:
 * Elasticity <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Fault Tolerance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Shared Responsibility Model <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Cloud Services Types <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Cloud Economics <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
@@ -809,6 +785,15 @@ Cloud Deployment Models:
 
 ---
 
+
+* Virtual Machines (VMs) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Virtual Machine Scale Sets (VMSS) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Availability Sets <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Virtual Desktop (AVD) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* App Service <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
 ### Virtual Machines (VMs) <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
 * Full Control <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
@@ -827,7 +812,7 @@ Cloud Deployment Models:
 
 ---
 
-### Common Use Cases <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### vCPUs <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
 * Web servers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Database servers <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
@@ -893,20 +878,76 @@ Cloud Deployment Models:
 
 ### Azure Storage Services <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-Azure Storage is a cloud storage solution for modern data storage scenarios. It provides a massively scalable object store, a file system service, a messaging store, and a NoSQL store.
+---
 
-Storage Services:
+### Azure Storage Services <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
 * Blob Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * File Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Queue Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Table Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Azure Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
-Redundancy Options:
-* LRS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* ZRS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* GRS <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+---
 
-Cost <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+### Blob Storage <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|5|8|3|4|2|6|7|5|9|10|8]
+Blob Storage Setup:
+├── Hot Tier
+│   ├── Frequently accessed files
+│   └── Cost: ~$0.0184/GB
+├── Cool Tier
+│   ├── Infrequently accessed files
+│   └── Cost: ~$0.01/GB
+└── Archive Tier
+    ├── Rarely accessed files
+    └── Cost: ~$0.00099/GB
+```
+
+---
+
+### Blob Storage <!-- .slide: data-transition="zoom" data-transition-speed="slow" --> <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Media Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Backup Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Big Data Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Static Websites <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### File Storage <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Enterprise File Sharing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Application Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Backup and Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Performance Features <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+
+---
+
+### Azure Storage <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+```plaintext[|1|2|5|8|11|3|4|2|6|7|5|9|10|8|12|13|11]
+Storage Architecture:
+├── Blob Storage
+│   ├── Media files
+│   └── Static content
+├── File Storage
+│   ├── Shared files
+│   └── User documents
+├── Queue Storage
+│   ├── Message queue
+│   └── Task processing
+└── Table Storage
+    ├── NoSQL data
+    └── Structured datasets
+```
+
+---
+
+### Azure Storage <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+
+* Data Storage <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Backup and Archive <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Content Delivery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
