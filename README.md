@@ -2121,7 +2121,7 @@ Effective cost management in the cloud involves several strategies:
   Note: While DTUs are still available, Microsoft has introduced a newer vCore-based purchasing model that provides more granular control over resources.
 
 - **What are vCores?**
-  vCores (virtual cores) are a more granular way to provision and manage computing resources in Azure SQL Database. Each vCore represents a logical CPU core that can be allocated to your database. This model provides:
+  vCores (virtual Cores) are a more granular way to provision and manage computing resources in Azure SQL Database. Each vCore represents a logical CPU core that can be allocated to your database. This model provides:
   - More precise control over compute resources
   - Better predictability of performance
   - Easier matching with on-premises workloads
@@ -2224,7 +2224,7 @@ Effective cost management in the cloud involves several strategies:
   - Automatic backups and point-in-time restore
   - Seamless migration from on-premises SQL Server
 
-#### Cosmos DB
+#### Azure Cosmos DB
 
 - **What is it?**
   Azure Cosmos DB is a globally distributed, multi-model database service that provides low latency, high availability, and automatic scaling.
@@ -2577,7 +2577,7 @@ Effective cost management in the cloud involves several strategies:
 - **Documentation Reference:**
   [Azure Arc Documentation](https://learn.microsoft.com/en-us/azure/azure-arc/)
 
-#### Azure CLI
+#### Azure CLI (Command-Line Interface)
 
 - **What is it?**
   A command-line tool for managing Azure resources across platforms (Windows, macOS, Linux).
@@ -2696,7 +2696,7 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
   │   │   ├── Simplified syntax
   │   │   ├── Type safety
   │   │   └── Modular design
-  │   ├── Template Specs
+  │   └── Template Specs
   │       ├── Version control
   │       └── Reusable templates
   ├── Terraform
@@ -2712,32 +2712,6 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
       ├── PowerShell automation
       ├── Azure modules
       └── Windows integration
-  ```
-
-- **Best Practices**:
-
-  ```plaintext
-  IaC Best Practices:
-  ├── Version Control
-  │   ├── Source control
-  │   ├── Change tracking
-  │   └── Collaboration
-  ├── Modularity
-  │   ├── Reusable components
-  │   ├── Template linking
-  │   └── Parameterization
-  ├── Testing
-  │   ├── Template validation
-  │   ├── What-if operations
-  │   └── Integration testing
-  ├── Security
-  │   ├── Secret management
-  │   ├── RBAC integration
-  │   └── Policy enforcement
-  └── Documentation
-      ├── Code comments
-      ├── Usage examples
-      └── Architecture diagrams
   ```
 
 - **Common Use Cases**:
@@ -2787,46 +2761,6 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 - **Documentation Reference:**
   [Azure Resource Manager Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/)
   [Bicep Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
-
-#### Best Practices
-
-- **Tool Selection**:
-
-  ```plaintext
-  Tool Selection Guide:
-  ├── Interactive Management
-  │   ├── Azure Portal
-  │   └── Cloud Shell
-  ├── Automation
-  │   ├── Azure CLI
-  │   ├── PowerShell
-  │   └── ARM Templates
-  ├── Development
-  │   ├── Azure DevOps
-  │   └── VS Code
-  └── Monitoring
-      ├── Azure Monitor
-      └── Log Analytics
-  ```
-
-- **Deployment Strategies**:
-
-  ```plaintext
-  Deployment Approaches:
-  ├── Infrastructure as Code
-  │   ├── ARM Templates
-  │   ├── Bicep
-  │   └── Terraform
-  ├── CI/CD Pipelines
-  │   ├── Azure Pipelines
-  │   └── GitHub Actions
-  ├── Manual Deployment
-  │   ├── Portal
-  │   └── CLI/PowerShell
-  └── Hybrid Approaches
-      ├── Combined methods
-      └── Phased deployment
-  ```
 
 - **Documentation Reference:**
   [Azure Management Tools Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/)
