@@ -2938,54 +2938,6 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
       └── Best practices
   ```
 
-- **Recommendation Types**:
-
-  ```plaintext
-  Advisor Recommendations:
-  ├── Cost Recommendations
-  │   ├── VM right-sizing
-  │   ├── Reserved instances
-  │   ├── Unused resources
-  │   └── Storage optimization
-  ├── Performance Recommendations
-  │   ├── Database optimization
-  │   ├── Network latency
-  │   ├── Application performance
-  │   └── Resource scaling
-  ├── High Availability Recommendations
-  │   ├── Multi-region deployment
-  │   ├── Load balancer setup
-  │   ├── Backup configuration
-  │   └── Disaster recovery
-  └── Security Recommendations
-      ├── Security updates
-      ├── Network security groups
-      ├── Data encryption
-      └── Access control
-  ```
-
-- **Best Practices**:
-
-  ```plaintext
-  Advisor Best Practices:
-  ├── Regular Review
-  │   ├── Weekly checks
-  │   ├── Monthly audits
-  │   └── Action tracking
-  ├── Implementation
-  │   ├── Priority-based actions
-  │   ├── Impact assessment
-  │   └── Change management
-  ├── Monitoring
-  │   ├── Recommendation status
-  │   ├── Implementation progress
-  │   └── Cost savings tracking
-  └── Integration
-      ├── Azure Monitor
-      ├── Microsoft Defender for Cloud
-      └── Cost Management
-  ```
-
 - **Documentation Reference:**
   [Azure Advisor Documentation](https://learn.microsoft.com/en-us/azure/advisor/)
 
@@ -3362,6 +3314,22 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 
 Azure's compliance offerings help organizations meet regulatory requirements and industry standards through comprehensive compliance controls and certifications.
 
+- **Practical Example:**
+  A healthcare organization's compliance setup:
+
+  ```plaintext
+  Compliance Framework:
+  ├── Industry Standards
+  │   ├── HIPAA
+  │   └── HITRUST
+  ├── Regional Compliance
+  │   ├── GDPR
+  │   └── CCPA
+  └── Security Standards
+      ├── ISO 27001
+      └── SOC 2
+  ```
+
 - **Common Standards:**
   - **Healthcare:**
 
@@ -3635,24 +3603,6 @@ Azure's compliance offerings help organizations meet regulatory requirements and
       └── Usage reports
   ```
 
-- **Best Practices**:
-
-  ```plaintext
-  Governance Best Practices:
-  ├── Resource Organization
-  │   ├── Consistent naming
-  │   └── Tagging strategy
-  ├── Access Control
-  │   ├── Least privilege
-  │   └── Regular review
-  ├── Cost Management
-  │   ├── Budget controls
-  │   └── Regular optimization
-  └── Compliance
-      ├── Regular audits
-      └── Policy updates
-  ```
-
 - **Documentation Reference:**
   [Azure Governance Documentation](https://learn.microsoft.com/en-us/azure/governance/)
 
@@ -3890,21 +3840,6 @@ Azure's compliance offerings help organizations meet regulatory requirements and
         ├── Auto-scaling
         └── Scheduling
     ```
-
-- **Best Practices:**
-
-  ```plaintext
-  Cost Management Best Practices:
-  ├── Regular Review
-  │   ├── Weekly analysis
-  │   └── Monthly reports
-  ├── Resource Management
-  │   ├── Tagging strategy
-  │   └── Cleanup schedule
-  └── Optimization
-      ├── Continuous monitoring
-      └── Regular optimization
-  ```
 
 - **Documentation Reference:**
   [Azure Cost Management Documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview)
