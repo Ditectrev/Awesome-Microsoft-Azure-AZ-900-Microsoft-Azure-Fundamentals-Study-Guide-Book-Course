@@ -3362,22 +3362,6 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 
 Azure's compliance offerings help organizations meet regulatory requirements and industry standards through comprehensive compliance controls and certifications.
 
-- **Practical Example:**
-  A healthcare organization's compliance setup:
-
-  ```plaintext
-  Compliance Framework:
-  ├── Industry Standards
-  │   ├── HIPAA
-  │   └── HITRUST
-  ├── Regional Compliance
-  │   ├── GDPR
-  │   └── CCPA
-  └── Security Standards
-      ├── ISO 27001
-      └── SOC 2
-  ```
-
 - **Common Standards:**
   - **Healthcare:**
 
