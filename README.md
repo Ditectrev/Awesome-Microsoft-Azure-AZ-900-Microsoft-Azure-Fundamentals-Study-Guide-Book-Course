@@ -3314,22 +3314,6 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 
 Azure's compliance offerings help organizations meet regulatory requirements and industry standards through comprehensive compliance controls and certifications.
 
-- **Practical Example:**
-  A healthcare organization's compliance setup:
-
-  ```plaintext
-  Compliance Framework:
-  ├── Industry Standards
-  │   ├── HIPAA
-  │   └── HITRUST
-  ├── Regional Compliance
-  │   ├── GDPR
-  │   └── CCPA
-  └── Security Standards
-      ├── ISO 27001
-      └── SOC 2
-  ```
-
 - **Common Standards:**
   - **Healthcare:**
 
@@ -3861,9 +3845,13 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ├── Production
   │   ├── Standard support
   │   └── Technical support
-  └── Enterprise
-      ├── Professional support
-      └── Enterprise support
+  ├── Enterprise
+  │   ├── Professional Direct support
+  │   └── Technical account manager
+  └── Large Enterprise
+      ├── Unified Enterprise support
+      ├── Dedicated technical account manager
+      └── Strategic planning and consulting
   ```
 
 - **Support Levels:**
@@ -3906,10 +3894,10 @@ Azure's compliance offerings help organizations meet regulatory requirements and
         └── $100/month
     ```
 
-  - **Professional Direct:**
+  - **Professional Direct Support:**
 
     ```plaintext
-    Professional Direct:
+    Professional Direct Support:
     ├── Features
     │   ├── 24/7 support
     │   ├── Technical account manager
@@ -3918,6 +3906,27 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     │   └── 1 hour
     └── Cost
         └── $1000/month
+    ```
+
+  - **Unified Enterprise Support:**
+
+    ```plaintext
+    Unified Enterprise Support:
+    ├── Features
+    │   ├── 24/7 support
+    │   ├── Dedicated technical account manager
+    │   ├── Proactive support and monitoring
+    │   ├── Custom solutions and architecture
+    │   ├── Training and workshops
+    │   └── Strategic planning sessions
+    ├── Response Time
+    │   ├── Critical: 15 minutes
+    │   ├── Important: 2 hours
+    │   └── Moderate: 4 hours
+    ├── Cost
+    │   └── Custom pricing (Enterprise-level)
+    └── Eligibility
+        └── Enterprise Agreement customers
     ```
 
 - **Support Features:**
@@ -3929,7 +3938,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   └── Best practices
   ├── Account Support
   │   ├── Billing support
-    │   └── Subscription management
+  │   └── Subscription management
   └── Additional Services
       ├── Training
       └── Consulting
@@ -3942,11 +3951,12 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   - Basic support is free with community forums and documentation
   - Developer support includes email support during business hours
   - Standard support provides 24/7 phone and email support
-  - Professional Direct includes technical account manager
+  - Professional Direct support includes technical account manager
+  - Unified Enterprise support is for Enterprise Agreement customers with dedicated resources
   - Higher support tiers offer faster response times
   - Choose support level based on business criticality
 
-#### Service Level Agreements
+#### Service Level Agreements (SLAs)
 
   Azure `SLAs` define the performance standards and availability guarantees for Azure services.
 
