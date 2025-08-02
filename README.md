@@ -4162,25 +4162,6 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 
   Microsoft's official learning resources for AZ-900 exam preparation.
 
-- **Practical Example:**
-  A comprehensive study approach:
-
-  ```plaintext
-  Study Resources:
-  ├── Microsoft Learn
-  │   ├── Learning paths
-  │   └── Modules
-  ├── Documentation
-  │   ├── Service docs
-  │   └── Best practices
-  ├── Practice Tests
-  │   ├── MeasureUp
-  │   └── Whizlabs
-  └── Virtual Labs
-      ├── Azure sandbox
-      └── Hands-on labs
-  ```
-
 - **Resource Details:**
   - **Microsoft Learn:**
 
@@ -4606,21 +4587,6 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   ```
 
 - **Resource Types:**
-  - **Documentation:**
-
-    ```plaintext
-    Documentation:
-    ├── Official Docs
-    │   ├── Service docs
-    │   └── Architecture
-    ├── Best Practices
-    │   ├── Security
-    │   └── Performance
-    └── Reference
-        ├── API docs
-        └── SDK docs
-    ```
-
   - **Training:**
 
     ```plaintext
