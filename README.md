@@ -2,13 +2,92 @@
 
 ![Promotional image](images/promotional.png)
 
+## ❣️ Support
+
+There are many ways to support us; in exchange, you'll get this material in a proper format:
+
+- ❤️ [shop.ditectrev.com, in EPUB or PDF formats](https://shop.ditectrev.com/),
+- ▶️ [Udemy, in an interactive video course format](https://www.udemy.com/user/social-ditectrev),
+- 📚 [Google Play Books, in PDF format](https://play.google.com/store/books/author?id=Daniel+Danielecki),
+- 🛍️ [Etsy, in PDF format](https://ditectrev.etsy.com/),
+- 🛒 [eBay, in PDF format](https://www.ebay.com/),
+- 🔄 [Patreon subscription allows you to get access to all of the materials in EPUB and PDF formats. You can also buy separate items on Patreon, but the subscription technically allows us to include all updates for EPUB and PDF formats. Hence, you get EPUB and PDF updates when you subscribe to Patreon](https://patreon.com/Ditectrev?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink).
+
+💰 If you work for a company, you could probably easily claim this expense while learning this topic. For us, it's about being in the game or not.
+
+⭐ Good ratings & reviews help us to survive. Please don't forget to leave a nice one when you purchase an item.
+
 ## ✨ This Study Guide Book & Course is unlike any Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guides Books & Courses you will find online
 
 ✋ Join a live online community and a course taught by industry experts and pass the Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) confidently. We aim to build an ecosystem of Information Technology (IT) certifications and online courses in cooperation with the technology industry. We believe it will give our students 100% confidence in the pacing market in an open-source environment. We are just at the beginning of our way, so it's even better for you to join now!
 
 [![Join our Discord](images/discord.png 'Join our Discord')](https://discord.gg/RFjtXKfJy3)
 
-## Who this course is for
+## ⌛️ Short and to the point; why should you take the course:
+
+1. Always happy to answer your questions 😊
+2. Unhappy? Please raise a refund; we'll always accept it 💸
+3. Learn about topics, such as:
+   - Access Control;
+   - Authentication & Authorization;
+   - Availability Zones;
+   - Azure Advisor;
+   - Azure Analysis Services;
+   - Azure Command Line Interface (Azure CLI);
+   - Azure Cosmos DB;
+   - Azure Event Hubs;
+   - Azure Functions;
+   - Azure Log Analytics;
+   - Azure Marketplace;
+   - Azure Monitor;
+   - Azure Multi-Factor Authentication (MFA);
+   - Azure Pay-as-You-Go Subscription;
+   - Azure Policies;
+   - Azure Portal;
+   - Azure Regions;
+   - Azure Resources;
+   - Azure Service Health;
+   - Azure Services;
+   - Azure SQL Databases;
+   - Azure Storage;
+   - Azure Web Apps;
+   - Capital Expenditure (CapEx) & Operational Expenditure (OpEx);
+   - Cloud Concepts;
+   - Compliancy, Governance, Identity & Privacy;
+   - General Data Protection Regulation (GDPR) & Azure;
+   - Inbound Data Traffic & Outbound Data Traffic;
+   - Infrastructure as a Service (laaS);
+   - Microsoft Defender for Cloud;
+   - Microsoft Defender for Identity;
+   - Microsoft Entra ID;
+   - Microsoft Entra ID Protection;
+   - Microsoft Trust Center;
+   - Network Security Group (NSG);
+   - Platform as a Service (PaaS);
+   - PowerShell;
+   - Public & Private Cloud;
+   - Public & Private Preview;
+   - Resource Groups;
+   - Serverless;
+   - Service Level Agreement (SLA);
+   - Software as a Service (SaaS);
+   - Virtual Machines (VMs);
+   - Windows Virtual Desktop;
+   - **Much More!**
+4. Real Life examples ✅
+5. The book & course explains the topic fully in-depth 🔬
+
+## ☝️ Course Updates
+
+**[v1.0.0](../../releases/tag/v1.0.0): August X, 2025.**
+
+- Launch of the course.
+
+## 🙋‍♀️ & 🙋‍♂️ Contribution
+
+We are so thankful for every contribution, which makes sure we can deliver top-notch content. Whenever you find a missing resource, broken link in a [Table of Contents](../..#table-of-contents), the wrong answer, please submit an [issue](../../issues). Even better would be a [Pull Request (PR)](../../pulls).
+
+## Who this course is for:
 
 - 👨‍🎓 Students preparing for the Microsoft Azure Fundamentals (AZ-900) Exam;
 - 👨‍🎓 AWS Engineers;
@@ -38,6 +117,112 @@
 - 🤩 Excitement to learn!
 - 0️⃣ Prior knowledge is required;
 - ✅ You can pass the Microsoft Azure Fundamentals (AZ-900) Exam solely based on our Study Guide Book & Course.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+  - [What is Microsoft Azure?](#what-is-microsoft-azure)
+  - [Brief History and Evolution of Azure](#brief-history-and-evolution-of-azure)
+  - [Who Uses Azure: Organizations and Professionals](#who-uses-azure-organizations-and-professionals)
+  - [Key Azure Concepts for AZ-900](#key-azure-concepts-for-az-900)
+  - [Cloud Computing Fundamentals](#cloud-computing-fundamentals)
+    - [What is Cloud Computing?](#what-is-cloud-computing)
+    - [Benefits of Cloud Computing](#benefits-of-cloud-computing)
+  - [Cloud Service Models](#cloud-service-models)
+- [Cloud Concepts](#cloud-concepts)
+  - [Cloud Deployment Models](#cloud-deployment-models)
+    - [Public Cloud](#public-cloud)
+    - [Private Cloud](#private-cloud)
+    - [Hybrid Cloud](#hybrid-cloud)
+    - [Cloud Computing Challenges](#cloud-computing-challenges)
+    - [Azure vs Other Cloud Platforms](#azure-vs-other-cloud-platforms)
+    - [Professional Use Cases](#professional-use-cases)
+  - [Cloud Computing Terms and Concepts](#cloud-computing-terms-and-concepts)
+    - [High Availability](#high-availability)
+    - [Scalability](#scalability)
+    - [Elasticity](#elasticity)
+    - [Fault Tolerance](#fault-tolerance)
+    - [Disaster Recovery](#disaster-recovery)
+    - [Shared Responsibility Model](#shared-responsibility-model)
+    - [Cloud Services Types](#cloud-services-types)
+      - [Infrastructure as a Service (IaaS)](#infrastructure-as-a-service-iaas)
+      - [Platform as a Service (PaaS)](#platform-as-a-service-paas)
+      - [Software as a Service (SaaS)](#software-as-a-service-saas)
+      - [Serverless Computing](#serverless-computing)
+    - [Cloud Economics](#cloud-economics)
+      - [Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)](#capital-expenditure-capex-vs-operational-expenditure-opex)
+      - [Total Cost of Ownership (TCO)](#total-cost-of-ownership-tco)
+      - [Cost Optimization Strategies](#cost-optimization-strategies)
+- [Core Azure Services](#core-azure-services)
+  - [Azure Compute Services](#azure-compute-services)
+    - [Virtual Machines (VMs)](#virtual-machines-vms)
+    - [Virtual Machine Scale Sets (VMSS)](#virtual-machine-scale-sets-vmss)
+    - [Availability Sets](#availability-sets)
+    - [Azure Virtual Desktop (AVD)](#azure-virtual-desktop-avd)
+    - [App Service](#app-service)
+    - [Azure Functions](#azure-functions)
+  - [Azure Storage Services](#azure-storage-services)
+    - [Blob Storage](#blob-storage)
+    - [File Storage](#file-storage)
+    - [Azure Storage](#azure-storage)
+  - [Azure Networking](#azure-networking)
+    - [Azure Virtual Network](#azure-virtual-network)
+  - [Azure Databases](#azure-databases)
+    - [Azure SQL Database](#azure-sql-database)
+    - [Azure Cosmos DB](#azure-cosmos-db)
+    - [Azure Database for PostgreSQL](#azure-database-for-postgresql)
+    - [Azure Database for MySQL](#azure-database-for-mysql)
+  - [Azure Management and Deployment Tools](#azure-management-and-deployment-tools)
+    - [Azure Portal](#azure-portal)
+    - [Azure Arc](#azure-arc)
+    - [Azure CLI (Command-Line Interface)](#azure-cli-command-line-interface)
+    - [Azure PowerShell](#azure-powershell)
+    - [Azure Resource Manager (ARM)](#azure-resource-manager-arm)
+    - [Azure DevOps](#azure-devops)
+    - [Infrastructure as Code (IaC)](#infrastructure-as-code-iac)
+  - [Azure Monitoring Tools](#azure-monitoring-tools)
+    - [Azure Monitor](#azure-monitor)
+    - [Application Insights](#application-insights)
+    - [Log Analytics](#log-analytics)
+    - [Network Watcher](#network-watcher)
+    - [Azure Service Health](#azure-service-health)
+    - [Azure Advisor](#azure-advisor)
+    - [Best Practices for Monitoring](#best-practices-for-monitoring)
+- [Security, Privacy, and Compliance](#security-privacy-and-compliance)
+  - [Azure Identity, Access, and Security](#azure-identity-access-and-security)
+    - [Azure Identity, Access, and Security Overview](#azure-identity-access-and-security-overview)
+    - [Microsoft Defender for Cloud](#microsoft-defender-for-cloud)
+    - [Azure Key Vault](#azure-key-vault)
+    - [Microsoft Entra ID](#microsoft-entra-id)
+  - [Privacy and Compliance](#privacy-and-compliance)
+    - [Compliance Offerings](#compliance-offerings)
+  - [Azure Governance and Compliance](#azure-governance-and-compliance)
+    - [Azure Governance](#azure-governance)
+    - [Compliance Management](#compliance-management)
+    - [Cost Management and Governance](#cost-management-and-governance)
+- [Azure Pricing and Support](#azure-pricing-and-support)
+  - [Understanding Azure Pricing](#understanding-azure-pricing)
+    - [Pricing Models](#pricing-models)
+    - [Cost Management](#cost-management)
+  - [Azure Support Options](#azure-support-options)
+    - [Support Plans](#support-plans)
+    - [Service Level Agreements (SLAs)](#service-level-agreements-slas)
+- [Exam Preparation](#exam-preparation)
+  - [AZ-900 Exam Overview](#az-900-exam-overview)
+    - [Exam Structure](#exam-structure)
+    - [Exam Topics](#exam-topics)
+  - [Study Resources](#study-resources)
+    - [Official Resources](#official-resources)
+    - [Community Resources](#community-resources)
+  - [Exam Tips](#exam-tips)
+    - [Preparation](#preparation)
+    - [During the Exam](#during-the-exam)
+- [Conclusion](#conclusion)
+  - [Key Takeaways](#key-takeaways)
+  - [Next Steps](#next-steps)
+  - [Additional Resources](#additional-resources)
+- [Appendices](#appendices)
+  - [Glossary](#glossary)
 
 ## Introduction
 
