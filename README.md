@@ -123,7 +123,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [Introduction](#introduction)
   - [What is Microsoft Azure?](#what-is-microsoft-azure)
   - [Brief History and Evolution of Azure](#brief-history-and-evolution-of-azure)
-  - [Who Uses Azure: Organizations and Professionals](#who-uses-azure-organizations-and-professionals)
+  - [Who Uses Azure?](#who-uses-azure)
   - [Key Azure Concepts for AZ-900](#key-azure-concepts-for-az-900)
   - [Cloud Computing Fundamentals](#cloud-computing-fundamentals)
     - [What is Cloud Computing?](#what-is-cloud-computing)
@@ -241,7 +241,7 @@ Microsoft Azure was first announced in 2008 as "Project Red Dog" and was officia
 - 2020: Introduction of Azure Synapse Analytics
 - 2022: Launch of Azure OpenAI Service
 
-### Who Uses Azure: Organizations and Professionals
+### Who Uses Azure?
 
 Azure's user base includes:
 
