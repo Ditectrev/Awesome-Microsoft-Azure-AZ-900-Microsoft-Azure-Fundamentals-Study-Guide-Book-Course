@@ -283,6 +283,7 @@ Azure's user base includes:
      - Development environment
      - Testing environment
      - Production environment
+
      Each with its own billing and access controls.
 
    - **Types of Subscriptions:**
@@ -475,11 +476,11 @@ Azure's user base includes:
        - **Documentation Reference:**
          [Azure Sovereign Regions](https://learn.microsoft.com/en-us/azure/azure-government/documentation-government-welcome)
 
-       - **Azure Datacenters**:
-         - **What are they?**
-           Azure datacenters are physical facilities that house the computing infrastructure for Azure services, designed with multiple layers of security, redundancy, and environmental controls.
+     - **Azure Datacenters**:
+       - **What are they?**
+         Azure datacenters are physical facilities that house the computing infrastructure for Azure services, designed with multiple layers of security, redundancy, and environmental controls.
 
-         - **Key Components**:
+       - **Key Components**:
 
            ```plaintext
            Datacenter Components:
@@ -505,7 +506,7 @@ Azure's user base includes:
                └── Climate control
            ```
 
-         - **Security Features**:
+       - **Security Features**:
 
            ```plaintext
            Security Measures:
@@ -523,7 +524,7 @@ Azure's user base includes:
                └── Incident response
            ```
 
-         - **Environmental Considerations**:
+       - **Environmental Considerations**:
 
            ```plaintext
            Environmental Features:
@@ -541,7 +542,7 @@ Azure's user base includes:
                └── Carbon footprint
            ```
 
-         - **Operational Features**:
+       - **Operational Features**:
 
            ```plaintext
            Operations:
@@ -559,7 +560,7 @@ Azure's user base includes:
                └── Service restoration
            ```
 
-         - **Compliance and Certifications**:
+       - **Compliance and Certifications**:
 
            ```plaintext
            Certifications:
@@ -577,7 +578,7 @@ Azure's user base includes:
                └── Local regulations
            ```
 
-         - **Important Considerations**:
+       - **Important Considerations**:
            - Multiple layers of redundancy
            - Continuous monitoring and maintenance
            - Regular security audits
@@ -585,9 +586,9 @@ Azure's user base includes:
            - Compliance with local regulations
            - Disaster recovery capabilities
 
-         - **Documentation Reference:**
-           [Azure Datacenter Security](https://learn.microsoft.com/en-us/azure/security/fundamentals/physical-security)
-           [Azure Compliance](https://learn.microsoft.com/en-us/azure/compliance/)
+       - **Documentation Reference:**
+         [Azure Datacenter Security](https://learn.microsoft.com/en-us/azure/security/fundamentals/physical-security)
+         [Azure Compliance](https://learn.microsoft.com/en-us/azure/compliance/)
 
    - **Documentation Reference:**
      [Azure Regions and Availability Zones](https://learn.microsoft.com/en-us/azure/availability-zones/az-overview)

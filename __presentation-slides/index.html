@@ -84,23 +84,16 @@
 
 ---
 
-### Azure Subscriptions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Subscriptions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-* Billing Boundary <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Access Control <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Resource Limits <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-
----
-
-### Subscriptions Types <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
+* Development/Testing/Production Environments <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Free Account <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Pay-As-You-Go <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Enterprise Agreement <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Enterprise Agreement (EA) <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
-### Practical Example <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Management Groups <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
 ```plaintext[|1|2|5|8|2,5,8|2|3|4|3,4|2-4|5|6|7|6,7|5-7|8|9|10|9,10|8-10]
 Root Management Group
@@ -117,32 +110,7 @@ Root Management Group
 
 ---
 
-### Azure Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-* Geographic Distribution <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Data Residency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Latency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Service Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
----
-
-### Popular Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-* East US <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* West US 2 <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* West Europe <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Southeast Asia <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-
----
-
-### Availability Zones <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-* High Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* 99.99% SLA <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-
----
-
-### Practical Example <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Regions and Availability Zones <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
 ```plaintext[|1|2|3|4]
 Region: East US
@@ -153,16 +121,16 @@ Region: East US
 
 ---
 
-### Region Pairs <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Regions and Availability Zones <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-* Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * High Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 * Data Residency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Maintenance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Performance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
-### Region Pair Example <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Region Pairs <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
 ```plaintext[|1|2|3|2,3|4|5|4,5|6|7|6,7|8|9|8,9]
 North America Region Pairs:
@@ -178,31 +146,16 @@ North America Region Pairs:
 
 ---
 
-### Common Use Cases <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Region Pairs <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
-Common Scenarios:
-├── Disaster Recovery
-│   ├── Business continuity
-│   └── Data protection
-├── High Availability
-│   ├── Multi-region deployment
-│   └── Load balancing
-├── Compliance
-│   ├── Data residency
-│   └── Regulatory requirements
-└── Performance
-    ├── Global distribution
-    └── Low latency
-```
+* Disaster Recovery <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* High Availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Data Residency <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Maintenance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
 ### Sovereign Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
----
-
-### Available Sovereign Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
 ```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12]
 Sovereign Regions:
@@ -221,177 +174,28 @@ Sovereign Regions:
 
 ---
 
-### Sovereign Features <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Sovereign Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
-Sovereign Features:
-├── Physical Isolation
-│   ├── Separate data centers
-│   └── Dedicated infrastructure
-├── Logical Isolation
-│   ├── Separate network
-│   └── Access controls
-├── Compliance
-│   ├── Government standards
-│   └── Industry regulations
-└── Operations
-    ├── Local operations
-    └── Specialized support
-```
+* Physical Isolation <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Logical Isolation <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Compliance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Operations <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
-### Sovereign Use Cases <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
+### Sovereign Regions <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
-Common Scenarios:
-├── Government
-│   ├── Federal agencies
-│   ├── Defense contracts
-│   └── Public sector
-├── Regulated Industries
-│   ├── Healthcare
-│   ├── Financial services
-│   └── Critical infrastructure
-└── Compliance Requirements
-    ├── Data sovereignty
-    ├── Regulatory compliance
-    └── Security standards
-```
-
----
-
-### Important Considerations <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-* Separate Azure portal and management tools <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Different service availability <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Specialized compliance certifications <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Unique pricing and licensing <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Restricted access requirements <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Separate support channels <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Government <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Regulated Industries <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Compliance Requirements <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
 ### Azure Datacenters <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
 
----
-
-### Datacenter Components <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21]
-Datacenter Components:
-├── Physical Security
-│   ├── 24/7 security personnel
-│   ├── Biometric access
-│   ├── Video surveillance
-│   └── Security perimeters
-├── Infrastructure
-│   ├── Power systems
-│   │   ├── Multiple power feeds
-│   │   ├── UPS systems
-│   │   └── Backup generators
-│   ├── Cooling systems
-│   │   ├── Redundant cooling
-│   │   └── Temperature control
-│   └── Network
-│       ├── Fiber connectivity
-│       └── Redundant paths
-└── Environmental Controls
-    ├── Fire suppression
-    ├── Flood protection
-    └── Climate control
-```
-
----
-
-### Security Measures <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
-Security Measures:
-├── Physical Security
-│   ├── Access control
-│   ├── Security cameras
-│   └── Intrusion detection
-├── Network Security
-│   ├── DDoS protection
-│   ├── Firewalls
-│   └── Encryption
-└── Operational Security
-    ├── Staff screening
-    ├── Security protocols
-    └── Incident response
-```
-
----
-
-### Environmental Features <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
-Environmental Features:
-├── Power Management
-│   ├── Energy efficiency
-│   ├── Renewable energy
-│   └── Power monitoring
-├── Cooling Systems
-│   ├── Efficient cooling
-│   ├── Temperature monitoring
-│   └── Humidity control
-└── Sustainability
-    ├── Green initiatives
-    ├── Waste reduction
-    └── Carbon footprint
-```
-
----
-
-### Operations <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
-Operations:
-├── Monitoring
-│   ├── 24/7 monitoring
-│   ├── Performance tracking
-│   └── Health checks
-├── Maintenance
-│   ├── Preventive maintenance
-│   ├── Equipment updates
-│   └── System upgrades
-└── Support
-    ├── Technical support
-    ├── Emergency response
-    └── Service restoration
-```
-
----
-
-### Certifications <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-```plaintext[|1|2|3|4|5|6|7|8|9|10|11|12|13]
-Certifications:
-├── ISO Standards
-│   ├── ISO 27001
-│   ├── ISO 27018
-│   └── ISO 22301
-├── Industry Standards
-│   ├── SOC 1/2/3
-│   ├── PCI DSS
-│   └── HIPAA
-└── Regional Compliance
-    ├── GDPR
-    ├── CCPA
-    └── Local regulations
-```
-
----
-
-### Important Considerations <!-- .slide: data-transition="zoom" data-transition-speed="slow" -->
-
-* Multiple layers of redundancy <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Continuous monitoring and maintenance <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Regular security audits <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Environmental impact management <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Compliance with local regulations <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
-* Disaster recovery capabilities <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Physical Security <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Infrastructure <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
+* Environmental Controls <!-- .element: class="fragment custom blur highlight-current-blue fade-up" -->
 
 ---
 
