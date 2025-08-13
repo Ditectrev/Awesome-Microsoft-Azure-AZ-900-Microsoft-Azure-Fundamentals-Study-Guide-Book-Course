@@ -598,7 +598,7 @@ Azure's user base includes:
 
 #### What is Cloud Computing?
 
-Cloud computing is the delivery of computing services over the internet, including `servers`, `storage`, `databases`, `networking`, `software`, `analytics`, and `intelligence`. Instead of owning and maintaining physical servers, you can access these resources on-demand from a cloud provider.
+Cloud computing is the delivery of computing services over the internet, including servers, storage, databases, networking, software, analytics, and intelligence. Instead of owning and maintaining physical servers, you can access these resources on-demand from a cloud provider.
 
 **Real-World Analogy:**
 Think of cloud computing like electricity. Instead of generating your own power, you pay for what you use from a utility company. Similarly, with cloud computing, you pay for computing resources as you need them, rather than maintaining your own infrastructure.
