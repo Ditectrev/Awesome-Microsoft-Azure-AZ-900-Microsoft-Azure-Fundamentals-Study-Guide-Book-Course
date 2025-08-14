@@ -790,7 +790,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 1. **Infrastructure as a Service (IaaS)**
    - **What it is:**
-     Azure `IaaS` provides virtualized computing resources over the internet. You manage the `operating system`, `middleware`, and `applications`, while Azure manages the physical infrastructure.
+     Azure IaaS provides virtualized computing resources over the internet. You manage the operating system, middleware, and applications, while Azure manages the physical infrastructure.
 
    - **Practical Example:**
      A company migrating their on-premises servers to Azure:
@@ -819,7 +819,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 2. **Platform as a Service (PaaS)**
    - **What it is:**
-     Azure `PaaS` provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure.
+     Azure PaaS provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure.
 
    - **Practical Example:**
      A web application deployment:
@@ -878,7 +878,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
 3. **Software as a Service (SaaS)**
    - **What it is:**
-     Azure `SaaS` delivers software applications over the internet, eliminating the need to install and run applications on individual computers.
+     Azure SaaS delivers software applications over the internet, eliminating the need to install and run applications on individual computers.
 
    - **Practical Example:**
      Enterprise productivity tools:
