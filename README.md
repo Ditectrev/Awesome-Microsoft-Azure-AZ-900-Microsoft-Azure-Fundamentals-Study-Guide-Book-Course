@@ -1147,11 +1147,11 @@ While cloud computing offers numerous benefits, organizations also face several 
   - Testing procedures
   - Documentation
 
-#### Cloud Economics
+### Cloud Economics
 
 Understanding cloud economics is crucial for making informed decisions about cloud adoption and cost management.
 
-##### Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)
+#### Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)
 
 - **Traditional IT (CapEx)**:
   - High upfront costs for hardware and software
@@ -1165,7 +1165,7 @@ Understanding cloud economics is crucial for making informed decisions about clo
   - Predictable monthly costs
   - Flexible scaling based on needs
 
-##### Total Cost of Ownership (TCO)
+#### Total Cost of Ownership (TCO)
 
 TCO includes all costs associated with owning and operating IT infrastructure:
 
@@ -1187,7 +1187,7 @@ TCO includes all costs associated with owning and operating IT infrastructure:
   - Data center facilities
   - Environmental controls
 
-##### Cost Optimization Strategies
+#### Cost Optimization Strategies
 
 Effective cost management in the cloud involves several strategies:
 
