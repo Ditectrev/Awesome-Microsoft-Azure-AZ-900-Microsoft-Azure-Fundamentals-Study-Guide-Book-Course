@@ -143,16 +143,17 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
     - [Elasticity](#elasticity)
     - [Fault Tolerance](#fault-tolerance)
     - [Disaster Recovery](#disaster-recovery)
-    - [Shared Responsibility Model](#shared-responsibility-model)
+  - [Cloud Economics](#cloud-economics)
+    - [Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)](#capital-expenditure-capex-vs-operational-expenditure-opex)
+    - [Total Cost of Ownership (TCO)](#total-cost-of-ownership-tco)
+    - [Cost Optimization Strategies](#cost-optimization-strategies)
+  - [Shared Responsibility Model](#shared-responsibility-model)
     - [Cloud Services Types](#cloud-services-types)
       - [Infrastructure as a Service (IaaS)](#infrastructure-as-a-service-iaas)
       - [Platform as a Service (PaaS)](#platform-as-a-service-paas)
       - [Software as a Service (SaaS)](#software-as-a-service-saas)
       - [Serverless Computing](#serverless-computing)
-    - [Cloud Economics](#cloud-economics)
-      - [Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)](#capital-expenditure-capex-vs-operational-expenditure-opex)
-      - [Total Cost of Ownership (TCO)](#total-cost-of-ownership-tco)
-      - [Cost Optimization Strategies](#cost-optimization-strategies)
+
 - [Core Azure Services](#core-azure-services)
   - [Azure Compute Services](#azure-compute-services)
     - [Virtual Machines (VMs)](#virtual-machines-vms)
@@ -1146,7 +1147,75 @@ While cloud computing offers numerous benefits, organizations also face several 
   - Testing procedures
   - Documentation
 
-#### Shared Responsibility Model
+#### Cloud Economics
+
+Understanding cloud economics is crucial for making informed decisions about cloud adoption and cost management.
+
+##### Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)
+
+- **Traditional IT (CapEx)**:
+  - High upfront costs for hardware and software
+  - Capital investments in infrastructure
+  - Depreciation over time
+  - Long-term planning required
+
+- **Cloud Computing (OpEx)**:
+  - Pay-as-you-go model
+  - No upfront capital investment
+  - Predictable monthly costs
+  - Flexible scaling based on needs
+
+##### Total Cost of Ownership (TCO)
+
+TCO includes all costs associated with owning and operating IT infrastructure:
+
+- **Hardware and software costs**:
+  - Server hardware
+  - Storage devices
+  - Networking equipment
+  - Software licenses
+
+- **Operational and maintenance costs**:
+  - IT staff salaries
+  - Training and certification
+  - Support contracts
+  - Regular maintenance
+
+- **Power and cooling costs**:
+  - Electricity consumption
+  - Heating, Ventilation, and Air Conditioning (HVAC) systems
+  - Data center facilities
+  - Environmental controls
+
+##### Cost Optimization Strategies
+
+Effective cost management in the cloud involves several strategies:
+
+- **Right-sizing resources**:
+  - Match resource capacity to actual needs
+  - Monitor usage patterns
+  - Scale down underutilized resources
+  - Choose appropriate service tiers
+
+- **Reserved instances**:
+  - Commit to 1 or 3-year terms
+  - Significant cost savings (up to 72%)
+  - Predictable workloads
+  - Budget planning
+
+- **Spot instances**:
+  - Use unused capacity at discounted rates
+  - Up to 90% cost savings
+  - Suitable for fault-tolerant workloads
+  - Risk of interruption
+
+- **Auto-scaling**:
+  - Automatically adjust resources based on demand
+  - Pay only for what you need
+  - Maintain performance during peak times
+  - Reduce costs during low usage
+
+### Shared Responsibility Model
 
 - **Definition**: A framework that defines which security tasks are handled by the cloud provider and which tasks are handled by the customer.
 
@@ -1276,74 +1345,6 @@ Cloud services are categorized into different models based on the level of contr
 - Pay only for execution time
 - Automatic scaling
 - Event-driven architecture
-
-#### Cloud Economics
-
-Understanding cloud economics is crucial for making informed decisions about cloud adoption and cost management.
-
-##### Capital Expenditure (CapEx) vs Operational Expenditure (OpEx)
-
-- **Traditional IT (CapEx)**:
-  - High upfront costs for hardware and software
-  - Capital investments in infrastructure
-  - Depreciation over time
-  - Long-term planning required
-
-- **Cloud Computing (OpEx)**:
-  - Pay-as-you-go model
-  - No upfront capital investment
-  - Predictable monthly costs
-  - Flexible scaling based on needs
-
-##### Total Cost of Ownership (TCO)
-
-TCO includes all costs associated with owning and operating IT infrastructure:
-
-- **Hardware and software costs**:
-  - Server hardware
-  - Storage devices
-  - Networking equipment
-  - Software licenses
-
-- **Operational and maintenance costs**:
-  - IT staff salaries
-  - Training and certification
-  - Support contracts
-  - Regular maintenance
-
-- **Power and cooling costs**:
-  - Electricity consumption
-  - HVAC systems
-  - Data center facilities
-  - Environmental controls
-
-##### Cost Optimization Strategies
-
-Effective cost management in the cloud involves several strategies:
-
-- **Right-sizing resources**:
-  - Match resource capacity to actual needs
-  - Monitor usage patterns
-  - Scale down underutilized resources
-  - Choose appropriate service tiers
-
-- **Reserved instances**:
-  - Commit to 1 or 3-year terms
-  - Significant cost savings (up to 72%)
-  - Predictable workloads
-  - Budget planning
-
-- **Spot instances**:
-  - Use unused capacity at discounted rates
-  - Up to 90% cost savings
-  - Suitable for fault-tolerant workloads
-  - Risk of interruption
-
-- **Auto-scaling**:
-  - Automatically adjust resources based on demand
-  - Pay only for what you need
-  - Maintain performance during peak times
-  - Reduce costs during low usage
 
 ## Core Azure Services
 
