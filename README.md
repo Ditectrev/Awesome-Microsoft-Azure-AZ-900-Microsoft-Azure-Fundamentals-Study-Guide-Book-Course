@@ -148,11 +148,6 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
     - [Total Cost of Ownership (TCO)](#total-cost-of-ownership-tco)
     - [Cost Optimization Strategies](#cost-optimization-strategies)
   - [Shared Responsibility Model](#shared-responsibility-model)
-    - [Cloud Services Types](#cloud-services-types)
-      - [Infrastructure as a Service (IaaS)](#infrastructure-as-a-service-iaas)
-      - [Platform as a Service (PaaS)](#platform-as-a-service-paas)
-      - [Software as a Service (SaaS)](#software-as-a-service-saas)
-      - [Serverless Computing](#serverless-computing)
 
 - [Core Azure Services](#core-azure-services)
   - [Azure Compute Services](#azure-compute-services)
@@ -793,6 +788,12 @@ Think of cloud computing like electricity. Instead of generating your own power,
    - **What it is:**
      Azure IaaS provides virtualized computing resources over the internet. You manage the operating system, middleware, and applications, while Azure manages the physical infrastructure.
 
+   - **Azure Examples:**
+     - **Azure Virtual Machines**: Complete control over OS and applications
+     - **Azure Storage**: Scalable storage solutions (Blob, File, Queue, Table)
+     - **Azure Virtual Network**: Private networking and connectivity
+     - **Azure Load Balancer**: Traffic distribution and high availability
+
    - **Practical Example:**
      A company migrating their on-premises servers to Azure:
 
@@ -821,6 +822,12 @@ Think of cloud computing like electricity. Instead of generating your own power,
 2. **Platform as a Service (PaaS)**
    - **What it is:**
      Azure PaaS provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure.
+
+   - **Azure Examples:**
+     - **Azure App Service**: Managed web application hosting with built-in CI/CD
+     - **Azure Functions**: Serverless compute for event-driven applications
+     - **Azure SQL Database**: Fully managed relational database service
+     - **Azure Kubernetes Service (AKS)**: Managed Kubernetes container orchestration
 
    - **Practical Example:**
      A web application deployment:
@@ -880,6 +887,12 @@ Think of cloud computing like electricity. Instead of generating your own power,
 3. **Software as a Service (SaaS)**
    - **What it is:**
      Azure SaaS delivers software applications over the internet, eliminating the need to install and run applications on individual computers.
+
+   - **Azure Examples:**
+     - **Microsoft 365**: Complete productivity suite (Office, Teams, SharePoint)
+     - **Salesforce**: Customer relationship management platform
+     - **Dropbox**: Cloud file storage and sharing
+     - **Zoom**: Video conferencing and communication platform
 
    - **Practical Example:**
      Enterprise productivity tools:
@@ -1264,87 +1277,6 @@ Effective cost management in the cloud involves several strategies:
   - **Data Security**: Always shared responsibility
   - **Application Security**: Varies by service model
   - **Network Security**: Varies by service model
-
-#### Cloud Services Types
-
-Cloud services are categorized into different models based on the level of control and management provided:
-
-##### Infrastructure as a Service (IaaS)
-
-- **What it is**: Provides virtualized computing resources over the internet
-- **What you manage**: Applications, data, runtime, middleware, OS
-- **What the provider manages**: Virtualization, servers, storage, networking
-
-**Examples**:
-
-- Virtual machines
-- Storage
-- Networking
-- Operating systems
-
-**Benefits**:
-
-- Highest level of control
-- Closest to traditional IT resources
-- Pay only for what you use
-
-##### Platform as a Service (PaaS)
-
-- **What it is**: Provides a platform for developing, testing, and managing applications
-- **What you manage**: Applications and data
-- **What the provider manages**: Runtime, middleware, OS, virtualization, servers, storage, networking
-
-**Examples**:
-
-- Development tools
-- Database management
-- Business analytics
-- Operating systems
-
-**Benefits**:
-
-- Faster development
-- Built-in scalability
-- Reduced management overhead
-
-##### Software as a Service (SaaS)
-
-- **What it is**: Software applications delivered over the internet
-- **What you manage**: Data and user access
-- **What the provider manages**: Everything else
-
-**Examples**:
-
-- Email services
-- Office applications
-- Customer relationship management
-- Enterprise resource planning
-
-**Benefits**:
-
-- No software installation
-- Automatic updates
-- Access from anywhere
-
-##### Serverless Computing
-
-- **What it is**: Event-driven computing where you don't manage servers
-- **What you manage**: Code and data
-- **What the provider manages**: Everything else
-
-**Examples**:
-
-- Event-driven functions
-- Pay-per-use execution
-- No server management
-- Automatic scaling
-
-**Benefits**:
-
-- No server management
-- Pay only for execution time
-- Automatic scaling
-- Event-driven architecture
 
 ## Core Azure Services
 
