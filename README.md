@@ -1284,7 +1284,7 @@ Effective cost management in the cloud involves several strategies:
 
 #### Virtual Machines (VMs)
 
-  Azure `VMs` are on-demand, scalable computing resources that provide complete control over the `operating system` and configuration. They're ideal for running applications that require full control over the computing environment.
+  Azure VMs are on-demand, scalable computing resources that provide complete control over the operating system and configuration. They're ideal for running applications that require full control over the computing environment.
 
 - **What is a vCPU?**
   A vCPU (virtual CPU) is a virtual processor that represents a portion of a physical CPU core. In Azure, vCPUs are the fundamental unit of compute power for virtual machines. Each vCPU:
