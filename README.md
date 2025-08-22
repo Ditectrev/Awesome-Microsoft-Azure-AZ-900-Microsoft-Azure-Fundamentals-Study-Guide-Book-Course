@@ -6,24 +6,24 @@
 
 There are many ways to support us; in exchange, you'll get this material in a proper format:
 
-- ❤️ [shop.ditectrev.com, in EPUB or PDF formats](https://shop.ditectrev.com/),
+- ❤️ [shop.ditectrev.com, in EPUB or PDF formats](https://shop.ditectrev.com/product/awesome-microsoft-azure-az-900-microsoft-azure-fundamentals-study-guide-book),
 - ▶️ [Udemy, in an interactive video course format](https://www.udemy.com/user/social-ditectrev),
-- 📚 [Google Play Books, in PDF format](https://play.google.com/store/books/author?id=Daniel+Danielecki),
-- 🛍️ [Etsy, in PDF format](https://ditectrev.etsy.com/),
-- 🛒 [eBay, in PDF format](https://www.ebay.com/),
+- 📚 [Google Play Books, in PDF format](https://play.google.com/store/books/details?id=wKh_EQAAQBAJ),
+- 🛍️ [Etsy, in PDF format](https://ditectrev.etsy.com/listing/4356430980),
+- 🛒 [eBay, in PDF format](https://ebay.us/m/pU3KqA),
 - 🔄 [Patreon subscription allows you to get access to all of the materials in EPUB and PDF formats. You can also buy separate items on Patreon, but the subscription technically allows us to include all updates for EPUB and PDF formats. Hence, you get EPUB and PDF updates when you subscribe to Patreon](https://patreon.com/Ditectrev?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink).
 
 💰 If you work for a company, you could probably easily claim this expense while learning this topic. For us, it's about being in the game or not.
 
 ⭐ Good ratings & reviews help us to survive. Please don't forget to leave a nice one when you purchase an item.
 
-## ✨ This Study Guide Book & Course is unlike any Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guides Books & Courses you will find online
+## ✨ This Study Guide Book & Course is unlike any Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) Study Guide Book & Course you will find online
 
-✋ Join a live online community and a course taught by industry experts and pass the Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) confidently. We aim to build an ecosystem of Information Technology (IT) certifications and online courses in cooperation with the technology industry. We believe it will give our students 100% confidence in the pacing market in an open-source environment. We are just at the beginning of our way, so it's even better for you to join now!
+✋ Join a live online community and a Study Guide Book & Course taught by industry experts and pass the Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) confidently. We aim to build an ecosystem of Information Technology (IT) certifications and online courses in cooperation with the technology industry. We believe it will give our students 100% confidence in the pacing market in an open-source environment. We are just at the beginning of our way, so it's even better for you to join now!
 
 [![Join our Discord](images/discord.png 'Join our Discord')](https://discord.gg/RFjtXKfJy3)
 
-## ⌛️ Short and to the point; why should you take the course:
+## ⌛️ Short and to the point; why should you take the Study Guide Book & Course:
 
 1. Always happy to answer your questions 😊
 2. Unhappy? Please raise a refund; we'll always accept it 💸
@@ -53,7 +53,7 @@ There are many ways to support us; in exchange, you'll get this material in a pr
    - Azure Web Apps;
    - Capital Expenditure (CapEx) & Operational Expenditure (OpEx);
    - Cloud Concepts;
-   - Compliancy, Governance, Identity & Privacy;
+   - Compliance, Governance, Identity & Privacy;
    - General Data Protection Regulation (GDPR) & Azure;
    - Inbound Data Traffic & Outbound Data Traffic;
    - Infrastructure as a Service (laaS);
@@ -75,11 +75,11 @@ There are many ways to support us; in exchange, you'll get this material in a pr
    - Windows Virtual Desktop;
    - **Much More!**
 4. Real Life examples ✅
-5. The book & course explains the topic fully in-depth 🔬
+5. The Study Guide Book & Course explains the topic fully in-depth 🔬
 
-## ☝️ Course Updates
+## ☝️ Study Guide Book & Course Updates
 
-**[v1.0.0](../../releases/tag/v1.0.0): August X, 2025.**
+**[v1.0.0](../../releases/tag/v1.0.0): August 22, 2025.**
 
 - Launch of the course.
 
@@ -87,7 +87,7 @@ There are many ways to support us; in exchange, you'll get this material in a pr
 
 We are so thankful for every contribution, which makes sure we can deliver top-notch content. Whenever you find a missing resource, broken link in a [Table of Contents](../..#table-of-contents), the wrong answer, please submit an [issue](../../issues). Even better would be a [Pull Request (PR)](../../pulls).
 
-## Who this course is for:
+## Who this Study Guide Book & Course is for:
 
 - 👨‍🎓 Students preparing for the Microsoft Azure Fundamentals (AZ-900) Exam;
 - 👨‍🎓 AWS Engineers;
