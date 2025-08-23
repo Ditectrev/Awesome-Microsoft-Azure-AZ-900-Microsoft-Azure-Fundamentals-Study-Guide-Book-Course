@@ -1439,6 +1439,10 @@ Effective cost management in the cloud involves several strategies:
 - **What is it?**
   Azure Virtual Machine Scale Sets provide automatic scaling of virtual machines based on demand or a defined schedule.
 
+- **Key Characteristics:**
+  - **Collection of VMs**: A group of identical virtual machines managed as a single unit
+  - **Automatic Management**: Automatically handles the creation and scaling of VMs based on demand
+
 - **Practical Example:**
   A web application with variable traffic:
 
