@@ -57,7 +57,7 @@ There are many ways to support us; in exchange, you'll get this material in a pr
    - Compliance, Governance, Identity & Privacy;
    - General Data Protection Regulation (GDPR) & Azure;
    - Inbound Data Traffic & Outbound Data Traffic;
-   - Infrastructure as a Service (laaS);
+   - Infrastructure as a Service (IaaS);
    - Microsoft Defender for Cloud;
    - Microsoft Defender for Identity;
    - Microsoft Entra ID;
