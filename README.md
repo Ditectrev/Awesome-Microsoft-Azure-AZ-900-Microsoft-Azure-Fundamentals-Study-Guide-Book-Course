@@ -1813,8 +1813,11 @@ Effective cost management in the cloud involves several strategies:
   ├── Cool Tier
   │   ├── Infrequently accessed files
   │   └── Cost: ~$0.01/GB
+  ├── Cold Tier
+  │   ├── Rarely accessed files (fast retrieval)
+  │   └── Cost: ~$0.002/GB
   └── Archive Tier
-      ├── Rarely accessed files
+      ├── Rarely accessed files (slow retrieval)
       └── Cost: ~$0.00099/GB
   ```
 
@@ -1884,7 +1887,7 @@ Effective cost management in the cloud involves several strategies:
 
 - **Key Points**:
   - Blob Storage is ideal for unstructured data like images and videos
-  - Three tiers: Hot, Cool, and Archive for cost optimization
+  - Four tiers: Hot, Cool, Cold, and Archive for cost optimization
   - Global distribution with CDN integration
   - Built-in security with encryption and access controls
   - Automatic replication for high availability
