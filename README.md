@@ -156,11 +156,11 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
     - [Virtual Machine Scale Sets (VMSS)](#virtual-machine-scale-sets-vmss)
     - [Availability Sets](#availability-sets)
     - [Azure Virtual Desktop (AVD)](#azure-virtual-desktop-avd)
-    - [App Service](#app-service)
+    - [Azure App Service](#azure-app-service)
     - [Azure Functions](#azure-functions)
   - [Azure Storage Services](#azure-storage-services)
-    - [Blob Storage](#blob-storage)
-    - [File Storage](#file-storage)
+    - [Azure Blob Storage](#azure-blob-storage)
+    - [Azure File Storage](#azure-file-storage)
     - [Azure Storage](#azure-storage)
   - [Azure Networking](#azure-networking)
     - [Azure Virtual Network](#azure-virtual-network)
@@ -835,7 +835,7 @@ Think of cloud computing like electricity. Instead of generating your own power,
 
      ```plaintext
      PaaS Architecture:
-     ├── App Service for web app
+     ├── Azure App Service for web app
      │   ├── Automatic scaling
      │   └── Built-in CI/CD
      ├── Azure SQL Database
@@ -1615,20 +1615,20 @@ Effective cost management in the cloud involves several strategies:
 - **Documentation Reference:**
   [Azure Virtual Desktop Documentation](https://learn.microsoft.com/en-us/azure/virtual-desktop/)
 
-#### App Service
+#### Azure App Service
 
 - **What is it?**
-  Azure `App Service` is a fully managed platform for building, deploying, and scaling web apps. It supports multiple programming languages and frameworks, with built-in `CI/CD` and `DevOps` capabilities.
+  Azure App Service is a fully managed platform for building, deploying, and scaling web apps. It supports multiple programming languages and frameworks, with built-in CI/CD and DevOps capabilities.
 
 - **Practical Example:**
   A modern web application:
 
   ```plaintext
-  App Service Architecture:
+  Azure App Service Architecture:
   ├── Frontend: Static Web Apps
   │   ├── React/Angular/Vue
   │   └── Cost: Free tier available
-  ├── Backend: App Service
+  ├── Backend: Azure App Service
   │   ├── .NET/Node.js/Python
   │   └── Cost: ~$75/month
   └── Database: Azure SQL
@@ -1646,7 +1646,7 @@ Effective cost management in the cloud involves several strategies:
     │   └── Static Web Apps
     ├── Backend
     │   ├── API Services
-    │   └── App Service
+    │   └── Azure App Service
     └── Database
         ├── SQL Database
         └── Cosmos DB
@@ -1683,7 +1683,7 @@ Effective cost management in the cloud involves several strategies:
 - **Scaling Options:**
 
   ```plaintext
-  App Service Scaling:
+  Azure App Service Scaling:
   ├── Manual Scaling
   │   ├── Choose instance size
   │   └── Set instance count
@@ -1700,7 +1700,7 @@ Effective cost management in the cloud involves several strategies:
   [Azure App Service Documentation](https://learn.microsoft.com/en-us/azure/app-service/)
 
 - **Key Points**:
-  - App Service is ideal for web applications and APIs
+  - Azure App Service is ideal for web applications and APIs
   - Supports multiple programming languages and frameworks
   - Built-in CI/CD integration simplifies deployment
   - Automatic scaling based on demand
@@ -1797,7 +1797,7 @@ Effective cost management in the cloud involves several strategies:
 
 ### Azure Storage Services
 
-#### Blob Storage
+#### Azure Blob Storage
 
 - **What is it?**
   Azure Blob Storage is a massively scalable object storage service for unstructured data, such as text or binary data.
@@ -1806,7 +1806,7 @@ Effective cost management in the cloud involves several strategies:
   A media streaming service:
 
   ```plaintext
-  Blob Storage Setup:
+  Azure Blob Storage Setup:
   ├── Hot Tier
   │   ├── Frequently accessed files
   │   └── Cost: ~$0.0184/GB
@@ -1886,14 +1886,14 @@ Effective cost management in the cloud involves several strategies:
   [Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)
 
 - **Key Points**:
-  - Blob Storage is ideal for unstructured data like images and videos
+  - Azure Blob Storage is ideal for unstructured data like images and videos
   - Four tiers: Hot, Cool, Cold, and Archive for cost optimization
   - Global distribution with CDN integration
   - Built-in security with encryption and access controls
   - Automatic replication for high availability
   - REST API for easy integration
 
-#### File Storage
+#### Azure File Storage
 
 - **What is it?**
   Azure File Storage provides fully managed file shares in the cloud that are accessible via the industry standard SMB protocol.
@@ -1980,7 +1980,7 @@ Effective cost management in the cloud involves several strategies:
   [Azure File Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/files/)
 
 - **Key Points**:
-  - File Storage provides SMB file shares in the cloud
+  - Azure File Storage provides SMB file shares in the cloud
   - Compatible with Windows, Linux, and macOS
   - Supports both standard and premium performance tiers
   - Azure File Sync enables hybrid cloud scenarios
@@ -1997,16 +1997,16 @@ Effective cost management in the cloud involves several strategies:
 
   ```plaintext
   Storage Architecture:
-  ├── Blob Storage
+  ├── Azure Blob Storage
   │   ├── Media files
   │   └── Static content
-  ├── File Storage
+  ├── Azure File Storage
   │   ├── Shared files
   │   └── User documents
-  ├── Queue Storage
+  ├── Azure Queue Storage
   │   ├── Message queue
   │   └── Task processing
-  └── Table Storage
+  └── Azure Table Storage
       ├── NoSQL data
       └── Structured datasets
   ```
@@ -2091,7 +2091,7 @@ Effective cost management in the cloud involves several strategies:
     │   └── Load Balancer
     ├── Application Tier
     │   ├── Internal access
-    │   └── App Services
+    │   └── Azure App Services
     └── Database Tier
         ├── Private access
         └── SQL Servers
@@ -3780,7 +3780,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     Pay-as-you-go:
     ├── Compute
     │   ├── VMs: $0.0089/hour
-    │   └── App Service: $0.013/hour
+    │   └── Azure App Service: $0.013/hour
     ├── Storage
     │   ├── Blob: $0.0184/GB
     │   └── SQL: $5/month
@@ -4111,7 +4111,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     ├── Virtual Machines
     │   ├── 99.95% uptime
     │   └── Multi-region
-    ├── App Service
+    ├── Azure App Service
     │   ├── 99.95% uptime
     │   └── Auto-scaling
     └── Functions
@@ -4123,10 +4123,10 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 
     ```plaintext
     Storage SLAs:
-    ├── Blob Storage
+    ├── Azure Blob Storage
     │   ├── 99.99% uptime
     │   └── Geo-redundant
-    ├── File Storage
+    ├── Azure File Storage
     │   ├── 99.9% uptime
     │   └── Zone-redundant
     └── SQL Database
@@ -4236,7 +4236,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   Azure Services:
   ├── Compute
   │   ├── VMs
-  │   ├── App Service
+  │   ├── Azure App Service
   │   └── Functions
   ├── Storage
   │   ├── Blob
@@ -4595,7 +4595,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     Service Knowledge:
     ├── Compute
     │   ├── VMs
-    │   └── App Service
+    │   └── Azure App Service
     ├── Storage
     │   ├── Blob
     │   └── File
@@ -4797,7 +4797,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     Azure Terms:
     ├── Compute
     │   ├── VM
-    │   ├── App Service
+    │   ├── Azure App Service
     │   ├── Functions
     │   ├── Container Instances
     │   └── AKS
