@@ -2062,7 +2062,7 @@ Effective cost management in the cloud involves several strategies:
 #### Azure Virtual Network
 
 - **What is it?**
-  Azure Virtual Network (`VNet`) is the fundamental building block for your private network in Azure, enabling secure communication between Azure resources, the internet, and on-premises networks.
+  Azure Virtual Network (VNet) is the fundamental building block for your private network in Azure, enabling secure communication between Azure resources, the internet, and on-premises networks.
 
 - **Practical Example:**
   A multi-tier application network:
@@ -2088,7 +2088,7 @@ Effective cost management in the cloud involves several strategies:
     App Network:
     ├── Web Tier
     │   ├── Public access
-    │   └── Load Balancer
+    │   └── Azure Load Balancer
     ├── Application Tier
     │   ├── Internal access
     │   └── Azure App Services
@@ -2147,7 +2147,7 @@ Effective cost management in the cloud involves several strategies:
   A high-availability web application:
 
     ```plaintext
-  Load Balancer Setup:
+  Azure Load Balancer Setup:
   ├── Public Load Balancer
   │   ├── Internet-facing
   │   └── Cost: ~$20/month
@@ -2208,7 +2208,7 @@ Effective cost management in the cloud involves several strategies:
 - **Performance Features:**
 
   ```plaintext
-  Load Balancer Features:
+  Azure Load Balancer Features:
   ├── High Availability
   │   ├── Zone-redundant
   │   └── Automatic failover
@@ -2224,7 +2224,7 @@ Effective cost management in the cloud involves several strategies:
   [Azure Load Balancer Documentation](https://learn.microsoft.com/en-us/azure/load-balancer/)
 
 - **Key Points**:
-  - Load Balancer distributes traffic across multiple VMs
+  - Azure Load Balancer distributes traffic across multiple VMs
   - Provides high availability and fault tolerance
   - Supports both public and internal load balancing
   - Health probes ensure only healthy instances receive traffic
@@ -3786,7 +3786,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     │   └── SQL: $5/month
     └── Networking
         ├── Data transfer: $0.087/GB
-        └── Load balancer: $20/month
+        └── Azure Load balancer: $20/month
     ```
 
   - **Reserved Instances:**
@@ -4141,7 +4141,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     ├── Virtual Network
     │   ├── 99.9% uptime
     │   └── Global reach
-    ├── Load Balancer
+    ├── Azure Load Balancer
     │   ├── 99.99% uptime
     │   └── Multi-region
     └── ExpressRoute
@@ -4244,7 +4244,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   └── Queue
   ├── Networking
   │   ├── VNet
-  │   ├── Load Balancer
+  │   ├── Azure Load Balancer
   │   └── VPN Gateway
   └── Databases
       ├── SQL Database
@@ -4601,7 +4601,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     │   └── File
     ├── Networking
     │   ├── VNet
-    │   └── Load Balancer
+    │   └── Azure Load Balancer
     └── Databases
         ├── SQL
         └── Cosmos DB
@@ -4808,7 +4808,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     │   └── Table
     ├── Networking
     │   ├── VNet
-    │   ├── Load Balancer
+    │   ├── Azure Load Balancer
     │   ├── Application Gateway
     │   └── CDN
     ├── Integration
