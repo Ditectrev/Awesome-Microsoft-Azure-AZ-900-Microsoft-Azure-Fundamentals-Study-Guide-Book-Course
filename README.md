@@ -82,7 +82,7 @@ There are many ways to support us; in exchange, you'll get this material in a pr
 
 **[v1.0.0](../../releases/tag/v1.0.0): August 22, 2025.**
 
-- Launch of the course.
+- Launch of the book.
 
 ## 🙋‍♀️ & 🙋‍♂️ Contribution
 
