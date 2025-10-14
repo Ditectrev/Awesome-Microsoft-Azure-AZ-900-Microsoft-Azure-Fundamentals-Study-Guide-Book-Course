@@ -1648,8 +1648,8 @@ Effective cost management in the cloud involves several strategies:
     │   ├── API Services
     │   └── Azure App Service
     └── Database
-        ├── SQL Database
-        └── Cosmos DB
+        ├── Azure SQL Database
+        └── Azure Cosmos DB
     ```
 
   - **Mobile App Backends:**
@@ -1663,7 +1663,7 @@ Effective cost management in the cloud involves several strategies:
     ├── Push Notifications
     │   └── Notification Hubs
     └── Data Storage
-        └── Cosmos DB
+        └── Azure Cosmos DB
     ```
 
   - **Business Applications:**
@@ -2368,7 +2368,7 @@ Effective cost management in the cloud involves several strategies:
   A global gaming platform:
 
   ```plaintext
-  Cosmos DB Setup:
+  Azure Cosmos DB Setup:
   ├── Multi-region Write
   │   └── Cost: ~$0.008/100 RUs
   ├── Single-region Write
@@ -2426,7 +2426,7 @@ Effective cost management in the cloud involves several strategies:
 - **Performance Features:**
 
   ```plaintext
-  Cosmos DB Features:
+  Azure Cosmos DB Features:
   ├── Global Distribution
   │   ├── Multi-region
   │   └── Low latency
@@ -2459,10 +2459,10 @@ Effective cost management in the cloud involves several strategies:
 
   ```plaintext
   Database Architecture:
-  ├── SQL Database
+  ├── Azure SQL Database
   │   ├── Relational data
   │   └── Transaction processing
-  ├── Cosmos DB
+  ├── Azure Cosmos DB
   │   ├── NoSQL data
   │   └── Global distribution
   └── Azure Database for PostgreSQL
@@ -3574,7 +3574,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
          ├── Azure Services
          │   ├── Synapse Analytics
          │   ├── Data Factory
-         │   └── SQL Database
+         │   └── Azure SQL Database
          ├── On-premises
          │   ├── SQL Server
          │   └── File shares
@@ -4129,7 +4129,7 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     ├── Azure File Storage
     │   ├── 99.9% uptime
     │   └── Zone-redundant
-    └── SQL Database
+    └── Azure SQL Database
         ├── 99.99% uptime
         └── Automatic failover
     ```
@@ -4247,8 +4247,8 @@ Azure's compliance offerings help organizations meet regulatory requirements and
   │   ├── Azure Load Balancer
   │   └── VPN Gateway
   └── Databases
-      ├── SQL Database
-      ├── Cosmos DB
+      ├── Azure SQL Database
+      ├── Azure Cosmos DB
       └── MySQL
   ```
 
@@ -4603,8 +4603,8 @@ Azure's compliance offerings help organizations meet regulatory requirements and
     │   ├── VNet
     │   └── Azure Load Balancer
     └── Databases
-        ├── SQL
-        └── Cosmos DB
+        ├── Azure SQL Database
+        └── Azure Cosmos DB
     ```
 
   - **Security & Compliance:**
