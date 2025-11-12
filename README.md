@@ -175,8 +175,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
     - [Azure CLI (Command-Line Interface)](#azure-cli-command-line-interface)
     - [Azure PowerShell](#azure-powershell)
     - [Azure Resource Manager (ARM)](#azure-resource-manager-arm)
-    - [Azure DevOps](#azure-devops)
     - [Infrastructure as Code (IaC)](#infrastructure-as-code-iac)
+    - [Azure DevOps](#azure-devops)
   - [Azure Monitoring Tools](#azure-monitoring-tools)
     - [Azure Monitor](#azure-monitor)
     - [Application Insights](#application-insights)
@@ -2778,32 +2778,6 @@ Effective cost management in the cloud involves several strategies:
       └── Managed identities
   ```
 
-#### Azure DevOps
-
-- **What is it?**
-  A set of development tools for planning, developing, testing, and deploying applications.
-
-- **Key Features**:
-
-  ```plaintext
-  DevOps Tools:
-  ├── Azure Repos
-  │   ├── Git repositories
-  │   └── Code management
-  ├── Azure Pipelines
-  │   ├── CI/CD
-  │   └── Build/Release
-  ├── Azure Boards
-  │   ├── Work items
-  │   └── Agile tools
-  ├── Azure Test Plans
-  │   ├── Test management
-  │   └── Manual testing
-  └── Azure Artifacts
-      ├── Package management
-      └── Dependency management
-  ```
-
 #### Infrastructure as Code (IaC)
 
 - **What is it?**
@@ -2888,6 +2862,32 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning comput
 - **Documentation Reference:**
   [Azure Resource Manager Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/)
   [Bicep Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
+
+#### Azure DevOps
+
+- **What is it?**
+  A set of development tools for planning, developing, testing, and deploying applications.
+
+- **Key Features**:
+
+  ```plaintext
+  DevOps Tools:
+  ├── Azure Repos
+  │   ├── Git repositories
+  │   └── Code management
+  ├── Azure Pipelines
+  │   ├── CI/CD
+  │   └── Build/Release
+  ├── Azure Boards
+  │   ├── Work items
+  │   └── Agile tools
+  ├── Azure Test Plans
+  │   ├── Test management
+  │   └── Manual testing
+  └── Azure Artifacts
+      ├── Package management
+      └── Dependency management
+  ```
 
 - **Documentation Reference:**
   [Azure Management Tools Documentation](https://learn.microsoft.com/en-us/azure/azure-portal/)
