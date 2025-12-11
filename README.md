@@ -84,6 +84,10 @@ There are many ways to support us; in exchange, you'll get this material in a pr
 
 - Launch of the book.
 
+**[v1.1.0](../../releases/tag/v1.1.0): December 11, 2025.**
+
+- Post-recording improvements.
+
 ## 🙋‍♀️ & 🙋‍♂️ Contribution
 
 We are so thankful for every contribution, which makes sure we can deliver top-notch content. Whenever you find a missing resource, broken link in a [Table of Contents](../..#table-of-contents), the wrong answer, please submit an [issue](../../issues). Even better would be a [Pull Request (PR)](../../pulls).
