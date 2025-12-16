@@ -7,7 +7,7 @@
 There are many ways to support us; in exchange, you'll get this material in a proper format:
 
 - ❤️ [shop.ditectrev.com, in EPUB or PDF formats](https://shop.ditectrev.com/product/awesome-microsoft-azure-az-900-microsoft-azure-fundamentals-study-guide-book),
-- ▶️ [Udemy, in an interactive video course format](https://www.udemy.com/user/social-ditectrev),
+- ▶️ [Udemy, in an interactive video course format](https://www.udemy.com/course/awesome-microsoft-azure-az-900-microsoft-azure-fundamentals/?referralCode=8791F565804A62FC0C1E),
 - 🆓 [Shorter, but free, part of our Udemy course is available on YouTube](https://www.youtube.com/playlist?list=PLD1m9AjEIXDbVigQu5wRbEWUl39rUNlyJ),
 - 📚 [Google Play Books, in PDF format](https://play.google.com/store/books/details?id=wKh_EQAAQBAJ),
 - 🛍️ [Etsy, in PDF format](https://ditectrev.etsy.com/listing/4356430980),
@@ -87,6 +87,10 @@ There are many ways to support us; in exchange, you'll get this material in a pr
 **[v1.1.0](../../releases/tag/v1.1.0): December 11, 2025.**
 
 - Post-recording improvements.
+
+**[v1.1.0](../../releases/tag/v1.1.0): December 16, 2025.**
+
+- Launch of the course.
 
 ## 🙋‍♀️ & 🙋‍♂️ Contribution
 
