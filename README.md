@@ -4177,6 +4177,9 @@ Azure's compliance offerings help organizations meet regulatory requirements and
 
 ## Exam Preparation
 
+
+- [Courseiva AZ-900 Practice](https://courseiva.com/certifications/az-900) — Free AZ-900 practice questions with detailed explanations and topic-based drills.
+
 ### AZ-900 Exam Overview
 
 #### Exam Structure
