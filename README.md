@@ -9,6 +9,7 @@ There are many ways to support us; in exchange, you'll get this material in a pr
 - ❤️ [shop.ditectrev.com, in EPUB or PDF formats](https://shop.ditectrev.com/product/awesome-microsoft-azure-az-900-microsoft-azure-fundamentals-study-guide-book),
 - ▶️ [Udemy, in an interactive video course format](https://www.udemy.com/course/awesome-microsoft-azure-az-900-microsoft-azure-fundamentals/?referralCode=8791F565804A62FC0C1E),
 - 🆓 [Shorter, but free, part of our Udemy course is available on YouTube](https://www.youtube.com/playlist?list=PLD1m9AjEIXDbVigQu5wRbEWUl39rUNlyJ),
+- 🖨️ [Amazon, printable physical book in paperback or hardcover (Kindle available, too)](https://www.amazon.com//Daniel-Danielecki-book/dp/B0FPGPPNHW),
 - 📚 [Google Play Books, in PDF format](https://play.google.com/store/books/details?id=wKh_EQAAQBAJ),
 - 🛍️ [Etsy, in PDF format](https://ditectrev.etsy.com/listing/4356430980),
 - 🛒 [eBay, in PDF format](https://ebay.us/m/pU3KqA),
